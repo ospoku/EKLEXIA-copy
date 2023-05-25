@@ -1,21 +1,12 @@
-﻿using ECLEXIA.Data;
-using ECLEXIA.Models;
-using ECLEXIA.ViewModels;
-using JWHC.Models;
-using Microsoft.AspNetCore.Http;
+﻿using EKKLESIA.Models;
+using EKKLESIA.ViewModels;
+using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Net.Mail;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ECLEXIA.Controllers
+namespace EKLEXIA.Controllers
 {
     public class MemberController : Controller
     {

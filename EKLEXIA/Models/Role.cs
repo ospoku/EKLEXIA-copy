@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EKKLESIA.Models
 {
-    public class ApplicationRole : IdentityRole
+    public class Role : IdentityRole
     {
         public string Rolename { get; set; }
     }

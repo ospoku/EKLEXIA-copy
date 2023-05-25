@@ -1,9 +1,8 @@
 ﻿
-using ECLEXIA.Data;
-using ECLEXIA.Models;
-using ECLEXIA.ViewModels;
-using JWHC.Controllers;
-using JWHC.Models;
+using EKKLESIA.Models;
+using EKLEXIA.Controllers;
+using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Hosting;
