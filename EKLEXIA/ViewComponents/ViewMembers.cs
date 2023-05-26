@@ -1,11 +1,9 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using EKKLESIA.Data;
-using EKKLESIA.ViewModels;
 using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class ViewMembers : ViewComponent
     {
@@ -19,17 +17,17 @@ namespace EKKLESIA.ViewComponents
             var MembersList = xct.Members.Where(m => m.IsDeleted == false).Select(m => new ViewMembersVM
             {
                 MemberId = m.MemberId,
-                Telephone=m.Telephone,
-            Hometown=m.Hometown,
+                Telephone = m.Telephone,
+                Hometown = m.Hometown,
                 Fullname = m.Fullname,
                 DateofBirth = m.DoB,
                 GenderId = m.Gender.GenderName,
-                Age=m.Age,
-RegionId = m.RegionId,
+                Age = m.Age,
+                RegionId = m.RegionId,
                 Address = m.Address,
-                IDNumber=m.IDNumber,
+                IDNumber = m.IDNumber,
 
-                CareerId=m.CareerId,
+                CareerId = m.CareerId,
                 Photo = m.Photo,
 
             }).ToList();

@@ -1,7 +1,6 @@
-﻿using EKKLESIA.Data;
-using EKKLESIA.ViewModels;
+﻿using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 namespace EKKLESIA.ViewComponents
 {
     public class ViewTithes : ViewComponent

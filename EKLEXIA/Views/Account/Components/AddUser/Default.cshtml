@@ -1,0 +1,74 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model EKLEXIA.ViewModels.AddUserVM 
+
+
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">New User</h6>
+            </div>
+            <div class="card-body justify-content-md-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-7">
+                        @using (Html.BeginForm("AddUser", "Account", FormMethod.Post))
+                        {<div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Firstname" placeholder="Enter Firstname" />
+                                </div>
+                            </div> <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Surname" placeholder="Enter Surname" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Username" placeholder="Enter Username" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-lock"></i></span></div>
+                                    <input class="form-control" type="password" asp-for="@Model.Password" placeholder="Enter Password" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-lock"></i></span></div>
+                                    <input class="form-control" type="tel" asp-for="@Model.Telephone" placeholder="Enter Telephone" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-lock"></i></span></div>
+                                    <input class="form-control" type="email" asp-for="@Model.Email" placeholder="Enter Email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user-alt-slash"></i></span></div>
+                                    <select class="form-control selectpicker" data-style="btn-secondary" title="Select role" multiple="multiple" asp-for="ApplicationRoleId" asp-items="@Model.ApplicationRoles"></select>
+                                </div>
+                            </div>
+
+                            <div class="tile-footer text-center">
+                                <button class="btn btn-primary"><i class="fa fa-fw fa-lg fa-check-circle"></i>Save</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-secondary" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+

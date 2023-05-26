@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model EKLEXIA.ViewModels.DetailMemberVM;
+
+
+<div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">Member Detail</h6>
+</div>
+<div class="card-body justify-content-md-center">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+
+
+          
+            <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
+                        <div class="form-control mr-2">@Model.Surname</div>
+
+
+                        <div class="input-group-prepend"><span class="input-group-text "><i class="icon fa fa-user-circle"></i></span></div>
+                        <div class="form-control">@Model.Othername</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text  ">Date of Birth</span></div>
+                        <div id="dob" class="form-control js-datepicker mr-2" type="date">@Model.DoB.ToString("dd-MMM-yyyy")</div>
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-venus-mars"></i></span></div>
+                        <div class="form-control">@Model.GenderId</div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone-alt"></i></span></div>
+                        <div class="form-control">@Model.Telephone</div>
+
+                                            
+                </div>
+                    </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
+                        <div class="form-control">@Model.Address</div>
+                </div>
+</div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
+                        <div class="form-control">@Model.ClinicNumber</div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
+                        <div class="form-control">@Model.Insurance</div>
+                    </div>
+                </div>
+
+
+
+
+
+
+             
+
+            
+        </div>
+    </div>
+</div>
+
+

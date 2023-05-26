@@ -1,0 +1,82 @@
+@{ Layout = null;}
+
+
+@model EKLEXIA.ViewModels.LoginVM
+
+<html>
+<head>
+    <title>Login Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/loginstyle.css" rel="stylesheet" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="row px-3">
+            <div class="col-sm-4 col-sm-4 card flex-row mx-auto px-0">
+            
+
+                <div class="card-body">
+                    <h4 class="title text-center mt-4">
+                        Login
+                    </h4>
+                    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+                    {
+
+                    <form class="form-box px-3">
+                        <div class="form-input">
+                            <span><i class="fa fa-user"></i></span>
+                            <input type="text" asp-for="@Model.Username"  placeholder="Username" tabindex="10" required>
+                        </div>
+                        <div class="form-input">
+                            <span><i class="fa fa-key"></i></span>
+                            <input type="password"  asp-for="@Model.Password" placeholder="Password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox"  asp-for="@Model.RememberMe" class="custom-control-input" id="cb1" name="">
+                                <label class="custom-control-label" for="cb1">Remember me</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn col-12 bg-primary rounded-pill  text-uppercase text-white">
+                                Login
+                            </button>
+                        </div>
+
+                        <div class="text-right">
+                            <a href="#" class="forget-link">
+                                Forget Password?
+                            </a>
+                        </div>
+
+               
+
+                        <hr class="my-4">
+
+                        <div class="text-center mb-2">
+                        
+                          
+                        </div>
+                    </form>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    @if (ViewBag.Message != null)
+    {
+    <script type="text/javascript">
+        window.onload = function () {
+
+            alert("@ViewBag.Message");
+        };
+    </script>
+    }
+</body>
+</html>

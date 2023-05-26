@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model IEnumerable<EKLEXIA.ViewModels.ViewRegionsVM>;
+
+
+
+<div class="col-3">
+
+
+    <a class="btn btn-primary text-white" asp-action="AddRegion" asp-controller="Settings"><i class="fa fa-fw fa-lg fa-plus-circle"></i>New Region</a>
+</div>
+
+
+
+
+
+
+<div class="card-header py-3">
+
+    <h6 class="m-0 font-weight-bold text-primary text-center">Regions</h6>
+</div>
+<div class="card-body justify-content-md-center">
+    <div class="row justify-content-center">
+        <div class="col-md-7">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var Region in Model)
+                        {
+                            <tr>
+                                <td>@Region.Name</td>
+
+                                <td>
+                                    <div class="text-center">
+                                        @*<a asp-action="DetailMember" asp-controller="Settings" asp-route-Id="@Region.RegionId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>*@
+                                        <a asp-action="EditRegion" asp-controller="Settings" asp-route-Id="@Region.RegionId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteRegion" asp-controller="Settings" asp-route-Id="@Region.RegionId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        </div>
+</div>

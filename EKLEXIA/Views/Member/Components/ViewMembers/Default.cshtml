@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model IEnumerable< EKLEXIA.ViewModels.ViewMembersVM>;
+
+
+       
+<div class="col-3">
+  
+
+        <a class="btn btn-primary text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-lg fa-plus-circle"></i>New Member</a>
+    </div>
+
+
+            <div class="card-header py-3">
+
+                <h6 class="m-0 font-weight-bold text-primary text-center">Members</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>CH.No</th>
+                                <th>Name</th>
+                                <th>DoB</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>Phone</th>
+                             
+                                <th>Town</th>
+                                <th>Photo</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var Member in Model)
+                            {
+                            <tr>
+                                <td>@Member.IDNumber</td>
+                                <td>@Member.Fullname</td>
+                                <td> @Member.DateofBirth.ToString("yyyy-MM-dd")</td>
+
+                                <td>@Member.GenderId</td>
+                                <td>@Member.Age</td>
+                                <td>@Member.Telephone</td>
+
+                                <td>@Member.Hometown</td>
+                                <td><img src="data:image;base64,@System.Convert.ToBase64String(Member.Photo)" class="btn-circle" /></td>
+                                <td>
+                                    <div class="text-center">
+                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>
+                                        <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            }
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+  

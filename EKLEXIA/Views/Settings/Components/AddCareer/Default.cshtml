@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model EKLEXIA.ViewModels.AddCareerVM;
+
+<div class="card-header py-1">
+    <h6 class="m-0 font-weight-bold text-primary">Career</h6>
+</div>
+
+
+
+@using (Html.BeginForm("AddCareer", "Settings"))
+{
+
+
+
+
+
+    <div class="card-body justify-content-md-center">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+
+
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-user"></i></span></div>
+                        <input class=" form-control " asp-for="@Model.CareerName" />
+                    </div>
+                </div>
+                <button class="btn btn-block btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
