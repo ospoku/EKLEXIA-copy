@@ -5,17 +5,11 @@ using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Net.Mail;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace ECLEXIA.Controllers
 {
@@ -69,7 +63,7 @@ namespace ECLEXIA.Controllers
                     }
                     else
                     {
-                        await usm.AddToRoleAsync(addThisUser, applicationRole.Rolename);
+                        await usm.AddToRoleAsync(addThisUser, applicationRole.Name);
 
                     }
                     ViewBag.Message = "New User created";

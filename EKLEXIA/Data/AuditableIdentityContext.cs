@@ -1,5 +1,4 @@
 ﻿using EKLEXIA.Models;
-using EKLEXIA.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -8,7 +7,7 @@ namespace EKLEXIA.Data
 {
 
 
-    public abstract class AuditableIdentityContext : IdentityDbContext<User, IdentityRole, string>
+    public abstract class AuditableIdentityContext : IdentityDbContext<User, Role, string>
     {
         public AuditableIdentityContext(DbContextOptions options) : base(options)
         {
@@ -18,7 +17,7 @@ namespace EKLEXIA.Data
 
         public DbSet<Audit> AuditLogs { get; set; }
 
-        public virtual async Task<int> SaveChangesAsync(string userId = null)
+        public virtual async Task<int> SaveChangesAsync(string userId)
         {
             OnBeforeSaveChanges(userId);
             var result = await base.SaveChangesAsync();

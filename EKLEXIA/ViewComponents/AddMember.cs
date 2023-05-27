@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using EKLEXIA.Models;
 using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
-using EKLEXIA.Models;
 
 namespace EKLEXIA.ViewComponents
 {

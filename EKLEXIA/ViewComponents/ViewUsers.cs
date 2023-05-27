@@ -2,7 +2,7 @@
 using EKLEXIA.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-
+using EKLEXIA.ViewModels;
 
 namespace EKLEXIA.ViewComponents
 {

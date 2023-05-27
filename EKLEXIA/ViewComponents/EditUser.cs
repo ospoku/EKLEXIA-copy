@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using EKLEXIA.Models;
 using EKLEXIA.Data;
 using EKLEXIA.Models;
+using EKLEXIA.ViewModels;
 
 namespace EKLEXIA.ViewComponents
 {

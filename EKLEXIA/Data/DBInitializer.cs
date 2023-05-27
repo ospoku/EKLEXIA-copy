@@ -142,7 +142,7 @@ namespace EKLEXIA.Data
             var usm = serviceProvider.GetRequiredService<UserManager<User>>();
             if (await usm.FindByNameAsync("SuperAdmin") == null)
             {
-                User superUser = new User()
+                User superUser = new()
                 {
                     UserName = "SuperAdmin",
                     Surname = "SuperAdmin",

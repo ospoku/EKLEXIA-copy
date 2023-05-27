@@ -1,5 +1,6 @@
 ﻿
 using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EKLEXIA.ViewComponents

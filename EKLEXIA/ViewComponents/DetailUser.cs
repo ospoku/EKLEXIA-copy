@@ -26,7 +26,7 @@ namespace EKLEXIA.ViewComponents
 
                 Telephone = user.PhoneNumber,
                 Username = user.UserName,
-                BranchId = user.BranchId,
+                
             };
 
 

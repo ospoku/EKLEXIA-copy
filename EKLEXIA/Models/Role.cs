@@ -8,6 +8,6 @@ namespace EKLEXIA.Models
 {
     public class Role : IdentityRole
     {
-        public string Rolename { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace EKLEXIA.Models
         public string Month { get; set; }
         public DateTime TitheDate { get; set; }
         public bool IsDeleted { get; set; }
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
         public DateTime CreatedDate { get; set; }
         public string Description { get; set; }
         public DateTime ModifiedDate { get; set; }
