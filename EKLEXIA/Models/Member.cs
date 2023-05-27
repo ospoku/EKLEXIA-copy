@@ -1,8 +1,9 @@
-﻿using System;
+﻿using EKLEXIA.Models;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EKKLESIA.Models
+namespace EKLEXIA.Models
 {
     public class Member
     {

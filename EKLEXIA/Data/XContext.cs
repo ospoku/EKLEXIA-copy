@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using EKKLESIA.Models;
+using EKLEXIA.Models;
+using EKLEXIA.Models;
 
 namespace EKLEXIA.Data
 {

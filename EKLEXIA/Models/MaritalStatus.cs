@@ -5,14 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EKKLESIA.Models
+namespace EKLEXIA.Models
 {
-    public class MaritalStatus: TableAudit
+    public class MaritalStatus : TableAudit
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string Id { get; set; }
         public string Name { get; set; }
-    
+
     }
 }

@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using EKKLESIA.Models;
+using EKLEXIA.Models;
 using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
+using EKLEXIA.Models;
 
 namespace EKLEXIA.ViewComponents
 {

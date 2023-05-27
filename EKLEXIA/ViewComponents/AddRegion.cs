@@ -2,7 +2,7 @@
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class AddRegion:ViewComponent
     {

@@ -1,9 +1,10 @@
 ﻿using EKLEXIA.Data;
+using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class DetailMember:ViewComponent
     {

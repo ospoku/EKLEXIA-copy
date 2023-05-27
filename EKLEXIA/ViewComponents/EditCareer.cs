@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using EKKLESIA.Models;
 using EKLEXIA.Data;
+using EKLEXIA.Models;
+using EKLEXIA.ViewModels;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class EditCareer : ViewComponent
     {

@@ -1,4 +1,4 @@
-﻿using EKKLESIA.Models;
+﻿using EKLEXIA.Models;
 using EKLEXIA.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;

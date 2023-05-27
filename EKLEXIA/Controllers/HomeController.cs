@@ -1,4 +1,4 @@
-﻿using EKKLESIA.Models;
+﻿using EKLEXIA.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

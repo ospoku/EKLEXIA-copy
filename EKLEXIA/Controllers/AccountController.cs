@@ -1,5 +1,5 @@
 ﻿
-using EKKLESIA.Models;
+using EKLEXIA.Models;
 using EKLEXIA.Controllers;
 using EKLEXIA.Data;
 using EKLEXIA.ViewModels;

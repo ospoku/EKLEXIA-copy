@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using EKLEXIA.Data;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class ViewDashboard:ViewComponent
     {

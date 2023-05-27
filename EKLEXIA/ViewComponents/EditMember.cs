@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using EKKLESIA.Models;
 using EKLEXIA.Data;
+using EKLEXIA.Models;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class EditMember : ViewComponent
     {

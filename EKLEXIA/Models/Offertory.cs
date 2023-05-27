@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualBasic;
 
-namespace EKKLESIA.Models
+namespace EKLEXIA.Models
 {
     public class Offertory
     {

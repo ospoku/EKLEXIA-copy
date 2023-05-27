@@ -1,6 +1,6 @@
 using System;
 
-namespace EKKLESIA.Models
+namespace EKLEXIA.Models
 {
     public class ErrorViewModel
     {

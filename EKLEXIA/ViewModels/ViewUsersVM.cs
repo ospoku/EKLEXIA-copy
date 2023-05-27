@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EKKLESIA.ViewModels
+namespace EKLEXIA.ViewModels
 {
     public class ViewUsersVM
     {

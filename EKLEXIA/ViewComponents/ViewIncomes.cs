@@ -2,7 +2,7 @@
 using EKLEXIA.Data;
 using Microsoft.AspNetCore.Mvc;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class ViewIncomes : ViewComponent
     {

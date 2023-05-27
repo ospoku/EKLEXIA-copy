@@ -1,5 +1,5 @@
 ﻿using System;
-using EKKLESIA.Models;
+using EKLEXIA.Models;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using System.Linq;

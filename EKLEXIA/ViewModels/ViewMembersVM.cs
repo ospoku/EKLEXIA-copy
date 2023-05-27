@@ -1,5 +1,4 @@
-﻿using System;
-using EKKLESIA.Models;
+﻿using EKLEXIA.Models;
 
 namespace EKLEXIA.ViewModels
 {

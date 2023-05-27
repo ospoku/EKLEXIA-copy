@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using EKKLESIA.Models;
-using EKKLESIA.ViewModels;
+using EKLEXIA.Models;
+using EKLEXIA.ViewModels;
 
-namespace EKKLESIA.ViewComponents
+namespace EKLEXIA.ViewComponents
 {
     public class DetailUser : ViewComponent
     {

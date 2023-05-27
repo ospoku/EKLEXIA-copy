@@ -1,13 +1,14 @@
-﻿using System;
+﻿using EKLEXIA.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EKKLESIA.Models
+namespace EKLEXIA.Models
 {
-    public class Career:TableAudit
+    public class Career : TableAudit
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -15,6 +16,6 @@ namespace EKKLESIA.Models
         public string Name { get; set; }
 
 
-  
+
     }
 }
