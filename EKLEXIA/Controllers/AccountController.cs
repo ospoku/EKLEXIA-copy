@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Net.Mail;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ECLEXIA.Controllers
 {
@@ -251,6 +252,7 @@ namespace ECLEXIA.Controllers
             return ViewComponent("ManageRoles", userId);
         }
         [HttpGet]
+        
         public IActionResult Login(LoginVM loginVM)
         {
             return View(loginVM);
