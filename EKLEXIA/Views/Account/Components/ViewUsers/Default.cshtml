@@ -39,10 +39,28 @@
                             <div>
 
 
-                                <a asp-action="DetailUser" asp-controller="Account" asp-route-Id="@user.UserId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>
+                                <a asp-action="DetailUser" data-target="#addMember" data-url="@Url.Action($"Add/{user.UserId}")" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>
                                 <a asp-action="EditUser" asp-controller="Account" asp-route-Id="@user.UserId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
                                 <a asp-action="DeleteUser" asp-controller="Account" asp-route-Id="@user.UserId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
                                 <a asp-action="ManageUserRole" asp-controller="Account" asp-route-Id="@user.UserId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-list text-white"></i></a>
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select an Action
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+                                    
+                                      
+                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@user.UserId"><i class="fa fa-sm fa-edit text-white mr-3"></i>Edit</a>
+                                   
+                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@user.UserId"><i class="fa fa-sm fa-comment text-white mr-3"></i>View</a>
+                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@user.UserId"><i class="fa fa-sm fa-print text-white mr-3"></i>Print</a>
+
+                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@user.UserId"><i class="fa fa-sm fa-trash text-white mr-3"></i>Delete</a>
+
+
+                                    </div>
+                                </div>
                             </div>
                         </td>
                     </tr>

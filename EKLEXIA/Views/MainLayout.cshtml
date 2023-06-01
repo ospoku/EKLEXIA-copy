@@ -35,6 +35,8 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/jquery.mCustomScrollbar.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+ 
+    <link href="~/assets/datatables/css/datatables.bootstrap4.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -234,16 +236,7 @@
                                     </ul>
                                 </div>
                             </div>
-                           @* <div class="p-15 p-b-0">
-                                <form class="form-material">
-                                    <div class="form-group form-primary">
-                                        <input type="text" name="footer-email" class="form-control">
-                                        <span class="form-bar"></span>
-                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>Search Friend</label>
-                                    </div>
-                                </form>
-                            </div>*@
-                          @*  <div class="pcoded-navigation-label">Dashboard Activities</div>*@
+                  
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a href="index.html" class="waves-effect waves-dark">
@@ -257,7 +250,7 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i><b>BC</b></span>
+                                        <span class="pcoded-micon"><i class="ti-users"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Member Activities</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -299,7 +292,7 @@
                                         </a>
                                     </li>
                                     <li class=" ">
-                                        <a href="button.html" class="waves-effect waves-dark">
+                                        <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext">ID Cards</span>
                                             <span class="pcoded-mcaret"></span>
@@ -310,86 +303,64 @@
                                 </ul>
                                 </li>
                             </ul>
-                            
-                           @* <div class="pcoded-navigation-label">Financial Activities</div>*@
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="">
-                                    <a  class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-receipt"></i><b>B</b></span>
-                                        <span class="pcoded-mtext">Financial Activities</span>
+                                <li class="pcoded-hasmenu">
+                                    <a class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Finance</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
+
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
                                             <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">View Tithes</span>
+                                                <span class="pcoded-mtext">View Register</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="button.html" class="waves-effect waves-dark">
+                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">View Welfare</span>
+                                                <span class="pcoded-mtext">ID Cards</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
 
 
                                     </ul>
-
                                 </li>
-                            </ul>
-                           @* <div class="pcoded-navigation-label">Chart And Maps</div>*@
+                            </ul>     
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
-                                    <a href="chart-morris.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-bar-chart-alt"></i><b>C</b></span>
-                                        <span class="pcoded-mtext">Charts</span>
+                                    <a class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Report</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                </li>
-                                <li class="">
-                                    <a href="map-google.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-map-alt"></i><b>M</b></span>
-                                        <span class="pcoded-mtext">Maps</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label">Report Activities</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu ">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-id-badge"></i><b>A</b></span>
-                                        <span class="pcoded-mtext">Pages</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
+
                                     <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
+                                        <li class=" ">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Login</span>
+                                                <span class="pcoded-mtext">View Register</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class="">
-                                            <a href="auth-sign-up.html" class="waves-effect waves-dark">
+                                        <li class=" ">
+                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">Registration</span>
+                                                <span class="pcoded-mtext">ID Cards</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class="">
-                                            <a href="sample-page.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-layout-sidebar-left"></i><b>S</b></span>
-                                                <span class="pcoded-mtext">Sample Page</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
+
+
                                     </ul>
                                 </li>
                             </ul>
+
+
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -516,6 +487,8 @@
     <script src="~/assets/js/vertical/vertical-layout.min.js "></script>
 
     <script type="text/javascript" src="~/assets/js/script.js "></script>
+    <script type="text/javascript" src="~/assets/datatables/js/datatables.bootstrap4.js"></script>
+
 </body>
 
 </html>

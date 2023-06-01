@@ -5,17 +5,26 @@
 
 
        
-<div class="col-3">
-  
-
-        <a class="btn btn-primary text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-lg fa-plus-circle"></i>New Member</a>
-    </div>
-
-
-            <div class="card-header py-3">
-
-                <h6 class="m-0 font-weight-bold text-primary text-center">Members</h6>
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-primary text-center">Members</h5>
+        <span>use class <code>table</code> inside table element</span>
+        <div class="card-header-right">
+         <div class="row align-items-center">
+             <div class="card-tools">
+                <a class="badge badge-primary  ml-auto px-4 b-radius-5 mr-3" asp-action="AddMember" asp-controller="Member">Add New</a>
+                </div>
+                <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
             </div>
+
+       </div>
+  
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -66,103 +75,6 @@
                 </div>
             </div>
 
-<div class="card">
-    <div class="card-header">
-        <h5>Basic Table</h5>
-        <span>use class <code>table</code> inside table element</span>
-        <div class="card-header-right">
-            <ul class="list-unstyled card-option">
-                <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                <li><i class="fa fa-window-maximize full-card"></i></li>
-                <li><i class="fa fa-minus minimize-card"></i></li>
-                <li><i class="fa fa-refresh reload-card"></i></li>
-                <li><i class="fa fa-trash close-card"></i></li>
-            </ul>
-        </div>
-    </div>
-    <div class="card-block table-border-style">
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
-<!-- Basic table card end -->
-<!-- Inverse table card start -->
-<div class="card">
-    <div class="card-header">
-        <h5>Dark Table</h5>
-        <span>use class <code>table-dark</code> inside table element</span>
-        <div class="card-header-right">
-            <ul class="list-unstyled card-option">
-                <li><i class="fa fa fa-wrench open-card-option"></i></li>
-                <li><i class="fa fa-window-maximize full-card"></i></li>
-                <li><i class="fa fa-minus minimize-card"></i></li>
-                <li><i class="fa fa-refresh reload-card"></i></li>
-                <li><i class="fa fa-trash close-card"></i></li>
-            </ul>
-        </div>
-    </div>
-    <div class="card-block table-border-style">
-        <div class="table-responsive">
-            <table class="table table-dark">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>
+            </div>
+            </div>
+   
