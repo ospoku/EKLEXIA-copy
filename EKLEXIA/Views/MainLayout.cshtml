@@ -35,8 +35,10 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/jquery.mCustomScrollbar.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
- 
-    <link href="~/assets/datatables/css/datatables.bootstrap4.min.css" rel="stylesheet"/>
+    <link href="~/assets/datatables/datatables.bootstrap4.css" rel="stylesheet" />
+    
+    <link href="~/assets/datatables/datatables.bootstrap4.min.css" rel="stylesheet" />
+   
 </head>
 
 <body>
@@ -246,11 +248,11 @@
                                     </a>
                                 </li>
                             </ul>
-                           @* <div class="pcoded-navigation-label">Membership Activities</div>*@
+                        
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-users"></i><b>BC</b></span>
+                                        <span class="pcoded-micon"><i class="fa-users"></i><b>BC</b></span>
                                         <span class="pcoded-mtext">Member Activities</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -263,7 +265,7 @@
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a href="button.html" class="waves-effect waves-dark">
+                                            <a asp-action="IDCards" asp-controller="Member" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">ID Cards</span>
                                                 <span class="pcoded-mcaret"></span>
@@ -274,7 +276,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                          @*  <div class="pcoded-navigation-label">Attendance</div>*@
+                          
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a  class="waves-effect waves-dark">
@@ -285,16 +287,16 @@
                                 
                                 <ul class="pcoded-submenu">
                                     <li class=" ">
-                                        <a href="breadcrumb.html" class="waves-effect waves-dark">
+                                        <a asp-action="AttendanceLists" asp-controller="Attendance" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                             <span class="pcoded-mtext">View Register</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
                                     <li class=" ">
-                                        <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
+                                        <a asp-action="ViewMeetings" asp-controller="Attendance" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">ID Cards</span>
+                                            <span class="pcoded-mtext">View Meetings</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
@@ -487,7 +489,11 @@
     <script src="~/assets/js/vertical/vertical-layout.min.js "></script>
 
     <script type="text/javascript" src="~/assets/js/script.js "></script>
-    <script type="text/javascript" src="~/assets/datatables/js/datatables.bootstrap4.js"></script>
+    <script src="~/assets/datatables/datatables.bootstrap4.js"></script>
+    <script src="~/assets/datatables/datatables.bootstrap4.min.js"></script>
+    
+    <script src="~/assets/datatables/jquery.datatables.min.js"></script>
+    <script src="~/assets/js/ospapps.js"></script>
 
 </body>
 

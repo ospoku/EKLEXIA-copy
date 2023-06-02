@@ -28,7 +28,7 @@ namespace EKLEXIA.ViewComponents
                 IDNumber = m.IDNumber,
 
                 CareerId = m.CareerId,
-                Photo = m.Photo,
+               // Photo = m.Photo,
 
             }).ToList();
             return View(MembersList);

@@ -7,42 +7,30 @@ using System.Net;
 
 namespace EKLEXIA.Controllers
 {
-    public class MemberController : Controller
+    public class AttendanceController : Controller
     {
 
         public readonly XContext cxt;
 
 
-        public MemberController(XContext xContext)
+        public AttendanceController(XContext xContext)
         {
             cxt = xContext;
 
         }
 
         [HttpGet]
-        public IActionResult AddMember() => ViewComponent("AddMember");
-
-        private static byte[] ConvertToBytes(IFormFile file)
-        {
-
-            using (var memoryStream = new MemoryStream())
-            {
-                file.CopyTo(memoryStream);
-                return memoryStream.ToArray();
-            };
-
-
-        }
+        public IActionResult AddMeeting() => ViewComponent("AddMeeting");
 
 
 
-        public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
+        public async Task<IActionResult> AddMeeting(AddMemberVM addMemberVM, IFormFile Photo)
         {
             if (!ModelState.IsValid)
             {
 
 
-                return ViewComponent("AddMember");
+                return ViewComponent("AddMeeting");
             }
 
             if (ModelState.IsValid)
@@ -137,57 +125,40 @@ namespace EKLEXIA.Controllers
             {
                 ViewBag.Message = "Member creation error!!! Please try again";
             }
-            return ViewComponent("AddMember");
+            return ViewComponent("AddMeeting");
         }
 
-        public IActionResult DetailMember(string Id)
+        public IActionResult DetailMeeting(string Id)
       => ViewComponent("DetailMember", Id);
-        public IActionResult EditMember(string Id)
+        public IActionResult EditMeeting(string Id)
         => ViewComponent("EditMember", Id);
         [HttpPost]
-        public async Task<IActionResult> EditMemberAsync(string Id, Member member)
+        public async Task<IActionResult> EditMeetingAsync(string Id, Meeting meeting)
         {
-            Member updateThisMember = new();
-            updateThisMember = (from a in cxt.Members where a.MemberId == Id select a).FirstOrDefault();
+            Meeting updateThisMeeting = new();
+            updateThisMeeting = (from a in cxt.Meetings where a.Id == Id select a).FirstOrDefault();
 
-            updateThisMember.Address = member.Address;
+            updateThisMeeting.Name = meeting.Name;
 
-            updateThisMember.DoB = member.DoB;
-            updateThisMember.Hometown = member.Hometown;
-            updateThisMember.RegionId = member.RegionId;
-            updateThisMember.Telephone = member.Telephone;
-            updateThisMember.GenderId = member.GenderId;
+     
+            updateThisMeeting.IsDeleted = false;
+            updateThisMeeting.ModifiedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value;
+            updateThisMeeting.ModifiedDate = DateTime.Now;
 
-            updateThisMember.Othername = member.Othername;
-
-            updateThisMember.Surname = member.Surname;
-
-            updateThisMember.IsDeleted = false;
-            updateThisMember.ModifiedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value;
-            updateThisMember.ModifiedDate = DateTime.Now;
-
-            cxt.Members.Attach(updateThisMember);
-            cxt.Entry(updateThisMember).State = EntityState.Modified;
+            cxt.Meetings.Attach(updateThisMeeting);
+            cxt.Entry(updateThisMeeting).State = EntityState.Modified;
             await cxt.SaveChangesAsync();
 
-            return RedirectToAction("ViewMembers");
+            return RedirectToAction("ViewMeetings");
         }
         [HttpGet]
-        public IActionResult ViewMembers()
+        public IActionResult ViewMeetings()
         {
-            return ViewComponent("ViewMembers");
+            return ViewComponent("ViewMeetings");
         }
 
         public IActionResult DeleteMember() => ViewComponent("ViewMembers");
 
-        public IActionResult ViewCardList()
-        {
-            return ViewComponent("ViewCardList");
-        }
-        public IActionResult Card(string Id)
-        {
-            return ViewComponent("Card", Id);
-        }
 
 
 

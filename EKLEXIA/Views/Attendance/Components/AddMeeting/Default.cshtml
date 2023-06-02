@@ -1,0 +1,32 @@
+﻿
+@model EKLEXIA.ViewModels.AddMeetingVM;
+
+
+
+
+<div class="modal fade" id="AddMeeting">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <div class="modal-title">
+                <h5>Add Meeting</h5>
+            </div>
+
+        </div>
+        <div class="modal-body">
+                <div class="form-group">
+                    <input type="text" asp-for="@Model.Name " class="form-control" placeholder="Enter Username">
+
+                </div>
+                <div class="form-group">
+                    <input type="password" asp-for="@Model.Description" class="form-control" placeholder="Enter Username">
+
+                </div>
+                <div class="form-group">
+                    <select   class="form-control" placeholder="Enter Username"/>
+
+                </div>
+        </div>
+    </div>
+    </div>
+    </div>

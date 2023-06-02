@@ -1,9 +1,9 @@
 ﻿@{
     Layout = "~/Views/MainLayout.cshtml";
 }
-@model IEnumerable< EKLEXIA.ViewModels.ViewMembersVM>;
+@model IEnumerable< EKLEXIA.ViewModels.ViewMeetingsVM>;
 
-
+<div id="PlaceHolderHere"></div>
        
 <div class="card">
     <div class="card-header">
@@ -35,13 +35,7 @@
                             <tr>
                                 <th>CH.No</th>
                                 <th>Name</th>
-                                <th>DoB</th>
-                                <th>Gender</th>
-                                <th>Age</th>
-                                <th>Phone</th>
-                             
-                                <th>Town</th>
-                                <th>Photo</th>
+                              
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -50,21 +44,14 @@
                             @foreach (var Member in Model)
                             {
                             <tr>
-                                <td>@Member.IDNumber</td>
-                                <td>@Member.Fullname</td>
-                                <td> @Member.DateofBirth.ToString("yyyy-MM-dd")</td>
+                                <td>@Member.Id</td>
+                                <td>@Member.Name</td>
 
-                                <td>@Member.GenderId</td>
-                                <td>@Member.Age</td>
-                                <td>@Member.Telephone</td>
-
-                                <td>@Member.Hometown</td>
-                                <td><img src="data:image;base64,@System.Convert.ToBase64String(Member.Photo)" class="btn-circle" /></td>
                                 <td>
                                     <div class="text-center">
-                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMember" data-url="@Url.Action("Create")"><i class="fa fa-sm fa-info text-white"></i></a>
-                                        <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
-                                        <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                        <button type="button"  class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMeeting" data-url="@Url.Action("AddMeeting")"><i class="fa fa-sm fa-info text-white"></i></button>
+                                        <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.Id" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.Id" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
                                     </div>
                                 <div class="btn-group" role="group">
                                     <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -73,12 +60,12 @@
                                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 
                                  
-                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-edit text-white mr-3"></i>Edit</a>
+                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@Member.Id"><i class="fa fa-sm fa-edit text-white mr-3"></i>Edit</a>
                                         
-                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-comment text-white mr-3"></i>View</a>
-                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-print text-white mr-3"></i>Print</a>
+                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Member.Id"><i class="fa fa-sm fa-comment text-white mr-3"></i>View</a>
+                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Member.Id"><i class="fa fa-sm fa-print text-white mr-3"></i>Print</a>
 
-                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-trash text-white mr-3"></i>Delete</a>
+                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Member.Id"><i class="fa fa-sm fa-trash text-white mr-3"></i>Delete</a>
 
 
                                     </div>

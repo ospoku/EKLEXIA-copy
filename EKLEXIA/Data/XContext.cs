@@ -18,10 +18,11 @@ namespace EKLEXIA.Data
         public DbSet<Welfare> Welfares { get; set; }
         public DbSet<MaritalStatus> MaritalStatuses { get; set; }
         public DbSet<Career> Careers { get; set; }
-        public DbSet<Tithe> Tithes { get; internal set; }
+        public DbSet<Tithe> Tithes { get;  set; }
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Income> Incomes { get;  set; }
+        public DbSet<Meeting> Meetings { get; set; }
     }
 
 

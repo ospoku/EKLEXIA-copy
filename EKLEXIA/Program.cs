@@ -70,6 +70,6 @@ var db = scope.ServiceProvider.GetRequiredService<XContext>();
 //await init.CareerSetup();
 init.RoleCreation(scope.ServiceProvider)
     .Wait();
-    init.UserCreation(scope.ServiceProvider).Wait();
+init.UserCreation(scope.ServiceProvider).Wait();
 
 app.Run();
