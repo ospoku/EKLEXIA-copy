@@ -251,16 +251,16 @@
                         
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="fa-users"></i><b>BC</b></span>
-                                        <span class="pcoded-mtext">Member Activities</span>
+                                    <a  class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-users"></i><b>BC</b></span>
+                                        <span class="pcoded-mtext">Membership</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a asp-action="ViewMembers" asp-controller="Member" class="waves-effect waves-dark">
+                                            <a asp-action="Members" asp-controller="Member" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">View Members</span>
+                                                <span class="pcoded-mtext">Members</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
@@ -271,8 +271,21 @@
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                      
-                             
+
+                                        <li class=" ">
+                                            <a asp-action="Groups" asp-controller="Member" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Groups</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a asp-action="Branches" asp-controller="Member" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Branches</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -280,7 +293,7 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a  class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-micon"><i class="fa fa-list"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Attendance</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -289,14 +302,14 @@
                                     <li class=" ">
                                         <a asp-action="AttendanceLists" asp-controller="Attendance" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">View Register</span>
+                                            <span class="pcoded-mtext">Register</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
                                     <li class=" ">
-                                        <a asp-action="ViewMeetings" asp-controller="Attendance" class="waves-effect waves-dark">
+                                        <a asp-action="Meetings" asp-controller="Attendance" class="waves-effect waves-dark">
                                             <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                            <span class="pcoded-mtext">View Meetings</span>
+                                            <span class="pcoded-mtext">Meetings</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                     </li>
@@ -308,27 +321,33 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-micon"><i class="fa fa-money"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Finance</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
 
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
+                                            <a asp-action="Tithes" asp-controller="Finance" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">View Register</span>
+                                                <span class="pcoded-mtext">Tithes</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
+                                            <a asp-action="Welfarelist" asp-controller="Finance" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext">ID Cards</span>
+                                                <span class="pcoded-mtext">Welfare List</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-
+                                        <li class=" ">
+                                            <a asp-action="Fundraisings" asp-controller="Finance" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Fundraisings</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
 
                                     </ul>
                                 </li>
@@ -336,7 +355,7 @@
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
                                     <a class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
+                                        <span class="pcoded-micon"><i class="fa fa-chart-line"></i><b>FC</b></span>
                                         <span class="pcoded-mtext">Report</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -361,7 +380,62 @@
                                     </ul>
                                 </li>
                             </ul>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu">
+                                    <a class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-gear"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">System Settings</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
 
+                                    <ul class="pcoded-submenu">
+                                        <li class=" ">
+                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Careers</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Regions</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="pcoded-item pcoded-left-item">
+                                <li class="pcoded-hasmenu">
+                                    <a class="waves-effect waves-dark">
+                                        <span class="pcoded-micon"><i class="fa fa-user-secret"></i><b>FC</b></span>
+                                        <span class="pcoded-mtext">Account Settings</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+
+                                    <ul class="pcoded-submenu">
+                                        <li class=" ">
+                                            <a asp-action="Users" asp-controller="Account" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Users</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+                                        <li class=" ">
+                                            <a asp-action="Permissions" asp-controller="Account" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Permissions</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </li>
+                            </ul>
 
                         </div>
                     </nav>

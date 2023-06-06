@@ -16,7 +16,7 @@ namespace EKLEXIA.ViewComponents
         public IViewComponentResult Invoke()
 
         {
-            ViewDashboardVM viewDashboardVM = new ViewDashboardVM()
+            DashboardVM viewDashboardVM = new DashboardVM()
             {
                 TotalMembers = xct.Members.Where(a => a.IsDeleted == false).Count().ToString(),
                 TotalFemales=xct.Members.Where(a=>a.IsDeleted==false&a.Gender.GenderName=="Female").Count().ToString(),

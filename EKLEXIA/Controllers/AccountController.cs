@@ -230,7 +230,7 @@ namespace ECLEXIA.Controllers
                                 IdentityResult newRoleResult = await usm.AddToRoleAsync(searchUser, applicationRole.Name);
                                 if (newRoleResult.Succeeded)
                                 {
-                                    return RedirectToAction("ViewUsers");
+                                    return RedirectToAction("Users");
                                 }
                             }
                         }
@@ -239,12 +239,12 @@ namespace ECLEXIA.Controllers
             }
 
 
-            return View("ViewUsers");
+            return View("Users");
         }
 
-        public IActionResult ViewUsers()
+        public IActionResult Users()
         {
-            return ViewComponent("ViewUsers");
+            return ViewComponent("Users");
         }
         public IActionResult ManageRoles(string userId)
         {

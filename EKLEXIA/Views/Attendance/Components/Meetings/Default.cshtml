@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model IEnumerable< EKLEXIA.ViewModels.MeetingsVM>;
+
+<div id="PlaceHolderHere"></div>
+       
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold  text-center">Meetings</h5>
+
+        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#AddMeeting" data-url="@Url.Action("AddMeeting")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Meeting</button>
+       
+        <div class="card-header-right">
+         
+               
+                <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+            </div>
+
+       </div>
+  
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>CH.No</th>
+                                <th>Name</th>
+                              <th>Description</th>
+                              <th>Groups</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var Meeting in Model)
+                            {
+                            <tr>
+                                <td>@Meeting.Id</td>
+                                <td>@Meeting.Name</td>
+                                <td></td>
+                                <td></td>
+
+                                <td>
+                                    <div class="text-center">
+                                        <button type="button"  class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMeeting" data-url="@Url.Action($"AddMeeting/{Meeting.Id}")"><i class="fa fa-sm fa-info text-white"></i></button>
+
+                                    <button asp-action="DeleteMember" class="btn btn-primary btn-circle" data-target="#DeleteMeeting" data-url="@Url.Action($"DeleteMeeting/{Meeting.Id}")"><i class="fa fa-sm fa-trash text-white"></i></button>
+                                    </div>
+                                
+                                </td>
+                            </tr>
+                            }
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            </div>
+       
+   

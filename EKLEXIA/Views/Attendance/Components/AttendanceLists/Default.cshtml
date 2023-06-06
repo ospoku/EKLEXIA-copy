@@ -1,30 +1,41 @@
 ﻿@{
     Layout = "~/Views/MainLayout.cshtml";
 }
-@model IEnumerable<EKLEXIA.ViewModels.ViewCardListVM>;
+@model IEnumerable<EKLEXIA.ViewModels.AttendanceListsVM>;
+
+<div id="PlaceHolderHere"></div>
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-center">Register</h5>
 
 
-<div class="col-3">
 
 
-    <a class="btn btn-primary text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-lg fa-plus-circle"></i>New Member</a>
-</div>
+        <button class="btn btn-primary btn-sm text-white"  data-toggle="ajax-modal" data-target="#AddAttendance" data-url="@Url.Action("AddAttendance")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Attendance</button>
+        
+        <div class="card-header-right">
 
 
-<div class="card-header py-3">
+            <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+        </div>
 
-    <h6 class="m-0 font-weight-bold text-primary text-center">ID Card List</h6>
-</div>
+    </div>
 <div class="card-body">
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>DoB</th>
-                    <th>Gender</th>
+                   
                
-                    <th>Phone</th>
+              
                  
                     <th>Clinic Number</th>
                     <th>Insurance</th>
@@ -62,3 +73,4 @@
     </div>
 </div>
 
+</div>

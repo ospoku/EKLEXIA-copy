@@ -6,6 +6,7 @@
         $.get(decodeUrl).done(function (data) {
             PlaceHolderElement.html(data);
             PlaceHolderElement.find('.modal').modal('show');
+      
         })
     })
 });
@@ -34,5 +35,8 @@ $(document).ready(function () {
         placeholder: "Select User",
         allowClear: true,
     });
-
+    $("#meetingType").select2({
+        placeholder: "Select Meeting",
+        dropdownParent:$('#AddAttendance')
+    });
 });

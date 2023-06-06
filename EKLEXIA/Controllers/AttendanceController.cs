@@ -22,7 +22,8 @@ namespace EKLEXIA.Controllers
         [HttpGet]
         public IActionResult AddMeeting() => ViewComponent("AddMeeting");
 
-
+        [HttpGet]
+        public IActionResult AddAttendance() => ViewComponent("AddAttendance");
 
         public async Task<IActionResult> AddMeeting(AddMemberVM addMemberVM, IFormFile Photo)
         {
@@ -149,17 +150,17 @@ namespace EKLEXIA.Controllers
             cxt.Entry(updateThisMeeting).State = EntityState.Modified;
             await cxt.SaveChangesAsync();
 
-            return RedirectToAction("ViewMeetings");
+            return RedirectToAction("Meetings");
         }
         [HttpGet]
-        public IActionResult ViewMeetings()
+        public IActionResult Meetings()
         {
-            return ViewComponent("ViewMeetings");
+            return ViewComponent("Meetings");
         }
 
         public IActionResult DeleteMember() => ViewComponent("ViewMembers");
 
-
+        public IActionResult AttendanceLists() => ViewComponent("AttendanceLists");
 
 
 

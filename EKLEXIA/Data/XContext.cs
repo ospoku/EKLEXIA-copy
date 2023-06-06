@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using EKLEXIA.Models;
+using EKLEXIA.ViewComponents;
 
 namespace EKLEXIA.Data
 {
@@ -14,7 +15,7 @@ namespace EKLEXIA.Data
         public DbSet<Region> Regions { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Month> Months { get; set; }
-
+        public DbSet<Attendance> AttendanceLists { get; set; }
         public DbSet<Welfare> Welfares { get; set; }
         public DbSet<MaritalStatus> MaritalStatuses { get; set; }
         public DbSet<Career> Careers { get; set; }
@@ -23,6 +24,8 @@ namespace EKLEXIA.Data
         public DbSet<Group> Groups { get; set; }
         public DbSet<Income> Incomes { get;  set; }
         public DbSet<Meeting> Meetings { get; set; }
+        public DbSet<Fund> Funds { get; set; }  
+        public DbSet<Fundraising> Fundraisings { get;set; }
     }
 
 

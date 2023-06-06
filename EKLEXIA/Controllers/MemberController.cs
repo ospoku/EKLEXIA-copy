@@ -131,7 +131,7 @@ namespace EKLEXIA.Controllers
 
                 TempData["Message"] = "New Member successfully added";
 
-                return RedirectToAction("ViewMembers");
+                return RedirectToAction("Members");
             }
             else
             {
@@ -170,28 +170,35 @@ namespace EKLEXIA.Controllers
             cxt.Entry(updateThisMember).State = EntityState.Modified;
             await cxt.SaveChangesAsync();
 
-            return RedirectToAction("ViewMembers");
+            return RedirectToAction("Members");
         }
         [HttpGet]
-        public IActionResult ViewMembers()
+        public IActionResult Members()
         {
-            return ViewComponent("ViewMembers");
+            return ViewComponent("Members");
         }
 
-        public IActionResult DeleteMember() => ViewComponent("ViewMembers");
+        public IActionResult DeleteMember() => ViewComponent("Members");
 
-        public IActionResult ViewCardList()
+        public IActionResult IdCards()
         {
-            return ViewComponent("ViewCardList");
+            return ViewComponent("CardList");
         }
         public IActionResult Card(string Id)
         {
             return ViewComponent("Card", Id);
         }
+        public IActionResult Branches()
+        {
+            return ViewComponent("Branches");
+        }
 
 
 
-
+        public IActionResult Groups ()
+        {
+            return ViewComponent("Groups");
+        }
 
 
     }

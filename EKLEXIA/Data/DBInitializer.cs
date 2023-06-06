@@ -83,8 +83,8 @@ namespace EKLEXIA.Data
         {
             if (xct.Branches.Any() == false)
             {
-                xct.Branches.AddRange(new Branch { BranchName = "Amomole Canada" },
-                    new Branch { BranchName = "Agape" });
+                xct.Branches.AddRange(new Branch { Name = "Amomole Canada" },
+                    new Branch { Name = "Agape" });
                 await xct.SaveChangesAsync();
             }
         }
@@ -92,11 +92,11 @@ namespace EKLEXIA.Data
         {
             if (xct.Groups.Any() == false)
             {
-                xct.Groups.AddRange(new Group { GroupName = "Men's Fellowship" },
-                    new Group { GroupName = "Choir" },
-                    new Group { GroupName = "Youth" },
-                    new Group { GroupName = "Women's Fellowship" },
-                      new Group { GroupName = "Sunday School" });
+                xct.Groups.AddRange(new Group { Name = "Men's Fellowship" },
+                    new Group { Name = "Choir" },
+                    new Group { Name = "Youth" },
+                    new Group { Name = "Women's Fellowship" },
+                      new Group { Name = "Sunday School" });
                 await xct.SaveChangesAsync();
             }
         }
