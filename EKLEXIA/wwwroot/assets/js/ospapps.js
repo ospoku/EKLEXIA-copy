@@ -11,32 +11,25 @@
     })
 });
 $(document).ready(function () {
-    $(".table").dataTable(
-
-
+    $(".table").dataTable({
+        buttons: [
+            'copy', 'excel', 'pdf'
+        ]
+    }
     );
-})
+});
 
 
 $(document).ready(function () { $('time.timeago').timeago(); });
 
 
 $(document).ready(function () {
-    $("#category").select2({
-        placeholder: "Select Category",
-        allowClear: true,
+    
+    $('#addAttendance').on('shown.bs.modal', function (e) {
 
-    });
-    $("#selectRole").select2({
-        placeholder: "Select Roles",
-        allowClear: true,
-    });
-    $("#selectUser").select2({
-        placeholder: "Select User",
-        allowClear: true,
-    });
-    $("#meetingType").select2({
-        placeholder: "Select Meeting",
-        dropdownParent:$('#AddAttendance')
+        $('.select2').select2({
+            placeholder: 'Select an option'
+        });
+       
     });
 });

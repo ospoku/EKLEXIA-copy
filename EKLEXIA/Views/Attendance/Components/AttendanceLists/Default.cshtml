@@ -3,20 +3,12 @@
 }
 @model IEnumerable<EKLEXIA.ViewModels.AttendanceListsVM>;
 
-<div id="PlaceHolderHere"></div>
 
 <div class="card">
     <div class="card-header">
         <h5 class="m-0 font-weight-bold text-center">Register</h5>
-
-
-
-
-        <button class="btn btn-primary btn-sm text-white"  data-toggle="ajax-modal" data-target="#AddAttendance" data-url="@Url.Action("AddAttendance")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Attendance</button>
-        
+        <a asp-action="AddAttendance" asp-controller="Attendance"  class="btn btn-primary btn-circle"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Attendance</a>
         <div class="card-header-right">
-
-
             <ul class="list-unstyled card-option">
                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
                 <li><i class="fa fa-window-maximize full-card"></i></li>
@@ -25,7 +17,6 @@
                 <li><i class="fa fa-trash close-card"></i></li>
             </ul>
         </div>
-
     </div>
 <div class="card-body">
     <div class="table-responsive">
@@ -33,27 +24,19 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                   
-               
-              
-                 
                     <th>Clinic Number</th>
                     <th>Insurance</th>
                     <th>Action</th>
                 </tr>
             </thead>
-
             <tbody>
                 @foreach (var Member in Model)
                 {
                     <tr>
                         <td>@Member.Fullname</td>
                         <td> @Member.DateofBirth.ToString("yyyy-MM-dd")</td>
-
                         <td>@Member.GenderId</td>
-                       
                         <td>@Member.Telephone</td>
-                  
                         <td>@Member.ClinicNumber</td>
                         <td>@Member.Insurance</td>
                         <td>
@@ -64,10 +47,6 @@
                         </td>
                     </tr>
                 }
-
-
-
-
             </tbody>
         </table>
     </div>

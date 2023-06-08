@@ -177,6 +177,10 @@ namespace EKLEXIA.Controllers
         {
             return ViewComponent("Members");
         }
+        public IActionResult Birthdays()
+        {
+            return ViewComponent("Birthdays");
+        }
 
         public IActionResult DeleteMember() => ViewComponent("Members");
 

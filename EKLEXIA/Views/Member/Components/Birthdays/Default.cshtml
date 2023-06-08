@@ -1,0 +1,100 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model IEnumerable< EKLEXIA.ViewModels.MembersVM>;
+
+
+       
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-center">Members</h5>
+        
+
+
+
+            <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+       
+        <div class="card-header-right">
+         
+               
+                <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+            </div>
+
+       </div>
+  
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>CH.No</th>
+                                <th>Name</th>
+                                <th>DoB</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>Phone</th>
+                             
+                                <th>Town</th>
+                                <th>Photo</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var Member in Model)
+                            {
+                            <tr>
+                                <td>@Member.IDNumber</td>
+                                <td>@Member.Fullname</td>
+                                <td> @Member.DateofBirth.ToString("yyyy-MM-dd")</td>
+
+                                <td>@Member.GenderId</td>
+                                <td>@Member.Age</td>
+                                <td>@Member.Telephone</td>
+
+                                <td>@Member.Hometown</td>
+                                <td><img src="data:image;base64,@System.Convert.ToBase64String(Member.Photo)" class="btn-circle" /></td>
+                                <td>
+                                    <div class="text-center">
+                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMember" data-url="@Url.Action("Create")"><i class="fa fa-sm fa-info text-white"></i></a>
+                                        <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                    </div>
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Select an Action
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+                                 
+                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-edit text-white mr-3"></i>Edit</a>
+                                        
+                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-comment text-white mr-3"></i>View</a>
+                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-print text-white mr-3"></i>Print</a>
+
+                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-trash text-white mr-3"></i>Delete</a>
+
+
+                                    </div>
+                                </div>
+                                </td>
+                            </tr>
+                            }
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            </div>
+       
+   

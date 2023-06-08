@@ -1,50 +1,36 @@
 ﻿
 @model EKLEXIA.ViewModels.AddMeetingVM;
 
-<!-- Required Fremwork -->
-<link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap/css/bootstrap.min.css">
 
-
-<!-- font-awesome-n -->
-<link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome-n.min.css">
-<link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css">
-
-<!-- Style.css -->
-<link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
-<link href="~/assets/datatables/datatables.bootstrap4.css" rel="stylesheet" />
-
-<link href="~/assets/datatables/datatables.bootstrap4.min.css" rel="stylesheet" />
-
-<div class="modal fade" id="AddMeeting" data-backdrop="static" role="dialog">
+<div class="modal fade" id="AddMeeting" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog">
+            @using (Html.BeginForm("AddMeeting", "Attendance", FormMethod.Post))
+            {
         <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header background-primary">
             
-                <h6 class="modal-title">Add Meeting</h6>
+                <h6>Add Meeting</h6>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-
+                    <button class="btn btn-sm btn-outline-danger">Close</button>
+                    <button class="btn btn-sm btn-outline-danger">Close</button>
            </div>
-
+            
      
         <div class="modal-body">
                 <div class="form-group">
                     <input type="text" asp-for="@Model.Name " class="form-control" placeholder="Enter Username">
-
                 </div>
                 <div class="form-group">
                     <textarea type="text" asp-for="@Model.Description" class="form-control" placeholder="Enter Username"></textarea>
-
-                </div>
-                <div class="form-group">
-                    <select   class="select2 form-control" placeholder="Default Group"/>
-
                 </div>
         </div>
         <div class="modal-footer">
             <button class="btn btn-sm btn-primary">Save</button>
         </div>
+        
     </div>
+    }
     </div>
 </div>

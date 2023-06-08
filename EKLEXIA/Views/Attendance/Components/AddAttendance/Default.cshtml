@@ -1,41 +1,39 @@
-﻿
-<link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap/css/bootstrap.min.css">
-<!-- scrollbar.css -->
-<link rel="stylesheet" type="text/css" href="~/assets/css/jquery.mCustomScrollbar.css">
-<!-- Style.css -->
-<link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
-<link href="~/assets/datatables/datatables.bootstrap4.css" rel="stylesheet" />
-
-<link href="~/assets/datatables/datatables.bootstrap4.min.css" rel="stylesheet" />
-<link href="~/assets/select2/css/select2.min.css" rel="stylesheet" />
-<link href="~/assets/select2/css/select2.css" rel="stylesheet" />
-
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
 @using EKLEXIA.Models;
 
 @model EKLEXIA.ViewModels.AddAttendanceVM;
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-center">Attendance</h5>
+
+        <div class="card-header-right">
 
 
-<div class="modal fade" id="AddAttendance" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog">
-        
-        <div class="modal-content">
-           
-        <div class="modal-header">
-                        <h5 class="m-0 font-weight-bold  text-center">Add Attendance</h5>
+            <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+        </div>
 
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                    </div>       
-        <div class="modal-body">
+    </div>
+    <div class="card-body">
+
                 <div class="card-body">
+                       
                         <div class="form-group">
-                            <input type="text" asp-for="@Model.Date" class="form-control" placeholder="Enter Username">
+                            <div class="input-group">
+                                <div class="input-group-prepend"><span class="input-group-text">Date</span></div>
+                            <input type="date" asp-for="@Model.Date" class="form-control js-datepicker" asp-format="{0:dd/MMM/yyyy}">
 
                         </div>
-
+                        </div>
                         <div class="form-group">
-                            <select  type="text" id="meetingType" class="form-control" asp-items="@Model.Meetings" asp-for="@Model.MeetingId" ></select>
+                            <select  type="text" id="meetingType" class="form-control select2" asp-items="@Model.Meetings" asp-for="@Model.MeetingId" ></select>
 
                         </div>
                     <div class="table-responsive">
@@ -78,26 +76,12 @@
                 </div>
 
             </div>
-        <div class="modal-footer">
+        <div class="card-footer">
             <button class="btn btn-sm btn-primary">Save</button>
         </div>
     </div>
   
-</div>
-</div>
-<script type="text/javascript" src="~/assets/js/jquery/jquery.min.js "></script>
-<script type="text/javascript" src="~/assets/js/jquery-ui/jquery-ui.min.js "></script>
 
-<script type="text/javascript" src="~/assets/js/bootstrap/js/bootstrap.min.js "></script>
 
-<script type="text/javascript" src="~/assets/js/script.js "></script>
-<script src="~/assets/datatables/datatables.bootstrap4.js"></script>
-<script src="~/assets/datatables/datatables.bootstrap4.min.js"></script>
 
-<script src="~/assets/datatables/jquery.datatables.min.js"></script>
 
-<script src="~/assets/js/ospapps.js"></script>
-<script src="~/assets/select2/js/select2.full.min.js"></script>
-<script src="~/assets/select2/js/select2.full.js"></script>
-<script src="~/assets/select2/js/select2.min.js"></script>
-<script src="~/assets/select2/js/select2.js"></script>

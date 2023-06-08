@@ -3,16 +3,13 @@
 }
 @model IEnumerable< EKLEXIA.ViewModels.TithesVM>;
 
-
+<div id="PlaceHolderHere"></div>
        
 <div class="card">
     <div class="card-header">
-        <h5 class="m-0 font-weight-bold text-center">Funds</h5>
-
-
-
-
-        <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+        <h5 class="m-0 font-weight-bold text-center">Tithes</h5>
+        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#addTithe" data-url="@Url.Action("AddTithe")"
+        ><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Tithe</button>
 
         <div class="card-header-right">
 
@@ -27,7 +24,7 @@
         </div>
 
     </div>
-            <div class="card-body">
+    <div class="card-body">
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
@@ -72,3 +69,4 @@
                 </div>
             </div>
   
+</div>

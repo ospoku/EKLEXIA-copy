@@ -30,10 +30,10 @@
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
-                                <th>CH.No</th>
+                               
                                 <th>Name</th>
                               <th>Description</th>
-                              <th>Groups</th>
+                          
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -42,10 +42,10 @@
                             @foreach (var Meeting in Model)
                             {
                             <tr>
-                                <td>@Meeting.Id</td>
+                               
                                 <td>@Meeting.Name</td>
-                                <td></td>
-                                <td></td>
+                                <td>@Meeting.Description</td>
+                                
 
                                 <td>
                                     <div class="text-center">

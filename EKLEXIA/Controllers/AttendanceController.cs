@@ -24,103 +24,28 @@ namespace EKLEXIA.Controllers
 
         [HttpGet]
         public IActionResult AddAttendance() => ViewComponent("AddAttendance");
-
-        public async Task<IActionResult> AddMeeting(AddMemberVM addMemberVM, IFormFile Photo)
+        [HttpPost]
+        public async Task<IActionResult> AddMeeting(AddMeetingVM addMeetingVM)
         {
             if (!ModelState.IsValid)
             {
-
-
                 return ViewComponent("AddMeeting");
             }
 
             if (ModelState.IsValid)
             {
-                //  if (imageData != null && imageData.Length > 0) 
-
-                int membershipid = cxt.Members.Count() + 1;
-                string memberId = "JWC" + membershipid.ToString();
-                int length = membershipid.ToString().Length;
-
-                if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
-                if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
-                if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
-
-
-                Member addThisMember = new()
+                Meeting addThisMeeting = new()
                 {
-                    Address = addMemberVM.Address,
-                    DoB = addMemberVM.DoB,
-                    GenderId = addMemberVM.GenderId,
-                    Othername = addMemberVM.Othername,
-                    Telephone = addMemberVM.Telephone,
-                    Hometown = addMemberVM.Hometown,
-                    Surname = addMemberVM.Surname,
-                    RegionId = addMemberVM.RegionId,
-                    GroupId = addMemberVM.GroupId,
-                    BranchId = addMemberVM.BranchId,
-                    CareerId = addMemberVM.CareerId,
-                    IDNumber = memberId,
+                    Name = addMeetingVM.Name,
+                    //Description = addMeetingVM.Description,
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
                     CreatedDate = DateTime.Now
                 };
-
-                using (var memoryStream = new MemoryStream())
-                {
-                    await Photo.CopyToAsync(memoryStream);
-                 //   addThisMember.Photo = memoryStream.ToArray();
-                }
-
-
-
-                cxt.Members.Add(addThisMember);
-
+                cxt.Meetings.Add(addThisMeeting);
                 await cxt.SaveChangesAsync();
-
-
-
-
-                //we creating the necessary URL string:
-                string GeneratedID = (from m in cxt.Members where m.MemberId == addThisMember.MemberId select m.IDNumber).FirstOrDefault().ToString()
-                       ;
-                string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
-                string from = "JHC";
-                string username = "KofiPoku";
-                string password = "Az36400@osp";
-                string to = addThisMember.Telephone;
-                string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
-
-                // Creating URL to send sms
-                string message = URL
-                    + "username="
-                    + username
-                    + "&password="
-                    + password
-                    + "&from="
-                    + from
-                    + "&to="
-                    + to
-                    + "&service="
-                    + "SMS"
-                    + "&message="
-                    + messageText;
-
-
-
-                HttpClient httpclient = new();
-
-                var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
-                if (response2.StatusCode == HttpStatusCode.OK)
-                {
-                    // Do something with response. Example get content:
-                    // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
-                }
-
-
                 TempData["Message"] = "New Member successfully added";
-
-                return RedirectToAction("ViewMembers");
+                return RedirectToAction("Meetings");
             }
             else
             {

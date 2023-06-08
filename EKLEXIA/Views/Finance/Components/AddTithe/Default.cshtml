@@ -1,86 +1,62 @@
-﻿@{
-    Layout = "~/Views/MainLayout.cshtml";
-}
+﻿
 @model EKLEXIA.ViewModels.AddTitheVM;
 
-<div class="card-header py-1">
-    <h6 class="m-0 font-weight-bold text-primary">Tithe</h6>
+<link href="~/assets/select2/css/select2.min.css" rel="stylesheet" />
+  <div class="modal fade" id="addTithe" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header background-primary">
+            <h6>New Tithe</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
 </div>
-<div class="container py-0">
-    
-   
+<div class="modal-body">
 
-
-            @using (Html.BeginForm("AddTithe", "Finance", FormMethod.Post))
-            {
-
-
-
-
-
-                    <div class="card-body justify-content-md-center">
-                        <div class="row justify-content-center">
-                            <div class="col-md-7">
-
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text  ">Payment Date</span></div>
-                                        <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.Date" asp-format="{0:dd/MMM/yyyy}" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-users"></i></span></div>
-                                        <select class="form-control selectpicker" title="Select Member" data-style="btn-secondary" data-live-search="true" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
-                                    </div>
-
-                                </div>      <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                        <select class="selectpicker form-control" title="Select Month" data-live-search="true" data-style="btn-secondary" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-money-bill"></i></span></div>
-                                        <input class=" form-control " asp-for="@Model.Amount" />
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-edit"></i></span></div>
-                                        <textarea class="selectpicker form-control "  asp-for="@Model.Description"></textarea>
-                                    </div>
-                                </div>
-
-
-                                <button class="btn btn-block btn-primary">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-           
-
+            <div class="card-body">
+         <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text">Payment Date</span></div>
+                    <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.Date" asp-format="{0:dd/MMM/yyyy}" />
+                </div>
+            </div>
+            <div class="form-group">
+                    <select class="form-control select2" title="Select Member"  asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
+            </div>    
+            <div class="form-group">
+                
+                    <select class="form-control select2" title="Select Month"  asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
               
+            </div>
+            <div class="form-group">
+              
+                    <input class=" form-control " asp-for="@Model.Amount" />
 
           
-
-             
+            </div>
+            <div class="form-group">
+               
+                    <textarea class="selectpicker form-control "  asp-for="@Model.Description"></textarea>
               
+            </div>
+            </div>
+ <div class="modal-footer">
+  <button class="btn btn-sm btn-primary">Submit</button>
+  </div>
+    </div>
+</div>
 
 
+   </div>
+  
+   </div>
 
-
-
-                      
+<script src="~/assets/select2/js/select2.min.js"></script>
          
           
                 
            
            
 
-                }
-            </div>
-            
+      
         

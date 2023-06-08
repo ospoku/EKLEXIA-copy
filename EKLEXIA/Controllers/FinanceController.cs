@@ -178,10 +178,23 @@ namespace EKLEXIA.Controllers
             return ViewComponent("Tithes");
         }
         [HttpGet]
+        public IActionResult AddTithe()
+        {
+            return ViewComponent("AddTithe");
+        }
+        [HttpGet]
         public IActionResult WelfareList()
         {
             return ViewComponent("WelfareList");
         }
+
+
+        [HttpGet]
+        public IActionResult AddWelfare()
+        {
+            return ViewComponent("AddWelfare");
+        }
+
         public IActionResult DeleteMember() => ViewComponent("ViewMembers");
 
         public IActionResult Fundraisings()

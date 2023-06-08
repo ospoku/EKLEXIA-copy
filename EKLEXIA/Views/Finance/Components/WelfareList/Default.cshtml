@@ -4,7 +4,7 @@
 @model IEnumerable< EKLEXIA.ViewModels.WelfaresVM>;
 
 
-
+<div id="PlaceHolderHere"></div>
 
 <div class="card">
     <div class="card-header">
@@ -13,7 +13,7 @@
 
 
 
-        <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#addWelfare" data-url="@Url.Action("AddWelfare")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Welfare</button>
 
         <div class="card-header-right">
 

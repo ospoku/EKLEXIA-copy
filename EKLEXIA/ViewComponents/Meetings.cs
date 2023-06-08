@@ -15,6 +15,7 @@ namespace EKLEXIA.ViewComponents
             var Meetings = xct.Meetings.Where(t => t.IsDeleted == false).Select(t => new MeetingsVM
             {
 
+                Name=t.Name,
 
 
 
