@@ -25,11 +25,11 @@ $(document).ready(function () { $('time.timeago').timeago(); });
 
 $(document).ready(function () {
     
-    $('#addAttendance').on('shown.bs.modal', function (e) {
+ 
 
         $('.select2').select2({
             placeholder: 'Select an option'
         });
        
-    });
-});
+ });
+
