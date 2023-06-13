@@ -80,7 +80,7 @@ namespace EKLEXIA.Controllers
                 using (var memoryStream = new MemoryStream())
                 {
                     await Photo.CopyToAsync(memoryStream);
-                 //   addThisMember.Photo = memoryStream.ToArray();
+                   addThisMember.Photo = memoryStream.ToArray();
                 }
 
 

@@ -2,7 +2,7 @@
     Layout = "~/Views/MainLayout.cshtml";
 }
 @model IEnumerable<EKLEXIA.ViewModels.ViewCardListVM>;
-
+<div id="PlaceHolderHere"></div>
 
 <div class="card">
     <div class="card-header">
@@ -27,7 +27,11 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    
+                        <th>Name</th>
+                        <th>Name</th>
+                        <th>Name</th>
+                        <th>Name</th>
+                        <th>Name</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -47,7 +51,7 @@
                         <td>@Member.Insurance</td>
                         <td>
                             <div class="text-center">
-                                <button  class="btn btn-primary btn-circle"><i class="fa fa-sm fa-print text-white"></i></button>
+                                    <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#Card" data-url="@Url.Action("Card")"><i class="fa fa-sm fa-print text-white"></i></button>
                            
                             </div>
                         </td>

@@ -19,7 +19,7 @@ namespace EKLEXIA.Models
         public string BranchId { get; set; }
         public string GroupId { get; set; }
         public Group Group { get; set; }
-      //  public byte[] Photo { get; set; }
+        public byte[] Photo { get; set; }
         public Career Career { get; set; }
         public string CareerId { get; set; }
         public Gender Gender { get; set; }

@@ -28,7 +28,7 @@ namespace EKLEXIA.ViewComponents
            
                 DoB = a.DoB,
                
-                GenderId = a.Gender.GenderName,
+                GenderId = a.Gender.Name,
              
                 Othername = a.Othername,
              

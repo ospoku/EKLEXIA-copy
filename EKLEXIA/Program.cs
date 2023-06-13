@@ -67,7 +67,10 @@ var db = scope.ServiceProvider.GetRequiredService<XContext>();
 
 
     var init = scope.ServiceProvider.GetRequiredService<DBInitializer>();
-//await init.CareerSetup();
+await init.GenderSetup();
+await init.MonthSetup();
+await init.RegionSetup();
+await init.MaritalStatusSetup();
 init.RoleCreation(scope.ServiceProvider)
     .Wait();
 init.UserCreation(scope.ServiceProvider).Wait();

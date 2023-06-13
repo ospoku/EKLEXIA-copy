@@ -3,16 +3,16 @@
 }
 @model IEnumerable<EKLEXIA.ViewModels.CareersVM>;
 
-
+    <div id="PlaceHolderHere"></div>
 
 <div class="card">
     <div class="card-header">
-        <h5 class="m-0 font-weight-bold text-center">Funds</h5>
+        <h5 class="m-0 font-weight-bold text-center">Careers</h5>
 
 
 
 
-        <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#AddCareer" data-url="@Url.Action("AddCareer")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Career</button>
 
         <div class="card-header-right">
 
@@ -27,15 +27,13 @@
         </div>
 
     </div>
-<div class="card-body justify-content-md-center">
-    <div class="row justify-content-center">
-        <div class="col-md-7">
+<div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>Career</th>
-
+                            <th>Name</th>
+                            <th>Description</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -45,12 +43,13 @@
                         {
                             <tr>
                                 <td>@Career.CareerName</td>
+                            <td>@Career.Description</td>
 
                                 <td>
                                     <div class="text-center">
                                         @*<a asp-action="DetailMember" asp-controller="Settings" asp-route-Id="@Region.RegionId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>*@
-                                        <a asp-action="EditCareer" asp-controller="Settings" asp-route-Id="@Career.CareerId" class="btn btn-primary btn-circle" data-target="careerModal" ><i class="fa fa-sm fa-edit text-white"></i></a>
-                                        <a asp-action="DeleteCareer" asp-controller="Settings" asp-route-Id="@Career.CareerId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                        <a asp-action="EditCareer" asp-controller="Settings" asp-route-Id="@Career.CareerId" class="btn btn-sm btn-primary btn-circle" data-target="careerModal" ><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteCareer" asp-controller="Settings" asp-route-Id="@Career.CareerId" class="btn btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -65,4 +64,4 @@
         </div>
 
     </div>
-</div>
+

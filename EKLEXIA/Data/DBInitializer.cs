@@ -58,8 +58,8 @@ namespace EKLEXIA.Data
         {
             if (xct.Genders.Any() == false)
             {
-                xct.Genders.AddRange(new Gender { GenderName = "Male" },
-                    new Gender { GenderName = "Female" });
+                xct.Genders.AddRange(new Gender { Name = "Male" },
+                    new Gender { Name = "Female" });
                 await xct.SaveChangesAsync();
             }
         }
@@ -68,51 +68,52 @@ namespace EKLEXIA.Data
             var rol = serviceProvider.GetRequiredService<RoleManager<Role>>();
             if (rol.Roles.Any() == false)
             {
-                await rol.CreateAsync(new Role() { Name = "Basic" });
-                await rol.CreateAsync(new Role() { Name = "Manager" });
-                await rol.CreateAsync(new Role() { Name = "SuperAdmin" });
-                await rol.CreateAsync(new Role() { Name = "Admin" });
+                await rol.CreateAsync(new Role() { AppRole = "Basic" });
+                await rol.CreateAsync(new Role() { AppRole = "Manager" });
+                await rol.CreateAsync(new Role() { AppRole = "SuperAdmin" });
+                await rol.CreateAsync(new Role() { AppRole = "Admin" });
+                await xct.SaveChangesAsync();
             };
 
-
+            
 
 
         }
 
-        public async Task BranchSetup()
-        {
-            if (xct.Branches.Any() == false)
-            {
-                xct.Branches.AddRange(new Branch { Name = "Amomole Canada" },
-                    new Branch { Name = "Agape" });
-                await xct.SaveChangesAsync();
-            }
-        }
-        public async Task GroupSetup()
-        {
-            if (xct.Groups.Any() == false)
-            {
-                xct.Groups.AddRange(new Group { Name = "Men's Fellowship" },
-                    new Group { Name = "Choir" },
-                    new Group { Name = "Youth" },
-                    new Group { Name = "Women's Fellowship" },
-                      new Group { Name = "Sunday School" });
-                await xct.SaveChangesAsync();
-            }
-        }
+        //public async Task BranchSetup()
+        //{
+        //    if (xct.Branches.Any() == false)
+        //    {
+        //        xct.Branches.AddRange(new Branch { Name = "Amomole Canada" },
+        //            new Branch { Name = "Agape" });
+        //        await xct.SaveChangesAsync();
+        //    }
+        //}
+        //public async Task GroupSetup()
+        //{
+        //    if (xct.Groups.Any() == false)
+        //    {
+        //        xct.Groups.AddRange(new Group { Name = "Men's Fellowship" },
+        //            new Group { Name = "Choir" },
+        //            new Group { Name = "Youth" },
+        //            new Group { Name = "Women's Fellowship" },
+        //              new Group { Name = "Sunday School" });
+        //        await xct.SaveChangesAsync();
+        //    }
+        //}
 
-        public async Task CareerSetup()
-        {
-            if (xct.Careers.Any() == false)
-            {
-                xct.Careers.AddRange(new Career { Name = "Trading" },
-                    new Career { Name = "Teaching" },
-                    new Career { Name = "Student" },
-                    new Career { Name = "Unemployed" },
-                      new Career { Name = "Dress Making" });
-                await xct.SaveChangesAsync();
-            }
-        }
+        //public async Task CareerSetup()
+        //{
+        //    if (xct.Careers.Any() == false)
+        //    {
+        //        xct.Careers.AddRange(new Career { Name = "Trading" },
+        //            new Career { Name = "Teaching" },
+        //            new Career { Name = "Student" },
+        //            new Career { Name = "Unemployed" },
+        //              new Career { Name = "Dress Making" });
+        //        await xct.SaveChangesAsync();
+        //    }
+        //}
         public async Task RegionSetup()
         {
             if (xct.Regions.Any() == false)

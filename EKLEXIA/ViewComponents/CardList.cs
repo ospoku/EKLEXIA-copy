@@ -20,7 +20,7 @@ namespace EKLEXIA.ViewComponents
          
                 Fullname = a.Fullname,
                 DateofBirth = a.DoB,
-                GenderId = a.Gender.GenderName,
+                GenderId = a.Gender.Name,
                 Age=a.Age,
 
                 Address = a.Address,

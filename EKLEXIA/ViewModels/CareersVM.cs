@@ -10,7 +10,7 @@ namespace EKLEXIA.ViewModels
     {
         public string CareerName { get; set; }
 
-
+        public string Description { get; set; }
 
         public string CareerId { get; set; }
 

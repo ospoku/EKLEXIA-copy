@@ -19,7 +19,7 @@ namespace EKLEXIA.ViewComponents
             AddMemberVM addMemberVM = new AddMemberVM
             {
 
-                Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.GenderId), nameof(Gender.GenderName)),
+                Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.Id), nameof(Gender.Name)),
                 MaritalStatuses = new SelectList(xct.MaritalStatuses.ToList(), nameof(MaritalStatus.Id), nameof(MaritalStatus.Name)),
                 Careers = new SelectList(xct.Careers.ToList(), nameof(Career.Id), nameof(Career.Name)),
                 Regions = new SelectList(xct.Regions.ToList(), nameof(Region.Id), nameof(Region.Name)),

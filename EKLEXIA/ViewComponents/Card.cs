@@ -20,7 +20,7 @@ namespace EKLEXIA.ViewComponents
             {
 
                 Address = a.Address,
-                GenderId = a.Gender.GenderName,
+                GenderId = a.Gender.Name,
 
 
                 DoB = a.DoB,

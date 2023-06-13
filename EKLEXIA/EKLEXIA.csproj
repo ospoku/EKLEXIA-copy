@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Content Remove="Views\index.cshtml" />
+    <Content Remove="wwwroot\assets\js\jquery-3.3.1.min.js" />
+    <Content Remove="wwwroot\assets\js\main.js" />
   </ItemGroup>
 
   <ItemGroup>

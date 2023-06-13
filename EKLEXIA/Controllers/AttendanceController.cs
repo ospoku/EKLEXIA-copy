@@ -37,9 +37,11 @@ namespace EKLEXIA.Controllers
                 Meeting addThisMeeting = new()
                 {
                     Name = addMeetingVM.Name,
-                    //Description = addMeetingVM.Description,
+                    Description = addMeetingVM.Description,
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+                    ModifiedBy ="",
+
                     CreatedDate = DateTime.Now
                 };
                 cxt.Meetings.Add(addThisMeeting);

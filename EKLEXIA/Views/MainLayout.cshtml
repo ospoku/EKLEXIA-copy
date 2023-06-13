@@ -37,9 +37,10 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
     <link href="~/assets/datatables/datatables.bootstrap4.css" rel="stylesheet" />
+    <link href="~/assets/css/Formwizard.css" rel="stylesheet" />
     
     <link href="~/assets/datatables/datatables.bootstrap4.min.css" rel="stylesheet" />
-   
+   <link href="~/assets/select2/css/select2.min.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -398,21 +399,20 @@
 
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
+                                            <a asp-action="Careers" asp-controller="Settings" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Careers</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
                                         <li class=" ">
-                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
+                                            <a asp-action="Regions" asp-controller="Settings" class="waves-effect waves-dark">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext">Regions</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-
-
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -573,9 +573,11 @@
     <script type="text/javascript" src="~/assets/js/script.js "></script>
     <script src="~/assets/datatables/datatables.bootstrap4.js"></script>
     <script src="~/assets/datatables/datatables.bootstrap4.min.js"></script>
-    
+    <script src="~/assets/js/Formwizard.js"></script>
     <script src="~/assets/datatables/jquery.datatables.min.js"></script>
+    <script src="~/assets/select2/js/select2.min.js"></script>
     <script src="~/assets/js/ospapps.js"></script>
+   
 
 </body>
 

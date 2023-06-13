@@ -21,7 +21,7 @@ namespace EKLEXIA.ViewComponents
                 Hometown = m.Hometown,
                 Fullname = m.Fullname,
                 DateofBirth = m.DoB,
-                GenderId = m.Gender.GenderName,
+                GenderId = m.Gender.Name,
                 Age = m.Age,
                 RegionId = m.RegionId,
                 Address = m.Address,

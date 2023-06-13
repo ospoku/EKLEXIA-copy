@@ -12,7 +12,7 @@ namespace EKLEXIA.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public  string Id { get; set; }
+        public string UserId { get; set; }
         public string Firstname { get; set; }
         public string Surname { get; set; }
 

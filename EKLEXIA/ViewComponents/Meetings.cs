@@ -16,7 +16,7 @@ namespace EKLEXIA.ViewComponents
             {
 
                 Name=t.Name,
-
+                Description = t.Description,
 
 
 

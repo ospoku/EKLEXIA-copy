@@ -16,15 +16,15 @@ namespace ECLEXIA.Controllers
 {
     public class AccountController : Controller
     {
-        public readonly XContext jwx;
+        public readonly XContext xct;
         public readonly UserManager<User> usm;
         public readonly RoleManager<Role> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        public AccountController(XContext jwContext, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signinmanager, IWebHostEnvironment environment)
+        public AccountController(XContext xContext, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signinmanager, IWebHostEnvironment environment)
         {
             usm = userManager;
-            jwx = jwContext;
+            xct = xContext;
             rol = roleManager;
             sim = signinmanager;
             env = environment;
@@ -278,8 +278,8 @@ namespace ECLEXIA.Controllers
                 userClaims.AddClaim(new Claim("Surname", user.Surname));
 
 
-                userClaims.AddClaim(new Claim(ClaimTypes.Role, string.Join(",", from p in jwx.UserRoles
-                                                                                join role in jwx.Roles on p.RoleId equals role.Id
+                userClaims.AddClaim(new Claim(ClaimTypes.Role, string.Join(",", from p in xct.UserRoles
+                                                                                join role in xct.Roles on p.RoleId equals role.Id
                                                                                 where p.UserId == user.Id
                                                                                 select role.Name.ToString())));
                 //string.Join(",", from p in gcx.UserRoles
@@ -313,8 +313,8 @@ namespace ECLEXIA.Controllers
                     userClaims.AddClaim(new Claim("Name", user.UserName));
 
 
-                    userClaims.AddClaim(new Claim(ClaimTypes.Role, string.Join(",", from p in jwx.UserRoles
-                                                                                    join role in jwx.Roles on p.RoleId equals role.Id
+                    userClaims.AddClaim(new Claim(ClaimTypes.Role, string.Join(",", from p in xct.UserRoles
+                                                                                    join role in xct.Roles on p.RoleId equals role.Id
                                                                                     where p.UserId == user.Id
                                                                                     select role.Name.ToString())));
 

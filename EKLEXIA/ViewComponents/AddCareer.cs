@@ -17,8 +17,8 @@ namespace EKLEXIA.ViewComponents
             AddCareerVM addCareerVM = new AddCareerVM
             {
 
-                
-        
+
+
             };
 
             return View(addCareerVM);
