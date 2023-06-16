@@ -72,6 +72,82 @@ public IActionResult Careers()
 
             return ViewComponent("Careers");
         }
+        [HttpGet]
+        public IActionResult AddGroup()
+        {
+
+
+
+            return ViewComponent("AddGroup");
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddGroup(AddGroupVM addGroupVM)
+        {
+            if (ModelState.IsValid)
+            {
+                Group addThisGroup = new Group
+                {
+                    Name = addGroupVM.Name,
+                    Description = addGroupVM.Description,
+                    CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+                    CreatedDate = DateTime.Now,
+                };
+
+                xct.Groups.Add(addThisGroup);
+                await xct.SaveChangesAsync();
+                TempData["Message"] = "New Group successfully added";
+                return RedirectToAction("Groups");
+            }
+
+
+            else
+            {
+                ViewBag.Message = "Member creation error!!! Please try again";
+            }
+            return ViewComponent("AddCareer");
+        }
+        public IActionResult Groups()
+        {
+
+            return ViewComponent("Groups");
+        }
+
+        public IActionResult Branches()
+        {
+            return ViewComponent("Branches");
+        }
+
+        [HttpGet]
+        public IActionResult AddBranch()
+        {
+            return ViewComponent("AddBranch");
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddBranch(AddBranchVM addBranchVM)
+        {
+            if (ModelState.IsValid)
+            {
+                Branch addThisBranch = new Branch
+                {
+                    Name = addBranchVM.Name,
+                    Description = addBranchVM.Description,
+                    CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+                    CreatedDate = DateTime.Now,
+                };
+
+                xct.Branches.Add(addThisBranch);
+                await xct.SaveChangesAsync();
+                TempData["Message"] = "New Branch successfully added";
+                return RedirectToAction("Branches");
+            }
+
+
+            else
+            {
+                ViewBag.Message = "Branch creation error!!! Please try again";
+            }
+            return ViewComponent("AddBranch");
+        }
 
     }
 }

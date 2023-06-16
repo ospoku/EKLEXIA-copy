@@ -15,10 +15,11 @@ namespace EKLEXIA.Models
         [DataType(DataType.Text)]
         public string Othername { get; set; }
         public string Fullname { get { return Surname + "  " + Othername; } }
+        [ForeignKey("BranchId")]
         public Branch Branch { get; set; }
+      
         public string BranchId { get; set; }
-        public string GroupId { get; set; }
-        public Group Group { get; set; }
+       
         public byte[] Photo { get; set; }
         public Career Career { get; set; }
         public string CareerId { get; set; }

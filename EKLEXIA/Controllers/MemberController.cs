@@ -35,27 +35,27 @@ namespace EKLEXIA.Controllers
         }
 
 
-
+        [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
         {
-            if (!ModelState.IsValid)
-            {
+            //if (!ModelState.IsValid)
+            //{
 
 
-                return ViewComponent("AddMember");
-            }
+            //    return ViewComponent("AddMember");
+            //}
 
-            if (ModelState.IsValid)
-            {
-                //  if (imageData != null && imageData.Length > 0) 
+            //if (ModelState.IsValid)
+            //{
+                  //if (imageData != null && imageData.Length > 0) 
 
-                int membershipid = cxt.Members.Count() + 1;
-                string memberId = "JWC" + membershipid.ToString();
-                int length = membershipid.ToString().Length;
+                //int membershipid = cxt.Members.Count() + 1;
+                //string memberId = "JWC" + membershipid.ToString();
+                //int length = membershipid.ToString().Length;
 
-                if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
-                if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
-                if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
+                //if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
+                //if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
+                //if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
 
 
                 Member addThisMember = new()
@@ -68,10 +68,10 @@ namespace EKLEXIA.Controllers
                     Hometown = addMemberVM.Hometown,
                     Surname = addMemberVM.Surname,
                     RegionId = addMemberVM.RegionId,
-                    GroupId = addMemberVM.GroupId,
+                 IDNumber="xxxxxxxx",
                     BranchId = addMemberVM.BranchId,
                     CareerId = addMemberVM.CareerId,
-                    IDNumber = memberId,
+                    //IDNumber = memberId,
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
                     CreatedDate = DateTime.Now
@@ -132,12 +132,12 @@ namespace EKLEXIA.Controllers
                 TempData["Message"] = "New Member successfully added";
 
                 return RedirectToAction("Members");
-            }
-            else
-            {
-                ViewBag.Message = "Member creation error!!! Please try again";
-            }
-            return ViewComponent("AddMember");
+        //}
+            //else
+            //{
+            //    ViewBag.Message = "Member creation error!!! Please try again";
+            //}
+            return ViewComponent("Members");
         }
 
         public IActionResult DetailMember(string Id)
@@ -192,17 +192,7 @@ namespace EKLEXIA.Controllers
         {
             return ViewComponent("Card", Id);
         }
-        public IActionResult Branches()
-        {
-            return ViewComponent("Branches");
-        }
-
-
-
-        public IActionResult Groups ()
-        {
-            return ViewComponent("Groups");
-        }
+        
 
 
     }

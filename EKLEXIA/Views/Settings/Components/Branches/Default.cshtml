@@ -3,15 +3,12 @@
 }
 @model IEnumerable<EKLEXIA.ViewModels.BranchesVM>;
 
-
+    <div id="PlaceHolderHere"></div>
 <div class="card">
     <div class="card-header">
         <h5 class="m-0 font-weight-bold text-center">Branches</h5>
 
-
-
-
-        <a class="btn btn-primary btn-sm text-white" asp-action="AddBranch" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Branch</a>
+        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#AddBranch" data-url="@Url.Action("AddBranch")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Branch</button>
 
         <div class="card-header-right">
 
@@ -51,8 +48,8 @@
                             <td>
                                 <div class="text-center">
                                   
-                                    <button class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></button>
-                                    <button class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></button>
+                                    <button class="btn  btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                    <button class="btn btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></button>
                                 </div>
                             </td>
                         </tr>

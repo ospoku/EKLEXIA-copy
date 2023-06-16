@@ -40,7 +40,7 @@ namespace EKLEXIA.Controllers
                     Description = addMeetingVM.Description,
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
-                    ModifiedBy ="",
+                   
 
                     CreatedDate = DateTime.Now
                 };

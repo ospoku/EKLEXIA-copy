@@ -1,16 +1,16 @@
 ﻿
-@model EKLEXIA.ViewModels.AddGroupVM;
+@model EKLEXIA.ViewModels.AddBranchVM;
 
 
 
-<div class="modal fade" id="AddGroup" data-backdrop="static" data-keyboard="false">
+<div class="modal fade" id="AddBranch" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog">
-        @using (Html.BeginForm("AddGroup", "Settings", FormMethod.Post))
+        @using (Html.BeginForm("AddBranch", "Settings", FormMethod.Post))
         {
             <div class="modal-content">
                 <div class="modal-header">
 
-                    <h6>New Group</h6>
+                    <h6>New Branch</h6>
                     <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
                    
                 </div>
@@ -18,10 +18,10 @@
 
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" asp-for="@Model.Name " class="form-control" placeholder="Enter Group" required="required">
+                        <input type="text" asp-for="@Model.Name" required="reqiured" class="form-control" placeholder="Enter Branch">
                     </div>
                     <div class="form-group">
-                        <textarea type="text" asp-for="@Model.Description" class="form-control" placeholder="Enter Description" required="required"></textarea>
+                        <textarea type="text" asp-for="@Model.Description" required="required" class="form-control" placeholder="Enter Description"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -3,12 +3,6 @@
 }
 @model EKLEXIA.ViewModels.AddMemberVM;
 
-
-
-                           
-     
-
-
 <div class="row justify-content-center">
     <div class="col-md-9">
         <div class="card">
@@ -53,15 +47,12 @@
                     <div class="card-body">
 
                 @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                {
+                 {
 
-
-                    <form role="form" action="index.html" class="login-box">
+               @*     <form role="form"  class="login-box" method="post" enctype="multipart/form-data">*@
                         <div class="tab-content" id="main_form">
-                            <div class="tab-pane active" role="tabpanel" id="step1">
-                                
-                                
-                                    
+                   
+                          <div class="tab-pane active" role="tabpanel" id="step1">
                                         <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend background-default"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
@@ -69,15 +60,12 @@
                                 </div>
                                      
                                     </div>
-                                    
                                         <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend  background-default"><span class="input-group-text "><i class="icon fa fa-user-circle"></i></span></div>
                                     <input class="form-control" asp-for="@Model.Othername" type="text" placeholder="Othernames">
                                 </div>
                                         </div>
-                                  
-                                    
                                         <div class="form-group">
                                 <div class="input-group">
                                         <div class="input-group-prepend background-default"><span class="input-group-text background-default ">Date of Birth</span></div>
@@ -100,23 +88,18 @@
                                 
                                     <select type="text" class="select2 form-control" title="Select Marital Status"  asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
                             </div>
-                            
-
-                                
+                               
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="default-btn next-step">Continue to next step</button></li>
+                                    <li><a class="btn btn-sm btn-primary default-btn next-step">Continue to next step</a></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step2">
-                                <div class="form-group">
-                                    <select class="select2 form-control" title="Select Region" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
-                                </div>
-                                <div class="form-group">
+                                
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-home"></i></span></div>
                                     <input class="form-control" asp-for="@Model.Residence" type="text" placeholder="Enter Residence">
                                 </div>
-                            </div>
+                           
 
                             <div class="form-group">
                                 <div class="input-group">
@@ -127,7 +110,7 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
-                                    <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address">
+                                    <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address"/>
                                 </div>
                             </div>
 
@@ -138,14 +121,17 @@
 
                                 </div>
                             </div>
+                                <div class="form-group">
+                                    <select class="select2 form-control" style="width:100%" title="Select Region" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
 
+                                </div>
                             
                          
 
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="default-btn prev-step">Back</button></li>
-                                    <li><button type="button" class="default-btn next-step skip-btn">Skip</button></li>
-                                    <li><button type="button" class="default-btn next-step">Continue</button></li>
+                                    <li><a  class="default-btn prev-step">Back</a></li>
+                                    <li><a class="default-btn next-step skip-btn">Skip</a></li>
+                                    <li><a  class="default-btn next-step">Continue</a></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step3">
@@ -181,16 +167,16 @@
                                   
                                        
                                 <ul class="list-inline pull-right">
-                                    <li><button type="button" class="default-btn prev-step">Back</button></li>
-                                    <li><button type="button" class="default-btn next-step skip-btn">Skip</button></li>
-                                    <li><button type="button" class="default-btn next-step">Continue</button></li>
+                                    <li><a  class="default-btn prev-step">Back</a></li>
+                                    <li><a  class="default-btn next-step skip-btn">Skip</a></li>
+                                    <li><a  class="default-btn next-step">Continue</a></li>
                                 </ul>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="step4">
 
                             <div class="form-group">
-                                
-                                    <select class="select2 form-control"  title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
+
+                                    <select class="select2 form-control" multiple style="width:100%" title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
 
 
 
@@ -198,8 +184,8 @@
                             
 
                             <div class="form-group">
-                               
-                                    <select class="select2 form-control"  asp-items="@Model.Branches" asp-for="@Model.BranchId"  title="Select Branch"></select>
+
+                                    <select class="select2 form-control" style="width:100%" asp-items="@Model.Branches" asp-for="@Model.BranchId" title="Select Branch"></select>
 
                                 </div>
                             
@@ -207,16 +193,19 @@
 
                                 <ul class="list-inline pull-right">
                                     <li><button type="button" class="default-btn prev-step">Back</button></li>
-                                    <li><button type="button" class="default-btn next-step" asp-action="AddMember" asp-controller="Member" >Finish</button></li>
+                                <button class="btn btn-sm btn-primary">Submit</button>
                                 </ul>
+                               
                             </div>
                             <div class="clearfix"></div>
                         </div>
-
-                    </form>}
+                        
+                    @*</form>*@
+                    }
                 </div>
             
         </div>
         </div>
+        </div>
         
- </div>
+ 

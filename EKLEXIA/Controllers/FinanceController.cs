@@ -68,7 +68,7 @@ namespace EKLEXIA.Controllers
                     Hometown = addMemberVM.Hometown,
                     Surname = addMemberVM.Surname,
                     RegionId = addMemberVM.RegionId,
-                    GroupId = addMemberVM.GroupId,
+                   
                     BranchId = addMemberVM.BranchId,
                     CareerId = addMemberVM.CareerId,
                     IDNumber = memberId,
