@@ -4,19 +4,21 @@ using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace EKLEXIA.Controllers
 {
+   
     public class MemberController : Controller
     {
 
         public readonly XContext cxt;
 
-
-        public MemberController(XContext xContext)
+ private readonly IDataProtector protector;
+        public MemberController(XContext xContext, IDataProtectionProvider provider)
         {
             cxt = xContext;
-
+            protector = provider.CreateProtector("EKLEXIA.MemberController");
         }
 
         [HttpGet]
@@ -35,7 +37,7 @@ namespace EKLEXIA.Controllers
         }
 
 
-
+        [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
         {
             if (!ModelState.IsValid)

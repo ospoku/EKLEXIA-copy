@@ -65,6 +65,6 @@ namespace EKLEXIA.Models
         public string ModifiedBy { get; set; }
         [DataType(DataType.Date)]
         public DateTime ModifiedDate { get; set; }
-
+        public string EncryptedId { get; set; }
     }
 }

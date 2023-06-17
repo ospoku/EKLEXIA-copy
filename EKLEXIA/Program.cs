@@ -33,7 +33,7 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<DBInitializer>();
 
-
+builder.Services.AddDataProtection();
 builder.Services.AddHttpContextAccessor();
 
 
