@@ -15,6 +15,8 @@ namespace EKLEXIA.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        [NotMapped]
+        public string EncryptedId { get; set; }
 
 
     }

@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace EKLEXIA.Models
 {
-    public class Region : TableAudit
+    public class Region 
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; }
+        public  string Id { get; set; }
         public string Name { get; set; }
+        
+        public bool IsDeleted { get; set; }
 
     }
 }

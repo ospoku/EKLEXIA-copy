@@ -3,6 +3,7 @@ using EKLEXIA.Models;
 using IMS.Permission;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,7 +37,7 @@ builder.Services.AddScoped<DBInitializer>();
 
 builder.Services.AddHttpContextAccessor();
 
-
+builder.Services.AddDataProtection().PersistKeysToFileSystem(new System.IO.DirectoryInfo(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "DataProtection"));
 
 var app = builder.Build();
 

@@ -13,6 +13,7 @@ namespace EKLEXIA.ViewModels
         public string Description { get; set; }
 
         public string CareerId { get; set; }
+        public string EncryptedId { get; set; }
 
 
     }

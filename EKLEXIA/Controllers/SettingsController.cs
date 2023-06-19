@@ -11,6 +11,8 @@ using System.Net;
 using System.Net.Mail;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore.Storage;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace ECLEXIA.Controllers
 {
@@ -21,13 +23,11 @@ namespace ECLEXIA.Controllers
         public readonly RoleManager<Role> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        public SettingsController(XContext xContext, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signinmanager, IWebHostEnvironment environment)
+        public readonly IDataProtector protector;
+        public SettingsController(XContext xContext, IDataProtectionProvider provider)
         {
-            usm = userManager;
             xct = xContext;
-            rol = roleManager;
-            sim = signinmanager;
-            env = environment;
+            protector = provider.CreateProtector("EKLEXIA.SettingsController");
         }
         
       
@@ -73,6 +73,12 @@ public IActionResult Careers()
             return ViewComponent("Careers");
         }
         [HttpGet]
+        public IActionResult EditCareer(string Id)
+        {
+            var unEncrypted = protector.Unprotect(Id);
+            return ViewComponent("EditCareer",unEncrypted);
+        }
+        [HttpGet]
         public IActionResult AddGroup()
         {
 
@@ -111,7 +117,10 @@ public IActionResult Careers()
 
             return ViewComponent("Groups");
         }
-
+        public IActionResult Regions()
+        {
+            return ViewComponent("Regions");
+        }
         public IActionResult Branches()
         {
             return ViewComponent("Branches");

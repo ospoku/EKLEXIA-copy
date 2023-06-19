@@ -74,7 +74,7 @@ namespace EKLEXIA.Controllers
                     //IDNumber = memberId,
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
-                    CreatedDate = DateTime.Now
+                    CreatedDate = DateTime.Now,
                 };
 
                 using (var memoryStream = new MemoryStream())
@@ -82,9 +82,6 @@ namespace EKLEXIA.Controllers
                     await Photo.CopyToAsync(memoryStream);
                    addThisMember.Photo = memoryStream.ToArray();
                 }
-
-
-
                 cxt.Members.Add(addThisMember);
 
                 await cxt.SaveChangesAsync();
@@ -93,45 +90,45 @@ namespace EKLEXIA.Controllers
 
 
                 //we creating the necessary URL string:
-                string GeneratedID = (from m in cxt.Members where m.MemberId == addThisMember.MemberId select m.IDNumber).FirstOrDefault().ToString()
-                       ;
-                string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
-                string from = "JHC";
-                string username = "KofiPoku";
-                string password = "Az36400@osp";
-                string to = addThisMember.Telephone;
-                string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
+                //string GeneratedID = (from m in cxt.Members where m.MemberId == addThisMember.MemberId select m.IDNumber).FirstOrDefault().ToString()
+                //       ;
+                //string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
+                //string from = "JHC";
+                //string username = "KofiPoku";
+                //string password = "Az36400@osp";
+                //string to = addThisMember.Telephone;
+                //string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
 
-                // Creating URL to send sms
-                string message = URL
-                    + "username="
-                    + username
-                    + "&password="
-                    + password
-                    + "&from="
-                    + from
-                    + "&to="
-                    + to
-                    + "&service="
-                    + "SMS"
-                    + "&message="
-                    + messageText;
-
-
-
-                HttpClient httpclient = new();
-
-                var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
-                if (response2.StatusCode == HttpStatusCode.OK)
-                {
-                    // Do something with response. Example get content:
-                    // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
-                }
+                //// Creating URL to send sms
+                //string message = URL
+                //    + "username="
+                //    + username
+                //    + "&password="
+                //    + password
+                //    + "&from="
+                //    + from
+                //    + "&to="
+                //    + to
+                //    + "&service="
+                //    + "SMS"
+                //    + "&message="
+                //    + messageText;
 
 
-                TempData["Message"] = "New Member successfully added";
 
-                return RedirectToAction("Members");
+                //HttpClient httpclient = new();
+
+                //var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
+                //if (response2.StatusCode == HttpStatusCode.OK)
+                //{
+                //    // Do something with response. Example get content:
+                //    // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
+                //}
+
+
+                //TempData["Message"] = "New Member successfully added";
+
+                //return RedirectToAction("Members");
         //}
             //else
             //{
