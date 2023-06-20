@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@using EKLEXIA.Models;
+
+@model EKLEXIA.ViewModels.AddAttendanceVM;
+
+    
+    <div class="row justify-content-center">
+    <div class="col-md-9">
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-center">Attendance</h5>
+
+        <div class="card-header-right">
+
+
+            <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+        </div>
+
+    </div>
+        
+                 <div class="card-body">
+                        <div class="form-group">
+                         
+                            <input type="date" asp-for="@Model.Date" class="form-control js-datepicker" asp-format="{0:dd/MMM/yyyy}">
+
+                        </div>
+                        
+                        <div class="form-group">
+                            <select  type="text" id="meetingType" class="select2 form-control" asp-items="@Model.Meetings" asp-for="@Model.MeetingId" ></select>
+
+                        </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    
+                                    <th>Name</th>
+                                    <th>Description</th>
+                        
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @for (int i = 0; i < Model.Members.Count(); i++)
+                                {
+                                    <tr>
+                                        <td>@Model.Members[i].Text</td>
+                                        
+                                        <td><input asp-for="@Model.Description" /></td>
+
+
+
+
+                                        <input type="hidden" class="custom-checkbox" asp-for="@Model.Members[i].Value" />
+                                        <td><input asp-for="Members[i].Selected" /></td>
+
+
+
+                                    </tr>
+                                                         }
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+</div>
+        <div class="card-footer">
+            <button class="btn btn-sm btn-primary">Save</button>
+        </div>
+  
+  </div>
+  </div>
+  </div>
+  

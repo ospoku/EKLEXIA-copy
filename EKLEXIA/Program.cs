@@ -3,6 +3,7 @@ using EKLEXIA.Models;
 using IMS.Permission;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,7 +37,7 @@ builder.Services.AddScoped<DBInitializer>();
 builder.Services.AddDataProtection();
 builder.Services.AddHttpContextAccessor();
 
-
+builder.Services.AddDataProtection().PersistKeysToFileSystem(new System.IO.DirectoryInfo(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "DataProtection"));
 
 var app = builder.Build();
 
@@ -67,9 +68,12 @@ var db = scope.ServiceProvider.GetRequiredService<XContext>();
 
 
     var init = scope.ServiceProvider.GetRequiredService<DBInitializer>();
-//await init.CareerSetup();
+await init.GenderSetup();
+await init.MonthSetup();
+await init.RegionSetup();
+await init.MaritalStatusSetup();
 init.RoleCreation(scope.ServiceProvider)
     .Wait();
-    init.UserCreation(scope.ServiceProvider).Wait();
+init.UserCreation(scope.ServiceProvider).Wait();
 
 app.Run();

@@ -1,60 +1,34 @@
-﻿@{
-    Layout = "~/Views/MainLayout.cshtml";
-}
-@model EKLEXIA.ViewModels.AddRegionVM;
-
-<div class="card-header py-1">
-    <h6 class="m-0 font-weight-bold text-primary">Region</h6>
-</div>
+﻿
+@model EKLEXIA.ViewModels.AddBranchVM;
 
 
 
-        @using (Html.BeginForm("AddRegion", "Settings"))
+<div class="modal fade" id="AddBranch" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        @using (Html.BeginForm("AddBranch", "Settings", FormMethod.Post))
         {
+            <div class="modal-content">
+                <div class="modal-header">
 
-           
-
-
-
-                <div class="card-body justify-content-md-center">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7">
-
-                      
-                
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-"></i></span></div>
-                                    <input class=" form-control " asp-for="@Model.RegionName" />
-
-                                </div>
-                            </div>
-
-                    
-
-
-                            <button class="btn btn-block btn-primary">Save</button>
-                        </div>
-                    </div>
+                    <h6>New Branch</h6>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
+                   
                 </div>
 
 
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" asp-for="@Model.Name" required="reqiured" class="form-control" placeholder="Enter Branch">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" asp-for="@Model.Description" required="required" class="form-control" placeholder="Enter Description"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-primary">Save</button>
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
         }
-
-
+    </div>
+</div>

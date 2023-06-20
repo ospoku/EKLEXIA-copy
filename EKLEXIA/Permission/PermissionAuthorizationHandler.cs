@@ -23,7 +23,7 @@ namespace IMS.Permission
                                                             x.Issuer == "LOCAL AUTHORITY");
             if (permissionss.Any())
             {
-                context.Succeed(requirement);
+              context.Succeed(requirement);
                 return;
             }
         }

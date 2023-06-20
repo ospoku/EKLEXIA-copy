@@ -3,209 +3,209 @@
 }
 @model EKLEXIA.ViewModels.AddMemberVM;
 
+<div class="row justify-content-center">
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="m-0 font-weight-bold text-center">New Member</h5>
+
+                <div class="card-header-right">
 
 
+                    <ul class="list-unstyled card-option">
+                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                        <li><i class="fa fa-minus minimize-card"></i></li>
+                        <li><i class="fa fa-refresh reload-card"></i></li>
+                        <li><i class="fa fa-trash close-card"></i></li>
+                    </ul>
+                </div>
 
-<div id="smartwizard">
+            </div>
 
+            
+                <div class="wizard">
+                    <div class="wizard-inner">
+                        <div class="connecting-line"></div>
+                        
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" aria-expanded="true"><span class="round-tab">1</span></a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" aria-expanded="false"><span class="round-tab">2</span></a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"><span class="round-tab">3</span></a>
+                            </li>
+                            <li role="presentation" class="disabled">
+                                <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"><span class="round-tab">4</span></a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
 
-    <ul class="nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#step-1">
-                <strong>Step 1</strong> <br>Bio Info
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#step-2">
-                <strong>Step 2</strong> <br>Address
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#step-3">
-                <strong>Step 3</strong> <br>Upload Image
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#step-4">
-                <strong>Step 4</strong> <br>Other Info
-            </a>
-        </li>
-    </ul>
-    @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data" }))
-    {
+                @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                 {
 
-        <div class="tab-content">
-            <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
-                <h3></h3>
-                <div class="card-body justify-content-md-center">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7">
-                            <div class="form-group">
+               @*     <form role="form"  class="login-box" method="post" enctype="multipart/form-data">*@
+                        <div class="tab-content" id="main_form">
+                   
+                          <div class="tab-pane active" role="tabpanel" id="step1">
+                                        <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
                                     <input class="form-control" asp-for="@Model.Surname" type="text" placeholder="Surname">
                                 </div>
-                            </div>
-                            <div class="form-group">
+                                     
+                                    </div>
+                                        <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text "><i class="icon fa fa-user-circle"></i></span></div>
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
                                     <input class="form-control" asp-for="@Model.Othername" type="text" placeholder="Othernames">
                                 </div>
-                            </div>
-                            <div class="form-group">
+                                        </div>
+                                        <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text  ">Date of Birth</span></div>
+                                        <div class="input-group-prepend"><span class="input-group-text">Date of Birth</span></div>
                                     <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.DoB" asp-format="{0:dd/MMM/yyyy}" />
                                 </div>
+                                        </div>
+                                    
+                                <div class="form-group">
+                                
+                                    <select class="select2 form-control" title="Select Gender"  asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
+                                </div>
+                                        
+
+                            <div class="form-group">
+                            
+                                    <select class="select2 form-control" title="Select Career"  asp-for="@Model.CareerId" asp-items="@Model.Careers"></select>
+                                </div>
+                            
+                            <div class="form-group">
+                                
+                                    <select type="text" class="select2 form-control" title="Select Marital Status"  asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
+                            </div>
+                               
+                                <ul class="list-inline pull-right">
+                                    <li><a class="btn btn-sm btn-primary default-btn next-step">Continue to next step</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step2">
+                                
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-home"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Residence" type="text" placeholder="Enter Residence">
+                                </div>
+                           
+
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Telephone" type="text" placeholder="Enter Telephone">
+                                </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-venus-mars"></i></span></div>
-                                    <select class="selectpicker form-control" title="Select Gender" data-style="btn-secondary" asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
+                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
+                                    <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address"/>
                                 </div>
-
                             </div>
 
                             <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                    <select class="selectpicker form-control " title="Select Career" data-live-search="true" data-style="btn-secondary" asp-for="@Model.CareerId" asp-items="@Model.Careers"></select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-heart-broken"></i></span></div>
-                                    <select class="selectpicker form-control" title="Select Marital Status" data-style="btn-secondary" asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                    <select class="selectpicker form-control " title="Select Career" data-live-search="true" data-style="btn-secondary" asp-for="@Model.CareerId" asp-items="@Model.Careers"></select>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2">
-                <h3></h3>
-                <div>
-                    <div class="card-body justify-content-md-center">
-                        <div class="row justify-content-center">
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-home"></i></span></div>
-                                        <input class="form-control" asp-for="@Model.Residence" type="text" placeholder="Enter Residence">
-
-
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone-alt"></i></span></div>
-                                        <input class="form-control" asp-for="@Model.Telephone" type="text" placeholder="Enter Telephone">
-
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
-                                        <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address">
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-map-pin"></i></span></div>
-                                        <input class="form-control" asp-for="@Model.Hometown" placeholder="Enter Hometown" />
+                                    <input class="form-control" asp-for="@Model.Hometown" placeholder="Enter Hometown" />
 
-                                    </div>
                                 </div>
+                            </div>
                                 <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                        <select class="form-control selectpicker" title="Select Region" data-live-search="true" data-style="btn-secondary" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
+                                    <select class="select2 form-control" style="width:100%" title="Select Region" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
+
+                                </div>
+                            
+                         
+
+                                <ul class="list-inline pull-right">
+                                    <li><a  class="default-btn prev-step">Back</a></li>
+                                    <li><a class="default-btn next-step skip-btn">Skip</a></li>
+                                    <li><a  class="default-btn next-step">Continue</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step3">
+
+                            <div class="card-body justify-content-md-center">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-7 text-center">
+                                        <div class="text-center">
+                                            <div class="text-center">
+                                                <div class="form-group">
+                                                    <img id="imagePreview" height="175" width="150" class="text-center" />
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <div class=" form-group">
+                                                <div class="text-center">
+
+                                                    <input class="btn btn-sm btn-default" id="Photo" name="Photo" onchange="document.getElementById('imagePreview').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
                                     </div>
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
-                <div class="card-body justify-content-md-center">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 text-center">
-                            <div class="text-center">
-                                <div class="text-center">
-                                    <div class="form-group">
-                                        <img id="imagePreview" height="175" width="150" class="text-center" />
-
-                                    </div>
-                                </div>
                             </div>
 
-                            <div class="text-center">
-                                <div class=" form-group">
-                                    <div class="text-center">
-
-                                        <input class="btn btn-secondary" id="Photo" name="Photo" onchange="ShowImagePreview(this)" type="file" asp-for="UploadPhoto" />
-
-
-                                    </div>
-                                </div>
+                                  
+                                       
+                                <ul class="list-inline pull-right">
+                                    <li><a  class="default-btn prev-step">Back</a></li>
+                                    <li><a  class="default-btn next-step skip-btn">Skip</a></li>
+                                    <li><a  class="default-btn next-step">Continue</a></li>
+                                </ul>
                             </div>
-
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4">
-                <h3></h3>                   
-                <div class="card-body justify-content-md-center">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                    <select class="form-control selectpicker " data-style="btn-secondary" title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
-
-
-
-                                </div>
-                            </div>
+                            <div class="tab-pane" role="tabpanel" id="step4">
 
                             <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-list"></i></span></div>
-                                    <select class="form-control selectpicker" data-style="btn-secondary" asp-items="@Model.Branches" asp-for="@Model.BranchId" type="text" title="Select Branch"></select>
+
+                                    <select class="select2 form-control" multiple style="width:100%" title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
+
+
 
                                 </div>
+                            
+
+                            <div class="form-group">
+
+                                    <select class="select2 form-control" style="width:100%" asp-items="@Model.Branches" asp-for="@Model.BranchId" title="Select Branch"></select>
+
+                                </div>
+                            
+
+
+                                <ul class="list-inline pull-right">
+                                    <li><button type="button" class="default-btn prev-step">Back</button></li>
+                                <button class="btn btn-sm btn-primary">Submit</button>
+                                </ul>
+                               
                             </div>
-
-
-
-
-
-
-                            <button class="btn btn-primary bg-primary">Submit</button>
-
+                            <div class="clearfix"></div>
                         </div>
-                    </div>
+                        
+                    @*</form>*@
+                    }
                 </div>
-
-            </div>
+            
         </div>
-    }
-    </div>
+        </div>
+        </div>
+        
+ 

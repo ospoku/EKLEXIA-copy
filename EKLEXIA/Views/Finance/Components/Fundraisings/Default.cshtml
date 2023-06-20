@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/MainLayout.cshtml";
+}
+@model IEnumerable< EKLEXIA.ViewModels.IncomesVM>;
+
+
+       
+<div class="card">
+    <div class="card-header">
+        <h5 class="m-0 font-weight-bold text-center">Funds</h5>
+
+
+
+
+        <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+
+        <div class="card-header-right">
+
+
+            <ul class="list-unstyled card-option">
+                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                <li><i class="fa fa-window-maximize full-card"></i></li>
+                <li><i class="fa fa-minus minimize-card"></i></li>
+                <li><i class="fa fa-refresh reload-card"></i></li>
+                <li><i class="fa fa-trash close-card"></i></li>
+            </ul>
+        </div>
+
+    </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Description</th>
+                             
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var Income in Model)
+                            {
+                            <tr>
+                                
+                                <td> @Income.Date.ToString("yyyy-MM-dd")</td>
+
+                                <td>@Income.Amount</td>
+                                <td>@Income.Description</td>
+                           
+                                <td>
+                                    <div class="text-center">
+                                        <a asp-action="DetailIncome" asp-controller="Finance" asp-route-Id="@Income.IncomeId." class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>
+                                        <a asp-action="EditIncome" asp-controller="Finance" asp-route-Id="@Income.IncomeId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
+                                        <a asp-action="DeleteIncome" asp-controller="Finance" asp-route-Id="@Income.IncomeId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            }
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+  
+</div>

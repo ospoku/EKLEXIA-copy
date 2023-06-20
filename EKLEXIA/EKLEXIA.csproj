@@ -8,12 +8,22 @@
 
   <ItemGroup>
     <Content Remove="Views\index.cshtml" />
+    <Content Remove="wwwroot\assets\js\jquery-3.3.1.min.js" />
+    <Content Remove="wwwroot\assets\js\main.js" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Select2.js" Version="4.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Settings\Components\AddBranch\Default.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

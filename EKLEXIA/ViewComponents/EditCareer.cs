@@ -2,21 +2,25 @@
 using EKLEXIA.Data;
 using EKLEXIA.Models;
 using EKLEXIA.ViewModels;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace EKLEXIA.ViewComponents
 {
     public class EditCareer : ViewComponent
     {
         public readonly XContext xct;
-        public EditCareer(XContext XContext)
+        public readonly IDataProtector protector;
+        public EditCareer(XContext xContext, IDataProtectionProvider provider)
         {
-            xct = XContext;
+            xct = xContext;
+            protector = provider.CreateProtector("");
         }
         public IViewComponentResult Invoke(string Id)
         {
-            Career CareerToEdit = new Career();
-            CareerToEdit = (from a in xct.Careers where a.Id == Id & a.IsDeleted == false select a).FirstOrDefault();
-            EditCareerVM editCareerVM = new EditCareerVM()
+         
+           
+             var CareerToEdit= xct.Careers.Where(c => c.Id == Id).FirstOrDefault();
+            EditCareerVM editCareerVM = new()
             {
 
 

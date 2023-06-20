@@ -27,7 +27,7 @@ namespace EKLEXIA.ViewModels
         public string BranchId { get; set; }
         public SelectList Branches { get; set; }
         public string GenderId { get; set; }
-        [DataType(DataType.Date)]
+       
         public DateTime DoB { get; set; }
         public string CareerId { get; set; }
         public SelectList Careers { get; set; }
@@ -49,10 +49,7 @@ namespace EKLEXIA.ViewModels
 
         [DataType(DataType.Date)]
         public DateTime PrintedDate { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
-        public string CreatedBy { get; set; }
-        public string ModifiedBy { get; set; }
+      
 
     }
 }

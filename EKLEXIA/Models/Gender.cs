@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace EKLEXIA.Models
 {
-    public class Gender : TableAudit
+    public class Gender
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string GenderId { get; set; }
-        public string GenderName { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }

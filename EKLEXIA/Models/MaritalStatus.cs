@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EKLEXIA.Models
 {
-    public class MaritalStatus : TableAudit
+    public class MaritalStatus
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
