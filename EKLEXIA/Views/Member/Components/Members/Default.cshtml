@@ -62,7 +62,7 @@
                                 <td><img src="data:image;base64,@System.Convert.ToBase64String(Member.Photo)" class="btn-circle" /></td>
                                 <td>
                                     <div class="text-center">
-                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMember" data-url="@Url.Action("Create")"><i class="fa fa-sm fa-info text-white"></i></a>
+                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="Encryption.Encrypt(@Member.MemberId)" class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMember" data-url="@Url.Action("Create")"><i class="fa fa-sm fa-info text-white"></i></a>
                                         <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
                                         <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
                                     </div>

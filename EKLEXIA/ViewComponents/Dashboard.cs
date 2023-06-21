@@ -5,10 +5,10 @@ using EKLEXIA.ViewModels;
 
 namespace EKLEXIA.ViewComponents
 {
-    public class ViewDashboard:ViewComponent
+    public class Dashboard:ViewComponent
     {
         public readonly XContext xct;
-        public ViewDashboard(XContext XContext)
+        public Dashboard(XContext XContext)
         {
             xct = XContext;
         }
@@ -16,7 +16,7 @@ namespace EKLEXIA.ViewComponents
         public IViewComponentResult Invoke()
 
         {
-            DashboardVM viewDashboardVM = new DashboardVM()
+            DashboardVM viewDashboardVM = new()
             {
                 TotalMembers = xct.Members.Where(a => a.IsDeleted == false).Count().ToString(),
                 TotalFemales=xct.Members.Where(a=>a.IsDeleted==false&a.Gender.Name=="Female").Count().ToString(),

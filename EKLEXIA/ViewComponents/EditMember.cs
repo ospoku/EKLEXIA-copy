@@ -3,21 +3,23 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using EKLEXIA.Data;
 using EKLEXIA.Models;
 using EKLEXIA.ViewModels;
+using System.Diagnostics.CodeAnalysis;
 
 namespace EKLEXIA.ViewComponents
 {
     public class EditMember : ViewComponent
     {
         public readonly XContext xct;
+        [SetsRequiredMembers]
         public EditMember(XContext XContext)
         {
             xct = XContext;
         }
         public IViewComponentResult Invoke(string Id)
         {
-            Member MemberToEdit = new Member();
+            Member MemberToEdit = new();
             MemberToEdit = (from a in xct.Members where a.MemberId == Id & a.IsDeleted == false select a).FirstOrDefault();
-            EditMemberVM editMemberVM = new EditMemberVM()
+            EditMemberVM editMemberVM = new()
             {
              
                 Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.Id), nameof(Gender.Name)),

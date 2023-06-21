@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 using Microsoft.AspNetCore.DataProtection;
+using System.Diagnostics.CodeAnalysis;
 
 namespace EKLEXIA.Controllers
 {
@@ -14,7 +15,7 @@ namespace EKLEXIA.Controllers
 
         public readonly XContext cxt;
 
- 
+        [SetsRequiredMembers]
         public MemberController(XContext xContext)
         {
             cxt = xContext;
@@ -70,7 +71,7 @@ namespace EKLEXIA.Controllers
                     Hometown = addMemberVM.Hometown,
                     Surname = addMemberVM.Surname,
                     RegionId = addMemberVM.RegionId,
-                    GroupId = addMemberVM.GroupId,
+                  
                     BranchId = addMemberVM.BranchId,
                     CareerId = addMemberVM.CareerId,
                     IDNumber = memberId,
@@ -175,16 +176,16 @@ namespace EKLEXIA.Controllers
             return RedirectToAction("ViewMembers");
         }
         [HttpGet]
-        public IActionResult ViewMembers()
+        public IActionResult Members()
         {
-            return ViewComponent("ViewMembers");
+            return ViewComponent("Members");
         }
 
         public IActionResult DeleteMember() => ViewComponent("ViewMembers");
 
-        public IActionResult ViewCardList()
+        public IActionResult IDCards()
         {
-            return ViewComponent("ViewCardList");
+            return ViewComponent("IDCards");
         }
         public IActionResult Card(string Id)
         {

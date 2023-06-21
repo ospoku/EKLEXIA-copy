@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EKLEXIA.ViewComponents
 {
-    public class CardList : ViewComponent
+    public class IDCards : ViewComponent
     {
         public readonly XContext xct;
-        public CardList(XContext XContext)
+        public IDCards(XContext XContext)
         {
             xct = XContext;
         }

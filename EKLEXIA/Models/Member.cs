@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.CompilerServices;
 
 namespace EKLEXIA.Models
 {
@@ -12,20 +13,21 @@ namespace EKLEXIA.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string MemberId { get; set; }
         [DataType(DataType.Text)]
-        public required  string Surname { get; set; }
+        public  string Surname { get; set; }
         [DataType(DataType.Text)]
-        public required string Othername { get; set; }
+        public  string Othername { get; set; }
         public string Fullname { get { return Surname + "  " + Othername; } }
         [ForeignKey("BranchId")]
-        public Branch Branch { get; set; }
+        public  Branch Branch { get; set; }
       
-        public required string BranchId { get; set; }
+        public  string BranchId { get; set; }
        
-        public required byte[] Photo { get; set; }
-        public Career Career { get; set; }
-        public required string CareerId { get; set; }
-        public Gender Gender { get; set; }
-        public string GenderId { get; set; }
+        public  byte[] Photo { get; set; }
+        public  Career Career { get; set; }
+        public  string CareerId { get; set; }
+        public  Gender Gender { get; set; }
+        
+        public  string GenderId { get; set; }
         [DataType(DataType.Date)]
         public DateTime DoB { get; set; }
 
@@ -57,16 +59,6 @@ namespace EKLEXIA.Models
         [DataType(DataType.Text)]
         public string RegionId { get; set; }
 
-        [DataType(DataType.Date)]
-        public DateTime PrintedDate { get; set; }
-
-        public bool IsDeleted { get; set; }
-        public string CreatedBy { get; set; }
-        [DataType(DataType.Date)]
-        public DateTime CreatedDate { get; set; }
    
-        [DataType(DataType.Date)]
-        public DateTime ModifiedDate { get; set; }
-        public string EncryptedId { get; set; }
     }
 }

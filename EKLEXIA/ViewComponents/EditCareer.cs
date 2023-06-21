@@ -3,6 +3,7 @@ using EKLEXIA.Data;
 using EKLEXIA.Models;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.DataProtection;
+using EKLEXIA.DataProtection;
 
 namespace EKLEXIA.ViewComponents
 {
@@ -19,7 +20,7 @@ namespace EKLEXIA.ViewComponents
         {
          
            
-             var CareerToEdit= xct.Careers.Where(c => c.Id == Id).FirstOrDefault();
+             var CareerToEdit= xct.Careers.Where(c => c.Id == Encryption.Decrypt(Id)).FirstOrDefault();
             EditCareerVM editCareerVM = new()
             {
 

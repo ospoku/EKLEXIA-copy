@@ -46,7 +46,7 @@ namespace ECLEXIA.Controllers
         {
             if (ModelState.IsValid)
             {
-                Career addThisCareer = new Career
+                Career addThisCareer = new()
                 {
                     Name = addCareerVM.Name,
                     Description = addCareerVM.Description,
@@ -75,8 +75,8 @@ public IActionResult Careers()
         [HttpGet]
         public IActionResult EditCareer(string Id)
         {
-            var unEncrypted = protector.Unprotect(Id);
-            return ViewComponent("EditCareer",unEncrypted);
+          
+            return ViewComponent("EditCareer",Id);
         }
         [HttpGet]
         public IActionResult AddGroup()
@@ -91,7 +91,7 @@ public IActionResult Careers()
         {
             if (ModelState.IsValid)
             {
-                Group addThisGroup = new Group
+                Group addThisGroup = new()
                 {
                     Name = addGroupVM.Name,
                     Description = addGroupVM.Description,
@@ -136,7 +136,7 @@ public IActionResult Careers()
         {
             if (ModelState.IsValid)
             {
-                Branch addThisBranch = new Branch
+                Branch addThisBranch = new()
                 {
                     Name = addBranchVM.Name,
                     Description = addBranchVM.Description,
