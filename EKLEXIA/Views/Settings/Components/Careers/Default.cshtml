@@ -48,9 +48,9 @@
 
                                 <td>
                                     <div class="text-center">
-                                        @*<a asp-action="DetailMember" asp-controller="Settings" asp-route-Id="@Region.RegionId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>*@
-                                        <a asp-action="EditCareer" asp-controller="Settings" asp-route-Id="@Encryption.Encrypt(@Career.CareerId)" class="btn btn-sm btn-primary btn-circle" data-target="careerModal" ><i class="fa fa-sm fa-edit text-white"></i></a>
-                                        <a asp-action="DeleteCareer" asp-controller="Settings" asp-route-Id="@Career.EncryptedId" class="btn btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                     
+                                    <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#EditCareer" data-url="@Url.Action($"EditCareer/{@Encryption.Encrypt(@Career.CareerId)}")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>EditCareer</button>
+                                    <a asp-action="DeleteCareer" asp-controller="Settings" asp-route-Id="@Career.EncryptedId" class="btn btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
                                     </div>
                                 </td>
                             </tr>

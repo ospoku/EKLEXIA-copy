@@ -26,7 +26,7 @@ namespace EKLEXIA.ViewComponents
 
 
 
-                CareerName = CareerToEdit.Name
+                Name = CareerToEdit.Name
             
               
             

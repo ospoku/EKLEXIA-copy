@@ -5,8 +5,8 @@ namespace EKLEXIA.ViewModels
 {
     public class EditCareerVM
     {
-        public string CareerId { get; set; }
-        public string CareerName { get; set; }
-
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }
