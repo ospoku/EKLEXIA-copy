@@ -26,10 +26,10 @@ namespace EKLEXIA.ViewComponents
 
 
 
-                Name = CareerToEdit.Name
+                Name = CareerToEdit.Name,
             
               
-            
+            Description=CareerToEdit.Description
        
 
             };

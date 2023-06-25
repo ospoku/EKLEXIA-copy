@@ -23,11 +23,11 @@ namespace ECLEXIA.Controllers
         public readonly RoleManager<Role> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        public readonly IDataProtector protector;       
-        public SettingsController(XContext xContext, IDataProtectionProvider provider)
+        
+        public SettingsController(XContext xContext)
         {
             xct = xContext;
-            protector = provider.CreateProtector("EKLEXIA.SettingsController");
+          
         }
         
       

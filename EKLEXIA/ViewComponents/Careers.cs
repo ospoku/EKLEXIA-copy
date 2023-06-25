@@ -9,11 +9,11 @@ namespace EKLEXIA.ViewComponents
     public class Careers : ViewComponent
     {
         public readonly XContext xct;
-        public readonly IDataProtector protector;
-        public Careers(XContext XContext, IDataProtectionProvider provider)
+       
+        public Careers(XContext XContext)
         {
             xct = XContext;
-            protector = provider.CreateProtector("EKLEXIA.Careers");
+         
         }
         public IViewComponentResult Invoke()
         {
@@ -22,15 +22,11 @@ namespace EKLEXIA.ViewComponents
                CareerName =c.Name,
                 CareerId = c.Id,
                 Description = c.Description,
-                EncryptedId= c.EncryptedId,
+         
                 
             }).ToList();
 
-            foreach(var car in Careers)
-            {
-                var stringId=car.CareerId.ToString();
-                car.EncryptedId = protector .Protect(stringId);
-            }
+          
             return View(Careers);
         }
     }
