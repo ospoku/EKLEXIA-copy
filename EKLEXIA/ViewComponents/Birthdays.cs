@@ -5,20 +5,20 @@ using EKLEXIA.ViewModels;
 
 namespace EKLEXIA.ViewComponents
 {
-    public class Members : ViewComponent
+    public class Birthdays : ViewComponent
     {
         public readonly XContext xct;
-        public Members(XContext XContext)
+        public Birthdays(XContext XContext)
         {
             xct = XContext;
         }
         public IViewComponentResult Invoke()
         {
-            var MembersList = xct.Members.Where(m => m.IsDeleted == false).Select(m => new MembersVM
+            var MembersList = xct.Members.Where(m =>m.DoB== DateTime.Today & m.IsDeleted==false).Select(m => new MembersVM
             {
                 MemberId = m.MemberId,
                 Telephone = m.Telephone,
-                Hometown = m.Hometown,
+               
                 Fullname = m.Fullname,
                 DateofBirth = m.DoB,
                 GenderId = m.Gender.Name,
@@ -27,8 +27,7 @@ namespace EKLEXIA.ViewComponents
                 Address = m.Address,
                 IDNumber = m.IDNumber,
 
-                CareerId = m.CareerId,
-                Photo = m.Photo,
+             
 
             }).ToList();
             return View(MembersList);

@@ -1,52 +1,52 @@
-﻿@{
+﻿@*@{
     Layout = "~/Views/MainLayout.cshtml";
-}
+}*@
 @model EKLEXIA.ViewModels.CardVM;
-<div class="col-md-12">
-    <div class="tile">
+<div class= "modal fade" id="Card" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
 
-        <div class="tile-body">
-            <div class="justify-content-center">
+        <div class="modal-content">
+            <div class ="modal-header">
+                <h6>Member ID Card</h6>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
+            </div>
+            <di class="modal-body">
 
-                <div class="card small">
-                    <div class="card-header">
-                        <h6>Member ID Card</h6>
-                    </div>
-                    <div  class="card-body" style="width:1in;height:2.2in">
+           <table style="width:3.38in; height:2.13in; border-color:red ;border-width:1px; border-style:solid"><tr><th colspan="3" ><p class="text-center">Church</p></th></tr>
+                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td style="border-color:red ;border-width:1px; border-style:solid">@Model.Fullname</td><td style="border-color:red ;border-width:1px; border-style:solid" rowspan="5"><img src="data:image;base64,@System.Convert.ToBase64String(Model.Photo)" class="img-radius" width="150" height="150" /></td></tr>
+
+
+                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td style="border-color:red ;border-width:1px; border-style:solid">@Model.GenderId</td></tr>
+                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.DoB.ToString("dd-MMM-yyyy")</td></tr>
+                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.Telephone"</td></tr>
+                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.Address"</td></tr>
+                </table>
                       
-                        <div style="height:1.0in">@Model.Photo</div>
+                      
+                        
 
-                        <label style="  position:fixed;  padding-left:55in">@Model.Fullname</label>
-                        <label style=" position:fixed; padding-left:3in">@Model.GenderId</label>
+                        
 
-                        <br style="height:5in" />
+                       
 
-                        <label style="position:fixed;padding-left:1.5in">@Model.DoB.ToString("dd-MMM-yyyy")</label>
+                  
 
-                        <label style="position:fixed; padding-left:2in">@Model.Address</label>
+                        
 
-                        <br style="height:0.5in" />
-
-                        <label  style="position:fixed; padding-left:1in">@Model.Telephone</label>
-
-                        <label  style="position:fixed; padding-left:2in"></label>
-
-                        <br style="height:0.5in" />
-                        <label   style="position:fixed; padding-left:1in"></label>
-
-                        </div>
-                    <div class="card-footer">
-                         <button id="printButton" class=" btn btn-primary mt-sm-2"><i class="fa fa-fw fa-lg fa-print"></i>Print Card</button>
+                        
+            
+            <div class="modal-footer">
+                         <button id="printButton" class=" btn btn-primary btn-sm"><i class="fa fa-fw fa-sm fa-print"></i>Print</button>
                     </div>
 
                     </div>
                 </div>
-            </div>
-        </div>
+          
+     </div>
 
 
 
-    </div>
+
 
 
 

@@ -18,7 +18,7 @@ namespace EKLEXIA.ViewModels
         public DateTime DoB { get; set; }
         public string Address { get; set; }
         public string Telephone { get; set; }
-        public byte Photo { get; set; }
+        public byte[] Photo { get; set; }
 
         public DateTime PrintDate { get; set; }
 

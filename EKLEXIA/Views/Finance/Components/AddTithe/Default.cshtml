@@ -21,11 +21,11 @@
                 </div>
             </div>
             <div class="form-group">
-                    <select class="form-control select2" title="Select Member"  asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
+                    <select class="form-control select2" title="Select Member" style="width:100%" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
             </div>    
             <div class="form-group">
-                
-                    <select class="form-control select2" title="Select Month"  asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
+
+                        <select class="form-control select2" title="Select Month" style="width:100%" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
               
             </div>
             <div class="form-group">
@@ -51,7 +51,20 @@
   
    </div>
 
-<script src="~/assets/select2/js/select2.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+
+
+            $('.select2').select2({
+                placeholder: 'Select an option'
+            });
+
+     });
+
+
+</script>
          
           
                 

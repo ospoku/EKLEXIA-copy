@@ -41,26 +41,6 @@ namespace EKLEXIA.Controllers
         [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
         {
-            if (!ModelState.IsValid)
-            {
-
-
-                return ViewComponent("AddMember");
-            }
-
-            if (ModelState.IsValid)
-            {
-                //  if (imageData != null && imageData.Length > 0) 
-
-                int membershipid = cxt.Members.Count() + 1;
-                string memberId = "JWC" + membershipid.ToString();
-                int length = membershipid.ToString().Length;
-
-                if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
-                if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
-                if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
-
-
                 Member addThisMember = new()
                 {
                     Address = addMemberVM.Address,
@@ -74,7 +54,7 @@ namespace EKLEXIA.Controllers
                   
                     BranchId = addMemberVM.BranchId,
                     CareerId = addMemberVM.CareerId,
-                    IDNumber = memberId,
+                    IDNumber = "memberId",
                     IsDeleted = false,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
                     CreatedDate = DateTime.Now
@@ -95,53 +75,11 @@ namespace EKLEXIA.Controllers
 
 
 
-                //we creating the necessary URL string:
-                string GeneratedID = (from m in cxt.Members where m.MemberId == addThisMember.MemberId select m.IDNumber).FirstOrDefault().ToString()
-                       ;
-                string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
-                string from = "JHC";
-                string username = "KofiPoku";
-                string password = "Az36400@osp";
-                string to = addThisMember.Telephone;
-                string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
-
-                // Creating URL to send sms
-                string message = URL
-                    + "username="
-                    + username
-                    + "&password="
-                    + password
-                    + "&from="
-                    + from
-                    + "&to="
-                    + to
-                    + "&service="
-                    + "SMS"
-                    + "&message="
-                    + messageText;
-
-
-
-                HttpClient httpclient = new();
-
-                var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
-                if (response2.StatusCode == HttpStatusCode.OK)
-                {
-                    // Do something with response. Example get content:
-                    // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
-                }
-
-
-                TempData["Message"] = "New Member successfully added";
-
-                return RedirectToAction("ViewMembers");
+                return RedirectToAction("Members");
             }
-            else
-            {
-                ViewBag.Message = "Member creation error!!! Please try again";
-            }
-            return ViewComponent("AddMember");
-        }
+       
+          
+        
 
         public IActionResult DetailMember(string Id)
       => ViewComponent("DetailMember", Id);
@@ -180,13 +118,18 @@ namespace EKLEXIA.Controllers
         {
             return ViewComponent("Members");
         }
-
-        public IActionResult DeleteMember() => ViewComponent("ViewMembers");
+        [HttpGet]
+        public IActionResult Birthdays()
+        {
+            return ViewComponent("Birthdays");
+        }
+       
 
         public IActionResult IDCards()
         {
             return ViewComponent("IDCards");
         }
+        [HttpGet]
         public IActionResult Card(string Id)
         {
             return ViewComponent("Card", Id);

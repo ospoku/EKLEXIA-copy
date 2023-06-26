@@ -22,7 +22,7 @@ namespace EKLEXIA.ViewModels
         public byte[] Photo { get; set; }
 
         public string MemberId { get; set; }
-        public string EncryptedId { get; set; }
+      
 
     }
 }

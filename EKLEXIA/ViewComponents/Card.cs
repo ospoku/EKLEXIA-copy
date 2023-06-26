@@ -1,4 +1,5 @@
 ﻿using EKLEXIA.Data;
+using EKLEXIA.DataProtection;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,17 +15,16 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke(string Id)
         {
-            var card = xct.Members.Where(a => a.MemberId == Id & a.IsDeleted == false).Select(a => new CardVM
+            var card = xct.Members.Where(a => a.MemberId == @Encryption.Decrypt(Id) & a.IsDeleted == false).Select(a => new CardVM
 
 
             {
 
                 Address = a.Address,
                 GenderId = a.Gender.Name,
-
+                Photo = a.Photo,
 
                 DoB = a.DoB,
-
 
                 Fullname = a.Fullname,
 

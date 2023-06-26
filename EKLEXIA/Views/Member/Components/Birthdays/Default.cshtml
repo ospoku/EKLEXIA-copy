@@ -7,12 +7,12 @@
        
 <div class="card">
     <div class="card-header">
-        <h5 class="m-0 font-weight-bold text-center">Members</h5>
+        <h5 class="m-0 font-weight-bold text-center">Birthdays</h5>
         
 
 
 
-            <a class="btn btn-primary btn-sm text-white" asp-action="AddMember" asp-controller="Member"><i class="fa fa-fw fa-sm fa-plus-circle"></i>New Member</a>
+        
        
         <div class="card-header-right">
          
@@ -41,7 +41,7 @@
                                 <th>Phone</th>
                              
                                 <th>Town</th>
-                                <th>Photo</th>
+                                
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -58,14 +58,10 @@
                                 <td>@Member.Age</td>
                                 <td>@Member.Telephone</td>
 
-                                <td>@Member.Hometown</td>
-                                <td><img src="data:image;base64,@System.Convert.ToBase64String(Member.Photo)" class="btn-circle" /></td>
+                               
+                                <td><progress></progress></td>
                                 <td>
                                     <div class="text-center">
-                                        <a asp-action="DetailMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"  data-toggle="ajax-modal"  data-target="#AddMember" data-url="@Url.Action("Create")"><i class="fa fa-sm fa-info text-white"></i></a>
-                                        <a asp-action="EditMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
-                                        <a asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
-                                    </div>
                                 <div class="btn-group" role="group">
                                     <button id="btnGroupDrop1" type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Select an Action
@@ -73,15 +69,16 @@
                                     <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
 
                                  
-                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-edit text-white mr-3"></i>Edit</a>
+                                            <a class="dropdown-item-custom" asp-action="EditIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId">Edit</a>
                                         
-                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-comment text-white mr-3"></i>View</a>
-                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-print text-white mr-3"></i>Print</a>
+                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId">View</a>
+                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId">Print</a>
 
-                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId"><i class="fa fa-sm fa-trash text-white mr-3"></i>Delete</a>
+                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Member.MemberId">Delete</a>
 
 
                                     </div>
+                                </div>
                                 </div>
                                 </td>
                             </tr>

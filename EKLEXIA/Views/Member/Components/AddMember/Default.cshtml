@@ -49,10 +49,10 @@
                 @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data" }))
                  {
 
-               @*     <form role="form"  class="login-box" method="post" enctype="multipart/form-data">*@
-                        <div class="tab-content" id="main_form">
+               
                    
-                          <div class="tab-pane active" role="tabpanel" id="step1">
+                   
+                      
                                         <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
@@ -89,11 +89,8 @@
                                     <select type="text" class="select2 form-control" title="Select Marital Status"  asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
                             </div>
                                
-                                <ul class="list-inline pull-right">
-                                    <li><a class="btn btn-sm btn-primary default-btn next-step">Continue to next step</a></li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" role="tabpanel" id="step2">
+                    
+                        
                                 
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-home"></i></span></div>
@@ -128,13 +125,8 @@
                             
                          
 
-                                <ul class="list-inline pull-right">
-                                    <li><a  class="default-btn prev-step">Back</a></li>
-                                    <li><a class="default-btn next-step skip-btn">Skip</a></li>
-                                    <li><a  class="default-btn next-step">Continue</a></li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" role="tabpanel" id="step3">
+                           
+                
 
                             <div class="card-body justify-content-md-center">
                                 <div class="row justify-content-center">
@@ -165,14 +157,9 @@
                             </div>
 
                                   
-                                       
-                                <ul class="list-inline pull-right">
-                                    <li><a  class="default-btn prev-step">Back</a></li>
-                                    <li><a  class="default-btn next-step skip-btn">Skip</a></li>
-                                    <li><a  class="default-btn next-step">Continue</a></li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane" role="tabpanel" id="step4">
+                                    
+                            
+                  
 
                             <div class="form-group">
 
@@ -191,17 +178,16 @@
                             
 
 
-                                <ul class="list-inline pull-right">
-                                    <li><button type="button" class="default-btn prev-step">Back</button></li>
+                           
                                 <button class="btn btn-sm btn-primary">Submit</button>
-                                </ul>
+                      
                                
-                            </div>
+                            
                             <div class="clearfix"></div>
-                        </div>
                         
-                    @*</form>*@
-                    }
+                        
+                    
+                   }
                 </div>
             
         </div>

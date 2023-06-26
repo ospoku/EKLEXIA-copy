@@ -37,9 +37,10 @@
 
                             <td>
                                 <div class="text-center">
-                                  
+                                    <div class="btn-group" role="group">
                                     <button data-toggle="ajax-modal" data-url="@Url.Action("EditCareer",new{Id=@Encryption.Encrypt(@Career.CareerId)})" class="btn btn-sm btn-primary btn-circle" data-target="#EditCareer"><i class="fa fa-sm fa-edit text-white"></i></button>
                                     <a asp-action="DeleteCareer" asp-controller="Settings"  class="btn btn-sm btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
