@@ -33,5 +33,26 @@ $(document).ready(function () {
        
  });
 
+$(document).ready(function () {
+    $('#btn1').click(function () {
+        $('input').attr('disabled', 'disabled');
+    });
+    $('#btn2').click(function () {
+        $('input').removeAttr('disabled');
+    });
+});
+document.getElementById('submit').onclick = function () {
+    var disabled = document.getElementById("name").disabled;
+    if (disabled) {
+        document.getElementById("name").disabled = false;
+    } else {
+        document.getElementById("name").disabled = true;
+    }
+}
 
+$(function () {
+    $('#smartwizard').smartwizard({
+        theme:'arrows'
+    });
+});
     

@@ -65,13 +65,13 @@ namespace EKLEXIA.Data
         }
         public async Task RoleCreation(IServiceProvider serviceProvider)
         {
-            var rol = serviceProvider.GetRequiredService<RoleManager<Role>>();
+            var rol = serviceProvider.GetRequiredService<RoleManager<AppRole>>();
             if (rol.Roles.Any() == false)
             {
-                await rol.CreateAsync(new Role() { AppRole = "Basic" });
-                await rol.CreateAsync(new Role() { AppRole = "Manager" });
-                await rol.CreateAsync(new Role() { AppRole = "SuperAdmin" });
-                await rol.CreateAsync(new Role() { AppRole = "Admin" });
+                await rol.CreateAsync(new AppRole() { Name = "Basic" });
+                await rol.CreateAsync(new AppRole() { Name = "Manager" });
+                await rol.CreateAsync(new AppRole() { Name = "SuperAdmin" });
+                await rol.CreateAsync(new AppRole() { Name = "Admin" });
                 await xct.SaveChangesAsync();
             };
 

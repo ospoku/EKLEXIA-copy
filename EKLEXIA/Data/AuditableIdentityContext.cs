@@ -7,7 +7,7 @@ namespace EKLEXIA.Data
 {
 
 
-    public abstract class AuditableIdentityContext : IdentityDbContext<User, Role, string>
+    public abstract class AuditableIdentityContext : IdentityDbContext<User, AppRole, string>
     {
         public AuditableIdentityContext(DbContextOptions options) : base(options)
         {

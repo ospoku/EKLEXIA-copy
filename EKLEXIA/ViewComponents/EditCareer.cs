@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using EKLEXIA.Data;
-using EKLEXIA.Models;
 using EKLEXIA.ViewModels;
-using Microsoft.AspNetCore.DataProtection;
+
 using EKLEXIA.DataProtection;
 
 namespace EKLEXIA.ViewComponents
@@ -10,26 +9,26 @@ namespace EKLEXIA.ViewComponents
     public class EditCareer : ViewComponent
     {
         public readonly XContext xct;
-        public readonly IDataProtector protector;
-        public EditCareer(XContext xContext, IDataProtectionProvider provider)
+        
+        public EditCareer(XContext xContext)
         {
             xct = xContext;
-            protector = provider.CreateProtector("");
+         
         }
         public IViewComponentResult Invoke(string Id)
         {
          
            
-             var CareerToEdit= xct.Careers.Where(c => c.Id == Encryption.Decrypt(Id)).FirstOrDefault();
+             var careerToEdit= xct.Careers.Where(c => c.Id == Encryption.Decrypt(Id)).FirstOrDefault();
             EditCareerVM editCareerVM = new()
             {
 
 
 
-                Name = CareerToEdit.Name,
+                Name = careerToEdit.Name,
             
               
-            Description=CareerToEdit.Description
+            Description=careerToEdit.Description
        
 
             };

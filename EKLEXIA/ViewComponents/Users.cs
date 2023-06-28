@@ -8,10 +8,10 @@ namespace EKLEXIA.ViewComponents
 {
     public class Users : ViewComponent
     {
-        public readonly RoleManager<Role> rol;
+        public readonly RoleManager<AppRole> rol;
         public readonly XContext xct;
         public readonly UserManager<User> usm;
-        public Users(XContext XContext, UserManager<User> userManager, RoleManager<Role> roleManager)
+        public Users(XContext XContext, UserManager<User> userManager, RoleManager<AppRole> roleManager)
         {
             rol = roleManager;
             xct = XContext;

@@ -1,0 +1,55 @@
+﻿
+@model EKLEXIA.ViewModels.ManageGrpVM;
+
+<div class="modal fade" id="ManageGroup" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        @using (Html.BeginForm("EditGroup", "Settings", FormMethod.Post))
+        {
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h6>Group Management</h6>
+                    <p>Select or deselect Members for @Model.Groupname.ToString()</p>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
+
+                </div>
+
+
+                <div class="modal-body">
+                    <table class="table" id="dataTable">
+                        <thead>
+                            <tr>
+
+
+                                <th>Name</th>
+
+
+                                <th>Select/Deselect</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @for (int i = 0; i < @Model.Members.Count(); i++)
+                            {
+                                <tr>
+                                    <td>
+                                        <input asp-for="@Model.Members[i].Value" type="hidden"/>
+                                        @Model.Members[i].Text
+                                    </td>
+                                    <td>
+                                        <div class="form-check m-1">
+                                            <input asp-for="Members[i].Selected" class="form-check-input" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm btn-primary">Save</button>
+                </div>
+
+            </div>
+        }
+    </div>

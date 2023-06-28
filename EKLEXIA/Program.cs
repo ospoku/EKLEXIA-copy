@@ -23,7 +23,7 @@ builder.Services.AddAuthentication();
 //builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
 builder.Services.AddDbContext<XContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ECX")));
 
-builder.Services.AddIdentity<User, Role>()
+builder.Services.AddIdentity<User, AppRole>()
     .AddEntityFrameworkStores<XContext>();
 builder.Services.AddAuthentication(options =>
 {

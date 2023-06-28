@@ -1,10 +1,16 @@
-{
-  "version": "1.0",
-  "defaultProvider": "cdnjs",
-  "libraries": [
-    {
-      "library": "datatables@1.10.21",
-      "destination": "wwwroot/assets/datatables/"
-    }
-  ]
-}
+
+  {
+    "version": "1.0",
+    "defaultProvider": "cdnjs",
+    "libraries": [
+
+
+
+ 
+      {
+        "provider": "cdnjs",
+        "library": "bootstrap@4.6.2",
+        "destination": "wwwroot/assets/css/bootstrap/"
+      }
+    ]
+  }

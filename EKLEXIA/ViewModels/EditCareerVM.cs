@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
-
-namespace EKLEXIA.ViewModels
+﻿namespace EKLEXIA.ViewModels
 {
     public class EditCareerVM
     {

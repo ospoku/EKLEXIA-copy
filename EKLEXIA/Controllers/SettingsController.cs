@@ -20,7 +20,7 @@ namespace ECLEXIA.Controllers
     {
         public readonly XContext xct; 
         public readonly UserManager<User> usm;
-        public readonly RoleManager<Role> rol;
+        public readonly RoleManager<AppRole> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
         
@@ -131,6 +131,17 @@ public IActionResult Careers()
         {
             return ViewComponent("AddBranch");
         }
+
+        [HttpGet]
+        public IActionResult Setup()
+        {
+            return ViewComponent("Setup");
+        }
+        [HttpGet]
+        public IActionResult Preferences()
+        {
+            return ViewComponent("Preferences");
+        }
         [HttpPost]
         public async Task<IActionResult> AddBranch(AddBranchVM addBranchVM)
         {
@@ -158,5 +169,15 @@ public IActionResult Careers()
             return ViewComponent("AddBranch");
         }
 
+        [HttpGet]
+        public IActionResult EditGroup(string Id)
+        {
+            return ViewComponent("EditGroup",Id);
+        }
+        [HttpGet]
+        public IActionResult ManageGroup(string Id)
+        {
+            return ViewComponent("ManageGroup", Id);
+        }
     }
 }

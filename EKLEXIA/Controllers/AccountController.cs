@@ -18,10 +18,10 @@ namespace ECLEXIA.Controllers
     {
         public readonly XContext xct;
         public readonly UserManager<User> usm;
-        public readonly RoleManager<Role> rol;
+        public readonly RoleManager<AppRole> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        public AccountController(XContext xContext, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signinmanager, IWebHostEnvironment environment)
+        public AccountController(XContext xContext, UserManager<User> userManager, RoleManager<AppRole> roleManager, SignInManager<User> signinmanager, IWebHostEnvironment environment)
         {
             usm = userManager;
             xct = xContext;
@@ -58,7 +58,7 @@ namespace ECLEXIA.Controllers
                 IdentityResult result = await usm.CreateAsync(addThisUser, addUserVM.Password);
                 if (result.Succeeded)
                 {
-                    Role applicationRole = await rol.FindByIdAsync(addUserVM.ApplicationRoleId);
+                    AppRole applicationRole = await rol.FindByIdAsync(addUserVM.ApplicationRoleId);
                     if (applicationRole == null)
                     {
                     }
@@ -224,7 +224,7 @@ namespace ECLEXIA.Controllers
                         IdentityResult roleResult = await usm.RemoveFromRoleAsync(searchUser, existingRole);
                         if (roleResult.Succeeded)
                         {
-                            Role applicationRole = await rol.FindByIdAsync(editUserVM.ApplicationRoleId);
+                            AppRole applicationRole = await rol.FindByIdAsync(editUserVM.ApplicationRoleId);
                             if (applicationRole != null)
                             {
                                 IdentityResult newRoleResult = await usm.AddToRoleAsync(searchUser, applicationRole.Name);

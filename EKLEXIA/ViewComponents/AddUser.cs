@@ -13,9 +13,9 @@ namespace EKLEXIA.ViewComponents
     {
         public readonly XContext xct;
         public readonly UserManager<User> usm;
-        public readonly RoleManager<Role> rmg;
+        public readonly RoleManager<AppRole> rmg;
 
-        public AddUser(XContext XContext,UserManager<User> userManager, RoleManager<Role> roleManager)
+        public AddUser(XContext XContext,UserManager<User> userManager, RoleManager<AppRole> roleManager)
         {
             usm = userManager;
             xct = XContext;

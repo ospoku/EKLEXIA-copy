@@ -10,9 +10,9 @@ namespace EKLEXIA.ViewComponents
     public class EditUser : ViewComponent
     {
         public readonly UserManager<User> USM;
-        public readonly RoleManager<Role> ROL;
+        public readonly RoleManager<AppRole> ROL;
         public readonly XContext xct;
-        public EditUser(UserManager<User> userManager,RoleManager<Role> rolManager,XContext XContext)
+        public EditUser(UserManager<User> userManager,RoleManager<AppRole> rolManager,XContext XContext)
         {
             USM = userManager;
             ROL = rolManager;
