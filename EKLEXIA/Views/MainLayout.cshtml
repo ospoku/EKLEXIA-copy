@@ -4,6 +4,7 @@
 
 <head>
     <title>Material Able bootstrap admin template by Codedthemes</title>
+
     <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 10]>
@@ -16,20 +17,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
-    <meta name="author" content="Codedthemes" />
+
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <!-- waves.css -->
     <link rel="stylesheet" href="~/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
     <!-- Required Fremwork -->
-    <link href="~/assets/css/bootstrap.css" rel="stylesheet" />
-    
-    
-    <link href="~/assets/css/smart_wizard_all.min.css" rel="stylesheet"/>
-    
-    
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap/css/bootstrap.min.css">
     <!-- waves.css -->
     <link rel="stylesheet" href="~/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
     <!-- themify icon -->
@@ -40,12 +36,14 @@
     <!-- scrollbar.css -->
     <link rel="stylesheet" type="text/css" href="~/assets/css/jquery.mCustomScrollbar.css">
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
-    <link href="~/assets/datatables/datatables.bootstrap4.css" rel="stylesheet" />
-    
-    
-    <link href="~/assets/datatables/datatables.bootstrap4.min.css" rel="stylesheet" />
-   <link href="~/assets/select2/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" asp-append-version="true"/>
+   
+    <link href="~/Vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="~/Vendor/select2/css/select2.min.css" rel="stylesheet" asp-append-version="true">
+
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style2.css" asp-append-version="true" />
+   
 </head>
 
 <body>
@@ -532,7 +530,6 @@
         </div>
     </div>
     
-    <!-- Required Jquery -->
     <script type="text/javascript" src="~/assets/js/jquery/jquery.min.js "></script>
     <script type="text/javascript" src="~/assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="~/assets/js/popper.js/popper.min.js"></script>
@@ -550,15 +547,19 @@
     <script src="~/assets/js/vertical/vertical-layout.min.js "></script>
 
     <script type="text/javascript" src="~/assets/js/script.js "></script>
-    <script src="~/assets/datatables/datatables.bootstrap4.js"></script>
-    <script src="~/assets/datatables/datatables.bootstrap4.min.js"></script>
-    
-    <script src="~/assets/datatables/jquery.datatables.min.js"></script>
-    <script src="~/assets/select2/js/select2.min.js"></script>
-    <script src="~/assets/js/ospapps.js"></script>
-    <script src="~/assets/js/jquery.smartWizard.js"></script>
-    <script src="~/assets/js/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Vendor/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="~/Vendor/datatables/dataTables.bootstrap4.min.js" asp-append-version="true"></script>
+    <script src="~/Vendor/select2/js/select2.min.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/Vendor/jquery-timeago/jquery.timeago.min.js" asp-append-version="true"></script>
 
+
+    <script type="text/javascript" src="~/Vendor/tinymce/tinymce.min.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="~/js/site.js" asp-append-version="true"></script>
+  
+    <script src="~/assets/js/ospapps.js" asp-append-version="true" type="text/javascript"></script>
+
+ 
 </body>
+
 
 </html>

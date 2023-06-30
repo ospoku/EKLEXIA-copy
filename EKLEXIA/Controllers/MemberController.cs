@@ -72,8 +72,10 @@ namespace EKLEXIA.Controllers
 
                 await cxt.SaveChangesAsync();
 
+            var notification = new Notification {
+            Text=$"The"};
 
-
+           
 
                 return RedirectToAction("Members");
             }
