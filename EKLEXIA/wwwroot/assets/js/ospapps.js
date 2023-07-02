@@ -41,15 +41,20 @@ $(document).ready(function () {
         $('input').removeAttr('disabled');
     });
 });
-document.getElementById("#btnorganization").onclick = function () {
-    var disabled = document.getElementById("#txtorganization").disabled;
-    if (disabled) {
-        document.getElementById("#txtorganization").disabled = false;
-    } else {
-        document.getElementById("#txtorganization").disabled = true;
-    }
-}
 
+$(document).ready(function () {
+    document.getElementById('btnorganization').onclick = function () {
+        var disabled = document.getElementById("txtorganization").disabled;
+        if (disabled) {
+            
+            document.getElementById("txtorganization").disabled = false;
+            document.getElementById("btnorganization").ariaValueText = "Save";
+        } else {
+            document.getElementById("txtorganization").disabled = true;
+            document.getElementById("btn").textContent = "Update";
+        }
+    }
+});
 
 $(document).ready(function () { $('time.timeago').timeago(); });
 
@@ -114,5 +119,10 @@ $(document).ready(function () {
     });
 
 
+});
+$(function () {
+    // SmartWizard initialize
+    $('#smartwizard').smartWizard({
+    theme:'arrows',});
 });
 

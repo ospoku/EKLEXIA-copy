@@ -1,7 +1,5 @@
 ﻿using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EKLEXIA.ViewComponents
