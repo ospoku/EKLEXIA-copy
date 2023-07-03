@@ -28,7 +28,9 @@ $(document).ready(function () {
  
 
         $('.select2').select2({
-            placeholder: 'Select an option'
+            placeholder: 'Select an option',
+         
+            maximumSelectionLength:1
         });
        
  });
@@ -59,22 +61,22 @@ $(document).ready(function () {
 $(document).ready(function () { $('time.timeago').timeago(); });
 
 
-$(document).ready(function () {
-    $("#selectDocument").select2({
-        placeholder: "Select Document",
-        allowClear: true,
+//$(document).ready(function () {
+//    $("#selectDocument").select2({
+//        placeholder: "Select Document",
+//        allowClear: true,
 
-    });
-    $("#selectRole").select2({
-        placeholder: "Select Roles",
-        allowClear: true,
-    });
-    $("#selectUser").select2({
-        placeholder: "Select Training Type",
-        allowClear: true,
-    });
+//    });
+//    $("#selectRole").select2({
+//        placeholder: "Select Roles",
+//        allowClear: true,
+//    });
+//    $("#selectUser").select2({
+//        placeholder: "Select Training Type",
+//        allowClear: true,
+//    });
 
-});
+//});
 
 //google.maps.event.addDomListener(window, 'load', function () {
 //    var places = new google.maps.places.Autocomplete(document.getElementById('<%=txtLocation.ClientID %>'));
