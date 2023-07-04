@@ -87,94 +87,109 @@
 
                                 <div class="form-group form-group-lg">
 
-                                    <select class="select2 form-control input-lg" style="width:100%" multiple="multiple" title="Select Gender" data-placeholder="select gender" asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
+                                    <select class="select2 form-control input-lg" style="width:100%" multiple="multiple" title="Select Gender" data-placeholder="Select gender" asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
                                 </div>
 
 
                                 <div class="form-group">
 
-                                    <select class="select2 form-control" style="width:100%" title="Select Career" asp-for="@Model.CareerId" asp-items="@Model.Careers"></select>
+                                    <select type="text" class="select2 form-control" data-placeholder="Select Marital Status" multiple="multiple" style="width:100%" title="Select Marital Status" asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
                                 </div>
-
                                 <div class="form-group">
 
-                                    <select type="text" class="select2 form-control" style="width:100%" title="Select Marital Status" asp-for="@Model.MaritalStatusId" asp-items="@Model.MaritalStatuses"></select>
+                                    <select class="select2 form-control" data-placeholder="Select Career" multiple="multiple" style="width:100%" title="Select Career" asp-for="@Model.CareerId" asp-items="@Model.Careers"></select>
                                 </div>
+
 
 
                             </div>
                             <div id="step-2" class="tab-pane" role="tabpanel" aria-labelledby="step-2">
 
-                                <div class="input-group input-group-sm">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="icon fa fa-home"></i></span>
                                     </div>
                                     <input class="form-control" asp-for="@Model.Residence" type="text" placeholder="Enter Residence">
                                 </div>
-                                <div class="input-group input-group-sm">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
 
                                         <span class="input-group-text"><i class="fa fa-phone"></i></span>
                                     </div>
                                     <input class="form-control" asp-for="@Model.Telephone" type="text" placeholder="Enter Telephone">
                                 </div>
-                                <div class="input-group input-group-sm">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
                                     </div>
                                     <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address" />
                                 </div>
-                                <div class="input-group input-group-sm">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="icon fa fa-map-pin"></i></span>
                                     </div>
                                     <input class="form-control" asp-for="@Model.Hometown" placeholder="Enter Hometown" />
                                 </div>
                                 <div class="form-group">
-                                    <select class="select2 form-control" style="width:100%" title="Select Region" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
+                                    <select class="select2 form-control" multiple="multiple" style="width:100%" data-placeholder="Select region" title="Select Region" asp-for="@Model.RegionId" asp-items="@Model.Regions"></select>
 
                                 </div>
 
                             </div>
+                           
                             <div id="step-3" class="tab-pane" role="tabpanel" aria-labelledby="step-3">
-                                <div class="card-body justify-content-md-center">
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-7 text-center">
-                                            <div class="text-center">
-                                                <div class="text-center">
-                                                    <div class="form-group">
-                                                        <img id="imagePreview" height="175" width="150" class="text-center" />
+                                <div class="row">
+                                    <div class="col-md-5">
 
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <img id="image" height="175" width="150" src="" />
 
-                                            <div class="text-center">
-                                                <div class=" form-group">
-                                                    <div class="text-center">
+                                                 
+                                              
+                                           
 
-                                                        <input class="btn btn-sm btn-default" id="Photo" name="Photo" onchange="document.getElementById('imagePreview').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
+                                     
 
 
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                        <input class="btn btn-sm btn-default" id="Photo" name="Photo" onchange="document.getElementById('image').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
 
 
-                                        </div>
-                                    </div>
-                                </div>
+
+
+
+
+                                        <div class="form-group" id="webcam" height="175" width="150"></div>
+
+
+
+
+
+                                        <input type="button" id="btnCapture" />
+                           
 
                             </div>
+
+                                
+                                <hr/>
+                                    <div class="col-md-5">
+                                       
+                                                  
+                                                            
+
+                                                </div>
+                                            </div>
+                                      
+                                  </div>
+                         
+                           
                             <div id="step-4" class="tab-pane" role="tabpanel" aria-labelledby="step-4">
                              
                                 <div class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-5">
                                         <div class="form-group">
 
-                                            
 
-                                            <select class="select2 form-control" style="width:100%" asp-items="@Model.Branches" asp-for="@Model.BranchId" title="Select Branch"></select>
+
+                                            <select class="select2 form-control" multiple="multiple"  data-placeholder="Select branch" style="width:100%" asp-items="@Model.Branches" asp-for="@Model.BranchId" title="Select Branch"></select>
 
                                         </div>
                                         </div>
@@ -193,7 +208,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <button class="btn btn-sm btn-primary">Save</button>
+                                <button class="btn btn-sm btn-primary">Save</button>
                                 </div>
                         </div>
 
@@ -202,16 +217,6 @@
                             <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-                
         
                 </div>
                    

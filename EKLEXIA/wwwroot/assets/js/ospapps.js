@@ -86,6 +86,41 @@ $(document).ready(function () { $('time.timeago').timeago(); });
 //    });})
 
 
+ 
+//$(document).ready(function CaptureSnapshot() {
+//    Webcam.set({
+//        width: 500,
+//        height: 375,
+//        image_format: 'png',
+//        jpeg_quality: 100
+//    });
+//    Webcam.attach('#webCam');
+//    $("#btnCapture").click(function () {
+//        Webcam.snap(function (data_uri) {
+//            $("#imagePreview")[0].src = data_uri;
+//            $("#btnUpload").removeAttr("disabled");
+//        });
+//    });
+
+//});
+
+$(function () {
+    Webcam.set({
+        width: 320,
+        height: 240,
+        image_format: 'png',
+        jpeg_quality: 100
+    });
+    Webcam.attach('#webcam');
+    $("#btnCapture").click(function () {
+        Webcam.snap(function (data_uri) {
+            $("#image")[0].src = data_uri
+        
+           
+        });
+    });
+})
+
 
 
 
