@@ -3,22 +3,21 @@ using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
-using Microsoft.AspNetCore.DataProtection;
-using System.Diagnostics.CodeAnalysis;
 
 namespace EKLEXIA.Controllers
 {
-   
+
     public class MemberController : Controller
     {
 
         public readonly XContext cxt;
+     
 
-        [SetsRequiredMembers]
+     
         public MemberController(XContext xContext)
         {
             cxt = xContext;
+         
            
         }
 
@@ -71,9 +70,11 @@ namespace EKLEXIA.Controllers
                 cxt.Members.Add(addThisMember);
 
                 await cxt.SaveChangesAsync();
+       
 
-            var notification = new Notification {
-            Text=$"The"};
+            //var notification = new Data.Notification
+            //{
+            //Text=$"The"};
 
            
 

@@ -87,39 +87,8 @@ $(document).ready(function () { $('time.timeago').timeago(); });
 
 
  
-//$(document).ready(function CaptureSnapshot() {
-//    Webcam.set({
-//        width: 500,
-//        height: 375,
-//        image_format: 'png',
-//        jpeg_quality: 100
-//    });
-//    Webcam.attach('#webCam');
-//    $("#btnCapture").click(function () {
-//        Webcam.snap(function (data_uri) {
-//            $("#imagePreview")[0].src = data_uri;
-//            $("#btnUpload").removeAttr("disabled");
-//        });
-//    });
 
-//});
 
-$(function () {
-    Webcam.set({
-        width: 320,
-        height: 240,
-        image_format: 'png',
-        jpeg_quality: 100
-    });
-    Webcam.attach('#webcam');
-    $("#btnCapture").click(function () {
-        Webcam.snap(function (data_uri) {
-            $("#image")[0].src = data_uri
-        
-           
-        });
-    });
-})
 
 
 
@@ -160,6 +129,23 @@ $(document).ready(function () {
 $(function () {
     // SmartWizard initialize
     $('#smartwizard').smartWizard({
-    theme:'arrows',});
+    theme:'arrows'});
 });
 
+
+$(function () {
+
+    Webcam.set({
+        width: 320,
+        height: 240,
+        image_format: 'jpeg',
+        jpeg_quality: 90
+    });
+    Webcam.attach('#my_camera');
+    $("#btnCapture").click(function () {
+        Webcam.snap(function (data_uri) {
+            $("#image")[0].src = data_uri;
+        });
+
+    })
+})

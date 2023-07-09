@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Toast\**" />
     <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="Views\Toast\**" />
     <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="Views\Toast\**" />
     <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="Views\Toast\**" />
     <None Remove="wwwroot\lib\**" />
   </ItemGroup>
 
@@ -24,11 +28,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Select2.js" Version="4.0.13" />
-    <PackageReference Include="toastr" Version="2.1.1" />
   </ItemGroup>
 
   <ItemGroup>

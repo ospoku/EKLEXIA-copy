@@ -1,10 +1,8 @@
 using EKLEXIA.Data;
 using EKLEXIA.Models;
-using IMS.Permission;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.DataProtection;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +19,9 @@ builder.Services.AddAuthentication();
 //)));
 //builder.Services.AddSingleton<IAuthorizationPolicyProvider, PermissionPolicyProvider>();
 //builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
+
+// Add services to the container.
+
 builder.Services.AddDbContext<XContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ECX")));
 
 builder.Services.AddIdentity<User, AppRole>()
@@ -37,7 +38,7 @@ builder.Services.AddScoped<DBInitializer>();
 builder.Services.AddDataProtection();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddDataProtection().PersistKeysToFileSystem(new System.IO.DirectoryInfo(Directory.GetCurrentDirectory() + Path.DirectorySeparatorChar + "DataProtection"));
+
 
 var app = builder.Build();
 
