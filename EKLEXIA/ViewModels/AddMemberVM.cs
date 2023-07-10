@@ -47,8 +47,7 @@ namespace EKLEXIA.ViewModels
         [DataType(DataType.Text)]
         public string RegionId { get; set; }
 
-        [DataType(DataType.Date)]
-        public DateTime PrintedDate { get; set; }
+      
       
 
     }
