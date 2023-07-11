@@ -16,7 +16,7 @@ namespace EKLEXIA.ViewModels
 
 
         public string GroupId { get; set; }
-        public SelectList Groups { get; set; }
+        public IEnumerable <SelectListItem> Groups { get; set; }
         public SelectList Genders { get; set; }
 
         [DataType(DataType.Text)]
@@ -47,8 +47,7 @@ namespace EKLEXIA.ViewModels
         [DataType(DataType.Text)]
         public string RegionId { get; set; }
 
-        [DataType(DataType.Date)]
-        public DateTime PrintedDate { get; set; }
+  
       
 
     }

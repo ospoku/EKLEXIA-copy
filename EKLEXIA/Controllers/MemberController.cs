@@ -3,6 +3,7 @@ using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using EKLEXIA.ToastNotification.Abstractions;
 
 namespace EKLEXIA.Controllers
 {
@@ -11,14 +12,14 @@ namespace EKLEXIA.Controllers
     {
 
         public readonly XContext cxt;
-     
 
-     
-        public MemberController(XContext xContext)
+        private readonly INotyfService notyf;
+
+        public MemberController(XContext xContext, INotyfService tNotyf)
         {
             cxt = xContext;
-         
-           
+            notyf = tNotyf;
+
         }
 
         [HttpGet]
@@ -68,17 +69,27 @@ namespace EKLEXIA.Controllers
 
 
                 cxt.Members.Add(addThisMember);
+            foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
+            {
 
+
+                var membergrp = new MemberGroup
+                {
+                    MemberId = addThisMember.MemberId,
+                    GroupId = addMemberVM.Groups.Select(g => g.Value.ToString()).ToString()
+                };
+
+                cxt.memberGroups.Add(membergrp);
+            }
                 await cxt.SaveChangesAsync();
-       
 
-            //var notification = new Data.Notification
-            //{
-            //Text=$"The"};
+        notyf.Success("A success for christian-schou.dk");
+          notyf.Success("A success toast that will last for 10 seconds.", 10);
 
-           
 
-                return RedirectToAction("Members");
+
+
+            return RedirectToAction("Members");
             }
        
           
