@@ -16,9 +16,9 @@ namespace EKLEXIA.ViewModels
 
 
         public string GroupId { get; set; }
-        public SelectList Groups { get; set; }
+        public List<SelectListItem> Groups { get; set; }
         public SelectList Genders { get; set; }
-
+        
         [DataType(DataType.Text)]
 
 

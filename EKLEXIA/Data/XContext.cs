@@ -26,7 +26,7 @@ namespace EKLEXIA.Data
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<Fund> Funds { get; set; }  
         public DbSet<Fundraising> Fundraisings { get;set; }
-        public DbSet<MemberGroup>memberGroups { get; set; }
+        public DbSet<MemberGroup> MemberGroups { get; set; }
     }
 
 

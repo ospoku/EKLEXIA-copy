@@ -69,16 +69,23 @@ namespace EKLEXIA.Controllers
 
                 cxt.Members.Add(addThisMember);
 
-                await cxt.SaveChangesAsync();
-       
 
-            //var notification = new Data.Notification
-            //{
-            //Text=$"The"};
 
-           
 
-                return RedirectToAction("Members");
+            foreach (var grp in  addMemberVM.Groups.Where(x=>x.Selected))
+            {
+                cxt.MemberGroups.Add(new MemberGroup
+                {
+                    MemberId = addThisMember.MemberId,
+                    GroupId =grp.Value,
+
+
+                });
+            };
+
+            await cxt.SaveChangesAsync();
+            
+            return RedirectToAction("Members");
             }
        
           

@@ -115,15 +115,34 @@
                                         <div class="btn-group-sm">
                                        @foreach (var gender in Model.Genders)
                                         {
-                                            <label class=" btn btn-sm btn-primary">
-                                            <span><i class="fa fa fa-female"></i></span>
-                                            
-                                            <input  type="radio" asp-for="@Model.GenderId" value="@gender.Value" id="Gender@(gender)" />
 
-                                            @gender.Text
-                                            </label>
-                                         
-                                        }
+                                            @if (gender.Text == "Female")
+                                            {
+
+                                                <label class=" btn btn-sm text-white" style="background-color:deeppink">
+                                                    <span><i class="fa fa fa-female"></i></span>
+                                                    <input  type="radio" asp-for="@Model.GenderId" value="@gender.Value" id="Gender@(gender)"/>
+
+                                                    @gender.Text
+                                                </label>
+
+                                            }
+                                            else
+                                            {
+                                                <label class=" btn btn-sm btn-primary">
+                                                    <span><i class="fa fa fa-male"></i></span>
+                                                    <input type="radio" asp-for="@Model.GenderId" value="@gender.Value" id="Gender@(gender)" />
+
+                                                    @gender.Text
+                                                </label>
+
+
+                                            }
+
+
+
+
+                                    }
                                         </div>
                                        
                                     </div>
@@ -184,7 +203,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                                        <input class="btn btn-sm btn-primary" capture="user" accept="image" id="Photo" name="Photo" onchange="document.getElementById('image').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
+                                                        <input class="btn btn-sm btn-primary" accept="capture=camera,image/*" id="Photo" name="Photo" onchange="document.getElementById('image').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
 
                            
                                                     </div>
@@ -194,10 +213,10 @@
                                 <hr/>
                                     <div class="col-md-5">
 
-                                        <div id="my_camera" style=" width: 320px;
+                                        @*<div id="my_camera" style=" width: 320px;
         height: 240px;
         border: 1px solid black;"></div>
-                                        <input id="btnCapture" type="button" value="Capture">
+                                        <input id="btnCapture" type="button" value="Capture">*@
 
                                         
                                         
@@ -226,8 +245,16 @@
                                     <hr>
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <select class="select2 form-control" multiple style="width:100%" title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
-
+                                       
+                                        @foreach(var grp in Model.Groups)
+                                            {
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"  id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">@grp.Text</label>
+                                                </div>
+                                              
+                                                
+                                            }
 
                                     </div>
                                 </div>
