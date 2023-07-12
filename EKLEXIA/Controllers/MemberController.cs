@@ -72,19 +72,8 @@ namespace EKLEXIA.Controllers
             //foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
             //{
 
-
-            //    var membergrp = new MemberGroup
-            //    {
-            //        MemberId = addThisMember.MemberId,
-            //        GroupId = addMemberVM.Groups.Select(g => g.Value.ToString()).ToString()
-            //    };
-
-            //    cxt.memberGroups.Add(membergrp);
-            //}
                 await cxt.SaveChangesAsync();
-
-        notyf.Success("A success for christian-schou.dk");
-          notyf.Success("A success toast that will last for 10 seconds.", 10);
+       
 
 
 
