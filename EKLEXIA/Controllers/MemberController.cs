@@ -3,7 +3,7 @@ using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using EKLEXIA.ToastNotification.Abstractions;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace EKLEXIA.Controllers
 {
@@ -69,18 +69,18 @@ namespace EKLEXIA.Controllers
 
 
                 cxt.Members.Add(addThisMember);
-            foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
-            {
+            //foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
+            //{
 
 
-                var membergrp = new MemberGroup
-                {
-                    MemberId = addThisMember.MemberId,
-                    GroupId = addMemberVM.Groups.Select(g => g.Value.ToString()).ToString()
-                };
+            //    var membergrp = new MemberGroup
+            //    {
+            //        MemberId = addThisMember.MemberId,
+            //        GroupId = addMemberVM.Groups.Select(g => g.Value.ToString()).ToString()
+            //    };
 
-                cxt.memberGroups.Add(membergrp);
-            }
+            //    cxt.memberGroups.Add(membergrp);
+            //}
                 await cxt.SaveChangesAsync();
 
         notyf.Success("A success for christian-schou.dk");

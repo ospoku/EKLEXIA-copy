@@ -1,3 +1,6 @@
+
+using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
 using EKLEXIA.Data;
 using EKLEXIA.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -21,7 +24,7 @@ builder.Services.AddAuthentication();
 //builder.Services.AddScoped<IAuthorizationHandler, PermissionAuthorizationHandler>();
 
 // Add services to the container.
-
+builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 builder.Services.AddDbContext<XContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ECX")));
 
 builder.Services.AddIdentity<User, AppRole>()
@@ -57,6 +60,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseCookiePolicy();
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");

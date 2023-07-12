@@ -1,8 +1,7 @@
-﻿
-using EKLEXIA.ToastNotification.Abstractions;
-using EKLEXIA.ToastNotification.Helpers;
-using EKLEXIA.ToastNotification.Notyf;
-using EKLEXIA.ToastNotification.Notyf.Models;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using AspNetCoreHero.ToastNotification.Helpers;
+using AspNetCoreHero.ToastNotification.Notyf;
+using AspNetCoreHero.ToastNotification.Notyf.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EKLEXIA.Views.Shared.Components.Notyf
