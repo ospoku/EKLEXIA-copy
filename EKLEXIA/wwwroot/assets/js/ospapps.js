@@ -145,6 +145,8 @@ $(function () {
     $("#btnCapture").click(function () {
         Webcam.snap(function (data_uri) {
             $("#image")[0].src = data_uri;
+            $("#image")[0].filename = "webcam.jpg";
+          
         });
 
     })

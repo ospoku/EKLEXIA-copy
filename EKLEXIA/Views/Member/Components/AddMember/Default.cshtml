@@ -92,19 +92,61 @@
                                     <select class="select2 form-control input-lg" style="width:100%" multiple="multiple" title="Select Gender" data-placeholder="Select gender" asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
                                 </div>*@
                                 <div class="form-group">
-                                    <div class="btn-group" data-toggle="buttons">
+                                   @* <div class="btn-group" data-toggle="buttons">
                                         <label class="pdsa-radiobutton btn  btn-sm btn-primary active">
-                                            <span class="glyphicon glyphicon-record"><i class="fa fa fa-male"></i></span>
+                                            <span><i class="fa fa fa-male"></i></span>
                                             @Html.RadioButton("gender",  Model.GenderId, true,
                                         new { id = "IsMale",value=Model.GenderId }) Male
                                         </label>
                                         <label class="pdsa-radiobutton btn btn-sm text-white" style="background-color:deeppink">
-                                            <span class="glyphicon glyphicon-unchecked"><i class="fa fa fa-female"></i></span>
+                                            <span><i class="fa fa fa-female"></i></span>
                                             @Html.RadioButton("gender", "Female",
                                         new { id = "IsFemale" }) Female
                                         </label>
+                                        <label class="pdsa-radiobutton btn btn-sm btn-primary">
+                                            <span><i class="fa fa fa-female"></i></span>
+                                          @*  <input asp-for="@Model.GenderId" type="radio" value="@Model.GenderId" name="Gender" />*@
+                                       @* </label>
+                                        <label class="pdsa-radiobutton btn btn-sm text-white" style="background-color:deeppink">
+                                            <span><i class="fa fa fa-female"></i></span>
+                                            @Html.RadioButtonFor(g=>g.GenderId,"Female")
+                                        </label>*@
+
+                                        <div class="btn-group-sm">
+                                       @foreach (var gender in Model.Genders)
+                                        {
+
+                                            @if (gender.Text == "Female")
+                                            {
+
+                                                <label class=" btn btn-sm text-white" style="background-color:deeppink">
+                                                    <span><i class="fa fa fa-female"></i></span>
+                                                    <input  type="radio" asp-for="@Model.GenderId" value="@gender.Value" id="Gender@(gender)"/>
+
+                                                    @gender.Text
+                                                </label>
+
+                                            }
+                                            else
+                                            {
+                                                <label class=" btn btn-sm btn-primary">
+                                                    <span><i class="fa fa fa-male"></i></span>
+                                                    <input type="radio" asp-for="@Model.GenderId" value="@gender.Value" id="Gender@(gender)" />
+
+                                                    @gender.Text
+                                                </label>
+
+
+                                            }
+
+
+
+
+                                    }
+                                        </div>
+                                       
                                     </div>
-                                </div>
+                               
                           
 
                                 <div class="form-group">
@@ -157,11 +199,11 @@
                                 <div class="row">
                                     <div class="col-md-5">
                                         <div class="form-group">
-                                        <img id="image" height="260" width="250"  />
+                                        <img id="image" height="260" width="250" src="" />
                                         </div>
 
                                         <div class="form-group">
-                                                        <input class="btn btn-sm btn-primary" id="Photo" name="Photo" onchange="document.getElementById('image').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
+                                                        <input class="btn btn-sm btn-primary" accept="capture=camera,image/*" id="Photo" name="Photo" onchange="document.getElementById('image').src=window.URL.createObjectURL(this.files[0])" type="file" asp-for="UploadPhoto" />
 
                            
                                                     </div>
@@ -171,10 +213,10 @@
                                 <hr/>
                                     <div class="col-md-5">
 
-                                        <div id="my_camera" style=" width: 320px;
+                                        @*<div id="my_camera" style=" width: 320px;
         height: 240px;
         border: 1px solid black;"></div>
-                                        <input id="btnCapture" type="button" value="Capture">
+                                        <input id="btnCapture" type="button" value="Capture">*@
 
                                         
                                         
@@ -203,8 +245,16 @@
                                     <hr>
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <select class="select2 form-control" multiple style="width:100%" title="Select Group" asp-for="@Model.GroupId" asp-items="@Model.Groups"></select>
-
+                                       
+                                        @foreach(var grp in Model.Groups)
+                                            {
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"  id="flexSwitchCheckChecked" checked>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">@grp.Text</label>
+                                                </div>
+                                              
+                                                
+                                            }
 
                                     </div>
                                 </div>

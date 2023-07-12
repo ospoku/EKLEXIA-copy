@@ -19,7 +19,7 @@ namespace EKLEXIA.ViewComponents
         public IViewComponentResult Invoke(string Id)
         {
             var allMembers = xct.Members.ToList();
-            var groupMembers = xct.memberGroups.Where(g => g.GroupId == Encryption.Decrypt(Id)).Select(m => m.MemberId);
+            var groupMembers = xct.MemberGroups.Where(g => g.GroupId == Encryption.Decrypt(Id)).Select(m => m.MemberId);
 
             Group group = xct.Groups.FirstOrDefault(g => g.Id == Encryption.Decrypt(Id));
 
