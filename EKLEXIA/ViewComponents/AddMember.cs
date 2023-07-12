@@ -23,7 +23,7 @@ namespace EKLEXIA.ViewComponents
                 MaritalStatuses = new SelectList(xct.MaritalStatuses.ToList(), nameof(MaritalStatus.Id), nameof(MaritalStatus.Name)),
                 Careers = new SelectList(xct.Careers.ToList(), nameof(Career.Id), nameof(Career.Name)),
                 Regions = new SelectList(xct.Regions.ToList(), nameof(Region.Id), nameof(Region.Name)),
-                Groups = new List<SelectListItem>(),
+                Groups = new List<SelectListItem>().ToList(),
              
                 Branches = new SelectList(xct.Branches.ToList(), nameof(Branch.Id), nameof(Branch.Name))
             };
