@@ -69,7 +69,17 @@ namespace EKLEXIA.Controllers
 
 
                 cxt.Members.Add(addThisMember);
+<<<<<<< HEAD
+            //foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
+            //{
+
+                await cxt.SaveChangesAsync();
+
+
+            notyf.Success("Member Saved");
+=======
             foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g=>g.Value).ToList())
+>>>>>>> 8a9db862277e6e9344738b61c746aff30cb31f45
 
             {
                 cxt.MemberGroups.Add(new MemberGroup
