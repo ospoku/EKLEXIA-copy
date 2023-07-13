@@ -73,9 +73,9 @@ namespace EKLEXIA.Controllers
             //{
 
                 await cxt.SaveChangesAsync();
-       
 
 
+            notyf.Success("Member Saved");
 
 
             return RedirectToAction("Members");
