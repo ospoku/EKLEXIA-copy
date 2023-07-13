@@ -69,21 +69,21 @@ namespace EKLEXIA.Controllers
 
 
                 cxt.Members.Add(addThisMember);
-            //foreach (var grp in addMemberVM.Groups.Select(g => g.Selected == true))
-            //{
+            foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g=>g.Value).ToList())
 
-                await cxt.SaveChangesAsync();
-       
+            {
+                cxt.MemberGroups.Add(new MemberGroup
+                {
+                    MemberId = addThisMember.MemberId,
+                    GroupId = grp,
+                });
+            }
 
-
-
-
+            await cxt.SaveChangesAsync();
+      
             return RedirectToAction("Members");
             }
-       
-          
-        
-
+  
         public IActionResult DetailMember(string Id)
       => ViewComponent("DetailMember", Id);
         public IActionResult EditMember(string Id)
