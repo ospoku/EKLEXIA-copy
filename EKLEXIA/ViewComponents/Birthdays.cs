@@ -25,7 +25,7 @@ namespace EKLEXIA.ViewComponents
                 Age = m.Age,
                 RegionId = m.RegionId,
                 Address = m.Address,
-                IDNumber = m.IDNumber,
+                
 
              
 
