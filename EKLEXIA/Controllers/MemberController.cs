@@ -80,7 +80,7 @@ namespace EKLEXIA.Controllers
             }
 
             await cxt.SaveChangesAsync();
-            notyf.Success("");
+            notyf.Success("member successfully created.");
             return RedirectToAction("Members");
             }
   
