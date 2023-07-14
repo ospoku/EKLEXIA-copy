@@ -250,11 +250,22 @@
                                         @for (int i = 0; i < Model.Groups.Count(); i++)
                                                                         {
                                                 <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="hidden"  id="flexSwitchCheckChecked" checked">
-                                                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                                                    <input class="form-check-input" type="hidden"  id="flexSwitchCheckChecked" asp-for="@Model.Groups[i].Value"/>
+                                        <input asp-for="Groups[i].Selected"/>
+                                                    <label class="form-check-label" for="flexSwitchCheckChecked">@Model.Groups[i].Text</label>
+                                                    
+                                                    
                                                 </div>
-                                              
-                                                
+
+                                                <label class="custom-checkbox">
+                                                    <input name="check" type="checkbox" autocomplete="off">
+                                                    <i class="custom-check-on text-info  fa fa-toggle-on">
+                                                    </i><i class="custom-check-off text-secondary fa fa-toggle-off">
+                                                    </i><input name="check" type="hidden" value="false">
+                                                    <span class="ml-1">
+                                                        Check Box
+                                                    </span>
+                                                </label>
                                             }
 
                                     </div>
