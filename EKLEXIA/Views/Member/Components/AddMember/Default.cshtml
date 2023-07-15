@@ -31,8 +31,8 @@
 
     
 
-                @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data" }))
-                 {
+                @using (Html.BeginForm("AddMember", "Member", FormMethod.Post, new { enctype = "multipart/form-data",  onsubmit = "" }))
+                {
                          
                     <div id="smartwizard">
                         <ul class="nav">
@@ -265,7 +265,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                <button class="btn btn-sm btn-primary">Save</button>
+                                <button class="btn btn-sm btn-primary" onsubmit="sendForm(event)">Save</button>
                                 </div>
                         </div>
 

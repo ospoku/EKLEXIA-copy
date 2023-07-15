@@ -1,16 +1,14 @@
-
-  {
-    "version": "1.0",
-    "defaultProvider": "cdnjs",
-    "libraries": [
-
-
-
- 
-      {
-        "provider": "cdnjs",
-        "library": "bootstrap@4.6.2",
-        "destination": "wwwroot/assets/css/bootstrap/"
-      }
-    ]
-  }
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@4.6.2",
+      "destination": "wwwroot/assets/css/bootstrap/"
+    },
+    {
+      "library": "sweetalert2@11.7.16",
+      "destination": "wwwroot/Vendor/"
+    }
+  ]
+}
