@@ -530,8 +530,6 @@
             </div>
         </div>
     </div>
-    @await Component.InvokeAsync("Notyf")
-    @RenderSection("Scripts", required:false)
    
     <script type="text/javascript" src="~/assets/js/jquery/jquery.min.js "></script>
     <script type="text/javascript" src="~/assets/js/jquery-ui/jquery-ui.min.js "></script>
@@ -561,7 +559,9 @@
   <script type="text/javascript" src="~/Vendor/wizard/jquery.smartWizard.min.js"></script>
     
     <script src="~/assets/js/ospapps.js" asp-append-version="true" type="text/javascript"></script>
-   
+
+    @await Component.InvokeAsync("Notyf")
+    @RenderSection("Scripts", required:false)
     
 </body>
 
