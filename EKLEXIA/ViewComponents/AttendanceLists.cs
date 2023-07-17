@@ -17,11 +17,6 @@ namespace EKLEXIA.ViewComponents
             List<AttendanceListsVM> attendanceLists = xct.AttendanceLists.Where(i => i.IsDeleted == false).Select(i => new AttendanceListsVM
             {
                
-
-
-
-
-
             }).ToList();
             return View(attendanceLists);
         }

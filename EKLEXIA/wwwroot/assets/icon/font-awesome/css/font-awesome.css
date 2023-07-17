@@ -713,7 +713,7 @@
   content: "\f0c3";
 }
 .fa-cut:before,
-.fa-scissors:before {
+.fa-sIMSsors:before {
   content: "\f0c4";
 }
 .fa-copy:before,
@@ -1908,7 +1908,7 @@
 .fa-hand-paper-o:before {
   content: "\f256";
 }
-.fa-hand-scissors-o:before {
+.fa-hand-sIMSsors-o:before {
   content: "\f257";
 }
 .fa-hand-lizard-o:before {

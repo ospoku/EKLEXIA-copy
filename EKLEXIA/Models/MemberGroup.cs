@@ -11,5 +11,7 @@ namespace EKLEXIA.Models
         public Group Group {get;set;}
         public string GroupId { get; set; }
     public string MemberId { get; set; }
+        [ForeignKey(nameof(MemberGroup.MemberId))]
+        public Member Member { get; set; }  
     }
 }

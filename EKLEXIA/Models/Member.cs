@@ -13,17 +13,17 @@ namespace EKLEXIA.Models
         [DataType(DataType.Text)]
         public string Othername { get; set; } = string.Empty;
         public string Fullname { get { return Surname + "  " + Othername; } }
-        [ForeignKey("BranchId")]
+        [ForeignKey(nameof(BranchId))]
         public Branch Branch { get; set; } = new Branch();
       
         public string BranchId { get; set; } = string.Empty;
 
         public byte[] Photo { get; set; } = Array.Empty<byte>();
         
-        public Career Career { get; set; } = new Career();
+        public Career Career { get; set; } 
         public string CareerId { get; set; } = string.Empty;
-       
-        public Gender Gender { get; set; }= new Gender();
+        [ForeignKey(nameof(GenderId))]
+        public Gender Gender { get; set; }
         
         public string GenderId { get; set; } = string.Empty;
         [DataType(DataType.Date)]
@@ -51,7 +51,7 @@ namespace EKLEXIA.Models
 
         public string Address { get; set; } = string.Empty;
     
-        public Region Region { get; set; } = new Region();
+        public Region Region { get; set; } 
         [DataType(DataType.Text)]
         public string RegionId { get; set; }=string.Empty;
      

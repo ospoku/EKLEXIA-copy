@@ -35,7 +35,7 @@
                         </div>
                         
                         <div class="form-group">
-                            <select  type="text" id="meetingType" class="select2 form-control" asp-items="@Model.Meetings" asp-for="@Model.MeetingId" ></select>
+                        <select type="text" id="meetingType" class="select2 form-control" asp-items="@Model.Meetings" asp-for="@Model.MeetingId" style="width:100%" multiple></select>
 
                         </div>
                     <div class="table-responsive">
@@ -66,10 +66,20 @@
 
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="custom-control custom-switch">
-                                                        
-                                                        <input type="checkbox" class="custom-control-input" id="customSwitch1" asp-for="Members[i].Selected"/>
-                                                        <label class="custom-control-label" for="customSwitch1">Present</label>
+                                                   
+                                                   
+                                                        <label class="toggle">
+                                                        <input type="checkbox"
+                                                               asp-for="Members[i].Selected">
+                                                            <span class="slider"> </span>
+                                                            <span class="labels" data-on="Present" data-off="Absent"> </span>
+                                                        </label>
+                                                    <div class="toggle-checkbox-wrapper">
+                                                        <input class="toggle-checkbox" type="checkbox" id="toggle">
+                                                        <label class="slider" for="toggle">
+                                                            <span class="toggle-switch opt1">Look, I'm blue!</span>
+                                                            <span class="toggle-switch opt2">Look, I'm brown!</span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>

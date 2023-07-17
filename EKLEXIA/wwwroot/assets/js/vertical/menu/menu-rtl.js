@@ -70,7 +70,7 @@ $(document).ready(function () {
                 $('.pcoded-header').attr("header-theme", "theme1");
                 $('.pcoded-navbar').attr("navbar-theme", "themelight1");
                 $('.pcoded').attr("sidebar-img", "false");
-                $('.pcoded-navigation-label').attr("menu-title-theme", "theme1");
+                $('.pcoded-navigation-label').attr("menu-title-theme", "t);
                 $('body').removeClass('dark');
 				$('body').attr("themebg-pattern", "theme1");
             }
@@ -332,3 +332,4 @@ function handlemenutype(get_value) {
 };
 
 handlemenutype("st2");
+      

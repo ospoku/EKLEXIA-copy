@@ -68,8 +68,8 @@ app.MapControllerRoute(
 var scope = app.Services.CreateScope();
 var db = scope.ServiceProvider.GetRequiredService<XContext>();
 
-  
-    db.Database.EnsureCreated();
+
+db.Database.EnsureCreated();
 
 
     var init = scope.ServiceProvider.GetRequiredService<DBInitializer>();
