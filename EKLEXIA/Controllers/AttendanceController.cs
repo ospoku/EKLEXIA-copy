@@ -9,12 +9,12 @@ namespace EKLEXIA.Controllers
     public class AttendanceController : Controller
     {
 
-        public readonly XContext cxt;
+        public readonly XContext xct;
 
 
         public AttendanceController(XContext xContext)
         {
-            cxt = xContext;
+            xct = xContext;
 
         }
 
@@ -23,6 +23,28 @@ namespace EKLEXIA.Controllers
 
         [HttpGet]
         public IActionResult AddAttendance() => ViewComponent("AddAttendance");
+        [HttpPost]
+        public IActionResult AddAttendance(AddAttendanceVM addAttendanceVM)
+        {
+            foreach (var att in addAttendanceVM.Members)
+            {
+
+
+                Attendance addThisAttendance = new()
+                {
+                    Date = addAttendanceVM.Date,
+                    Description = addAttendanceVM.Description,
+                    MemberId = addAttendanceVM.MemberId,
+                    MeetingId = addAttendanceVM.MeetingId,
+                    IsPresent = addAttendanceVM.IsPresent,
+                };
+                xct.Attendances.Add(addThisAttendance);
+                xct.SaveChanges();
+            }
+
+
+            return ViewComponent(nameof(AttendanceLists));
+        }
         [HttpPost]
         public async Task<IActionResult> AddMeeting(AddMeetingVM addMeetingVM)
         {
@@ -43,8 +65,8 @@ namespace EKLEXIA.Controllers
 
                     CreatedDate = DateTime.Now
                 };
-                cxt.Meetings.Add(addThisMeeting);
-                await cxt.SaveChangesAsync();
+                xct.Meetings.Add(addThisMeeting);
+                await xct.SaveChangesAsync();
                 TempData["Message"] = "New Member successfully added";
                 return RedirectToAction("Meetings");
             }
@@ -63,7 +85,7 @@ namespace EKLEXIA.Controllers
         public async Task<IActionResult> EditMeetingAsync(string Id, Meeting meeting)
         {
             Meeting updateThisMeeting = new();
-            updateThisMeeting = (from a in cxt.Meetings where a.Id == Id select a).FirstOrDefault();
+            updateThisMeeting = (from a in xct.Meetings where a.Id == Id select a).FirstOrDefault();
 
             updateThisMeeting.Name = meeting.Name;
 
@@ -72,9 +94,9 @@ namespace EKLEXIA.Controllers
             updateThisMeeting.ModifiedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value;
             updateThisMeeting.ModifiedDate = DateTime.Now;
 
-            cxt.Meetings.Attach(updateThisMeeting);
-            cxt.Entry(updateThisMeeting).State = EntityState.Modified;
-            await cxt.SaveChangesAsync();
+            xct.Meetings.Attach(updateThisMeeting);
+            xct.Entry(updateThisMeeting).State = EntityState.Modified;
+            await xct.SaveChangesAsync();
 
             return RedirectToAction("Meetings");
         }

@@ -1,10 +1,18 @@
-﻿namespace EKLEXIA.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EKLEXIA.Models
 {
     public class Fundraising
     {
-        public Fundraising() { }
-        public string FundraisingId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; } 
+        public Fundraising()
+        
+        { 
+        
+        }
+        [Key]
+        public string Id { get; set; }
+        public string FundraisingId { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty; 
     }
 }

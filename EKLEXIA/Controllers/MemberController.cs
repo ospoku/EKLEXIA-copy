@@ -25,17 +25,17 @@ namespace EKLEXIA.Controllers
         [HttpGet]
         public IActionResult AddMember() => ViewComponent("AddMember");
 
-        private static byte[] ConvertToBytes(IFormFile file)
-        {
+        //private static byte[] ConvertToBytes(IFormFile file)
+        //{
 
-            using (var memoryStream = new MemoryStream())
-            {
-                file.CopyTo(memoryStream);
-                return memoryStream.ToArray();
-            };
+        //    using (var memoryStream = new MemoryStream())
+        //    {
+        //        file.CopyTo(memoryStream);
+        //        return memoryStream.ToArray();
+        //    };
 
 
-        }
+        //}
 
 
         [HttpPost]

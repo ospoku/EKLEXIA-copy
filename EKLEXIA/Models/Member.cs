@@ -1,33 +1,31 @@
-﻿using EKLEXIA.Models;
-using Newtonsoft.Json;
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.CompilerServices;
 
 namespace EKLEXIA.Models
 {
-    public class Member:TableAudit
+    public class Member : TableAudit
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string MemberId { get; set; }
         [DataType(DataType.Text)]
-        public  string Surname { get; set; }
+        public string Surname { get; set; } = string.Empty;
         [DataType(DataType.Text)]
-        public  string Othername { get; set; }
+        public string Othername { get; set; } = string.Empty;
         public string Fullname { get { return Surname + "  " + Othername; } }
         [ForeignKey("BranchId")]
-        public  Branch Branch { get; set; }
+        public Branch Branch { get; set; } = new Branch();
       
-        public  string BranchId { get; set; }
-       
-        public  byte[] Photo { get; set; }
-        public  Career Career { get; set; }
-        public  string CareerId { get; set; }
-        public  Gender Gender { get; set; }
+        public string BranchId { get; set; } = string.Empty;
+
+        public byte[] Photo { get; set; } = Array.Empty<byte>();
         
-        public  string GenderId { get; set; }
+        public Career Career { get; set; } = new Career();
+        public string CareerId { get; set; } = string.Empty;
+       
+        public Gender Gender { get; set; }= new Gender();
+        
+        public string GenderId { get; set; } = string.Empty;
         [DataType(DataType.Date)]
         public DateTime DoB { get; set; }
 
@@ -42,23 +40,21 @@ namespace EKLEXIA.Models
 
 
 
-        public string IDNumber { get; set; }
+        public string IDNumber { get; set; } = string.Empty;
 
-
-
-
-        public string Hometown { get; set; }
+        public string Hometown { get; set; } = string.Empty;
 
 
 
         [DataType(DataType.PhoneNumber)]
-        public string Telephone { get; set; }
+        public string Telephone { get; set; }= string.Empty;
 
-        public string Address { get; set; }
-        public Region Region { get; set; }
+        public string Address { get; set; } = string.Empty;
+    
+        public Region Region { get; set; } = new Region();
         [DataType(DataType.Text)]
-        public string RegionId { get; set; }
-
-   
+        public string RegionId { get; set; }=string.Empty;
+     
+ 
     }
 }

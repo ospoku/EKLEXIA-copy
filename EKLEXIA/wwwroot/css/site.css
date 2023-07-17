@@ -160,7 +160,7 @@ body {
         color: var(--theme-yellow);
     }*/
 
-/*.dropdown-item-custom {
+.dropdown-item-custom {
     display: block;
     width: 100%;
     padding: 0.25rem 1.5rem;
@@ -192,9 +192,11 @@ body {
     float: right;
 }
 
-.accordion .card-header.collapsed:after {*/
-    /* symbol for "collapsed" panels */
-    /*content: "\f067";
+.accordion .card-header.collapsed:after {
+    font-family: 'FontAwesome';
+    content: "\f067";
+    float: right;
+   
 }
 hr {
     border: none;
@@ -202,48 +204,3 @@ hr {
     height: 100vh;
     width: 1px;
 }
-#video {
-    border: 1px solid black;
-    width: 320px;
-    height: 240px;
-}
-
-#photo {
-    border: 1px solid black;
-    width: 320px;
-    height: 240px;
-}
-
-#canvas {
-    display: none;
-}
-
-.camera {
-    width: 340px;
-    display: inline-block;
-}
-
-.output {
-    width: 340px;
-    display: inline-block;
-}
-
-#startbutton {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    bottom: 36px;
-    padding: 5px;
-    background-color: #6a67ce;
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    font-size: 14px;
-    color: rgba(255, 255, 255, 1.0);
-    cursor: pointer;
-}
-
-.contentarea {
-    font-size: 16px;
-    font-family: Arial;
-    text-align: center;
-}*/

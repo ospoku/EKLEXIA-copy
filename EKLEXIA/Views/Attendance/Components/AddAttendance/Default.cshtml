@@ -25,7 +25,8 @@
         </div>
 
     </div>
-        
+    @using (Html.BeginForm("AddAttendance","Attendance",FormMethod.Post))
+        {
                  <div class="card-body">
                         <div class="form-group">
                          
@@ -61,10 +62,18 @@
 
 
                                         <input type="hidden" class="custom-checkbox" asp-for="@Model.Members[i].Value" />
-                                        <td><input asp-for="Members[i].Selected" /></td>
+                                        <td>
 
-
-
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="custom-control custom-switch">
+                                                        
+                                                        <input type="checkbox" class="custom-control-input" id="customSwitch1" asp-for="Members[i].Selected"/>
+                                                        <label class="custom-control-label" for="customSwitch1">Present</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
                                     </tr>
                                                          }
 
@@ -78,6 +87,7 @@
         <div class="card-footer">
             <button class="btn btn-sm btn-primary">Save</button>
         </div>
+        }
   
   </div>
   </div>

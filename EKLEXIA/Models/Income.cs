@@ -1,18 +1,18 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EKLEXIA.Models
 {
-    public class Income
+    public class Income:TableAudit
     {
-      
-        public string Description { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+      public string Id { get; set; }
+        public string Description { get; set; } = string.Empty;
         public DateTime Date { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public bool IsDeleted { get; set; }
-        public string CreatedBy { get; set; }
+      
         public double Amount { get; set; }
-        public string ModifiedBy { get; set; }
-        public DateTime ModifiedDate { get; set; }
-        public string IncomeId { get; internal set; }
+        public string IncomeId { get; internal set; } = string.Empty;
     }
 }
