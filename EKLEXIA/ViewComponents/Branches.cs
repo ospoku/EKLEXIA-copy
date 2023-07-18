@@ -17,7 +17,7 @@ namespace EKLEXIA.ViewComponents
             var branches = xct.Branches.Where(r => r.IsDeleted == false).Select(r => new BranchesVM
             {
        Name=r.Name,
-Id = r.Id,
+Id = r.BranchId,
       Description=r.Description,
 
 

@@ -7,10 +7,11 @@ namespace EKLEXIA.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string Id { get; set; } = string.Empty;
+        public string MeetingId { get; set; } 
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; }=string.Empty;
-        public Attendance Attendance { get; set; }  = new Attendance();
+        public Attendance Attendance { get; set; }
+
         public string  AttendanceId { get; set;}=string.Empty;
     }
 }

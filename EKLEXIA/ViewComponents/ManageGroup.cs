@@ -21,7 +21,7 @@ namespace EKLEXIA.ViewComponents
             var allMembers = xct.Members.ToList();
             var groupMembers = xct.MemberGroups.Where(g => g.GroupId == Encryption.Decrypt(Id)).Select(m => m.MemberId);
 
-            Group group = xct.Groups.FirstOrDefault(g => g.Id == Encryption.Decrypt(Id));
+            Group group = xct.Groups.FirstOrDefault(g => g.GroupId == Encryption.Decrypt(Id));
 
             ManageGrpVM manageGrpVM = new()
             {

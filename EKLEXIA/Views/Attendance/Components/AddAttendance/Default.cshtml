@@ -64,28 +64,27 @@
                                         <input type="hidden" class="custom-checkbox" asp-for="@Model.Members[i].Value" />
                                         <td>
 
-                                            <div class="row">
-                                                <div class="col">
-                                                   
-                                                   
-                                                        <label class="toggle">
-                                                        <input type="checkbox"
-                                                               asp-for="Members[i].Selected">
-                                                            <span class="slider"> </span>
-                                                            <span class="labels" data-on="Present" data-off="Absent"> </span>
-                                                        </label>
-                                                    <div class="toggle-checkbox-wrapper">
-                                                        <input class="toggle-checkbox" type="checkbox" id="toggle">
+                                           
+                                                  
+                                                        <input class="toggle-checkbox" type="checkbox" asp-for="Members[i].Selected">
                                                         <label class="slider" for="toggle">
                                                             <span class="toggle-switch opt1">Look, I'm blue!</span>
                                                             <span class="toggle-switch opt2">Look, I'm brown!</span>
                                                         </label>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+
+                                            <label class="a8z-toggle-switch">
+                                                <input checked type="checkbox" id="example_default_1">
+                                                <span class="toggle">
+                                                    <span class="switch"></span>
+                                                </span>
+                                                <span class="label">Label on right</span>
+                                            </label>
                                         </td>
                                     </tr>
-                                                         }
+                                                         
+                                
+                                }
 
 
 

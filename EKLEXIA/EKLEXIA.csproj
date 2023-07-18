@@ -50,7 +50,7 @@
 
   <ItemGroup>
     <Folder Include="DataProtection\" />
-    <Folder Include="wwwroot\Vendor\Wizard\" />
+    <Folder Include="wwwroot\Vendor\form-wizard\" />
   </ItemGroup>
 
 </Project>

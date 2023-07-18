@@ -3,6 +3,7 @@ using EKLEXIA.Data;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace EKLEXIA.Controllers
 {
@@ -10,12 +11,12 @@ namespace EKLEXIA.Controllers
     {
 
         public readonly XContext xct;
+        public readonly INotyfService notx;
 
-
-        public AttendanceController(XContext xContext)
+        public AttendanceController(XContext xContext, INotyfService notyf)
         {
             xct = xContext;
-
+            notx = notyf;
         }
 
         [HttpGet]
@@ -59,15 +60,14 @@ namespace EKLEXIA.Controllers
                 {
                     Name = addMeetingVM.Name,
                     Description = addMeetingVM.Description,
-                    IsDeleted = false,
+                    
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
-                   
-
+                  
                     CreatedDate = DateTime.Now
                 };
                 xct.Meetings.Add(addThisMeeting);
                 await xct.SaveChangesAsync();
-                TempData["Message"] = "New Member successfully added";
+                notx.Success("Meeting successful created");
                 return RedirectToAction("Meetings");
             }
             else
@@ -85,7 +85,7 @@ namespace EKLEXIA.Controllers
         public async Task<IActionResult> EditMeetingAsync(string Id, Meeting meeting)
         {
             Meeting updateThisMeeting = new();
-            updateThisMeeting = (from a in xct.Meetings where a.Id == Id select a).FirstOrDefault();
+            updateThisMeeting = (from a in xct.Meetings where a.MeetingId == Id select a).FirstOrDefault();
 
             updateThisMeeting.Name = meeting.Name;
 

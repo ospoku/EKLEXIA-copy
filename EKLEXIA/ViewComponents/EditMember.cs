@@ -22,7 +22,7 @@ namespace EKLEXIA.ViewComponents
             EditMemberVM editMemberVM = new()
             {
              
-                Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.Id), nameof(Gender.Name)),
+                Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.GenderId), nameof(Gender.Name)),
            
                 Address = MemberToEdit.Address,
               

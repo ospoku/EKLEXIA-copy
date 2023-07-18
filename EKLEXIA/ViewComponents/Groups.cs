@@ -17,7 +17,7 @@ namespace EKLEXIA.ViewComponents
             var grps = xct.Groups.Where(r => r.IsDeleted == false).Select(r => new GroupsVM
             {
        Name=r.Name,
-Id = r.Id,
+Id = r.GroupId,
       Description=r.Description,
 
 

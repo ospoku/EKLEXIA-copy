@@ -38,7 +38,7 @@ namespace EKLEXIA.ViewComponents
             AddAttendanceVM AddAttendanceVM = new();
 
             {
-                AddAttendanceVM.Meetings = new SelectList(xct.Meetings.ToList(), nameof(Meeting.Id), nameof(Meeting.Name));
+                AddAttendanceVM.Meetings = new SelectList(xct.Meetings.ToList(), nameof(Meeting.MeetingId), nameof(Meeting.Name));
 
                 AddAttendanceVM.Members = xct.Members.Select(m => new SelectListItem { Text = m.Fullname, Value = m.MemberId }).ToList();
              

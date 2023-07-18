@@ -18,7 +18,7 @@ namespace EKLEXIA.ViewComponents
             var Careers = xct.Careers.Where(c => c.IsDeleted == false).Select(c => new CareersVM
             {
                CareerName =c.Name,
-                CareerId = c.Id,
+                CareerId = c.CareerId,
                 Description = c.Description,
          
                 

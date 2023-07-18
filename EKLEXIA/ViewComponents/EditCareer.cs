@@ -19,7 +19,7 @@ namespace EKLEXIA.ViewComponents
         {
          
            
-             var careerToEdit= xct.Careers.Where(c => c.Id == Encryption.Decrypt(Id)).FirstOrDefault();
+             var careerToEdit= xct.Careers.Where(c => c.CareerId == Encryption.Decrypt(Id)).FirstOrDefault();
             EditCareerVM editCareerVM = new()
             {
 

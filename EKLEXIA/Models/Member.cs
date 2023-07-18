@@ -14,12 +14,12 @@ namespace EKLEXIA.Models
         public string Othername { get; set; } = string.Empty;
         public string Fullname { get { return Surname + "  " + Othername; } }
         [ForeignKey(nameof(BranchId))]
-        public Branch Branch { get; set; } = new Branch();
+        public Branch Branch { get; set; }
       
         public string BranchId { get; set; } = string.Empty;
 
         public byte[] Photo { get; set; } = Array.Empty<byte>();
-        
+        [ForeignKey(nameof(CareerId))]
         public Career Career { get; set; } 
         public string CareerId { get; set; } = string.Empty;
         [ForeignKey(nameof(GenderId))]
@@ -50,11 +50,11 @@ namespace EKLEXIA.Models
         public string Telephone { get; set; }= string.Empty;
 
         public string Address { get; set; } = string.Empty;
-    
+        [ForeignKey(nameof(RegionId))]
         public Region Region { get; set; } 
         [DataType(DataType.Text)]
         public string RegionId { get; set; }=string.Empty;
-     
+    
  
     }
 }

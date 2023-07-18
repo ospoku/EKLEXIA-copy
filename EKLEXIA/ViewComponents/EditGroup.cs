@@ -20,7 +20,7 @@ namespace EKLEXIA.ViewComponents
         {
          
            
-             var grpToEdit= xct.Groups.Where(c => c.Id == Encryption.Decrypt(Id)).FirstOrDefault();
+             var grpToEdit= xct.Groups.Where(c => c.GroupId == Encryption.Decrypt(Id)).FirstOrDefault();
             EditGrpVM editGrpVM = new()
             {
 

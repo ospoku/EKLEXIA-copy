@@ -20,7 +20,7 @@ namespace EKLEXIA.ViewComponents
             var RegionList = xct.Regions.Where(r => r.IsDeleted == false).Select(r => new RegionsVM
             {
        Name=r.Name,
-RegionId = r.Id,
+RegionId = r.RegionId,
       
 
 

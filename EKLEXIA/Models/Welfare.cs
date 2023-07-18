@@ -13,6 +13,7 @@ namespace EKLEXIA.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string WelfareId { get; set; }
         public string MemberId { get; set; }
+        public Member Member { get; set; }
         public string Month { get; set; }
         public DateTime WelfareDate { get; set; }
         public bool IsDeleted { get; set; }
