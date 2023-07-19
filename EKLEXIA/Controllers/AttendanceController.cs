@@ -31,17 +31,21 @@ namespace EKLEXIA.Controllers
             {
 
 
-                Attendance addThisAttendance = new()
+                Attendance addThisAttendance = new Attendance
                 {
                     Date = addAttendanceVM.Date,
                     Description = addAttendanceVM.Description,
-                    MemberId = addAttendanceVM.MemberId,
+                    MemberId = att.Value.ToString(),
                     MeetingId = addAttendanceVM.MeetingId,
-                    IsPresent = addAttendanceVM.IsPresent,
+                    IsPresent = att.Selected,
+                    CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+                    CreatedDate = DateTime.Now
                 };
-                xct.Attendances.Add(addThisAttendance);
-                xct.SaveChanges();
+
+                xct.Attendances.Add(addThisAttendance); 
             }
+                xct.SaveChanges();
+            
 
 
             return ViewComponent(nameof(AttendanceLists));

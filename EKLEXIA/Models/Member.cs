@@ -37,18 +37,12 @@ namespace EKLEXIA.Models
                     / 365;
             }
         }
-
-
-
         public string IDNumber { get; set; } = string.Empty;
 
         public string Hometown { get; set; } = string.Empty;
 
-
-
         [DataType(DataType.PhoneNumber)]
         public string Telephone { get; set; }= string.Empty;
-
         public string Address { get; set; } = string.Empty;
         [ForeignKey(nameof(RegionId))]
         public Region Region { get; set; } 

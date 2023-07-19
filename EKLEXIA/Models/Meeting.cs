@@ -10,8 +10,6 @@ namespace EKLEXIA.Models
         public string MeetingId { get; set; } 
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; }=string.Empty;
-        public Attendance Attendance { get; set; }
-
-        public string  AttendanceId { get; set;}=string.Empty;
+        
     }
 }
