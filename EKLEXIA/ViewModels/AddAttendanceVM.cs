@@ -12,7 +12,7 @@ namespace EKLEXIA.ViewModels
         public string Description { get; set; }
         public bool IsPresent { get; set; }
         public DateTime Date { get; set; }
-        public List<SelectListItem> Members { get; set; }
+        public List<CheckBoxItem> Attendees { get; set; }
         public string MemberId { get; set; }
     }
 

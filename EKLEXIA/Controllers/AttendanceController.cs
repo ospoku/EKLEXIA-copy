@@ -27,17 +27,17 @@ namespace EKLEXIA.Controllers
         [HttpPost]
         public IActionResult AddAttendance(AddAttendanceVM addAttendanceVM)
         {
-            foreach (var att in addAttendanceVM.Members)
+            foreach (var att in addAttendanceVM.Attendees)
             {
 
 
-                Attendance addThisAttendance = new Attendance
+                Attendance addThisAttendance = new()
                 {
                     Date = addAttendanceVM.Date,
-                    Description = addAttendanceVM.Description,
+                    Description = att.Description,
                     MemberId = att.Value.ToString(),
                     MeetingId = addAttendanceVM.MeetingId,
-                    IsPresent = att.Selected,
+                    IsPresent = att.IsSelected,
                     CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
                     CreatedDate = DateTime.Now
                 };
