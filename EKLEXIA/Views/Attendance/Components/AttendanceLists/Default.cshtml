@@ -24,24 +24,27 @@
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Clinic Number</th>
-                    <th>Insurance</th>
-                    <th>Action</th>
+                    <th>Meeting</th>
+                    <th>Date</th>
+                    <th>Present/Absent</th>
+                        <th>Comment</th>
+                        <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var Member in Model)
+                @foreach (var meeting in Model)
                 {
                     <tr>
-                        <td>@Member.Fullname</td>
-                        <td> @Member.DateofBirth.ToString("yyyy-MM-dd")</td>
-                        <td>@Member.GenderId</td>
-                        <td>@Member.Telephone</td>
-                        <td>@Member.ClinicNumber</td>
-                        <td>@Member.Insurance</td>
+                            <td>@meeting.Fullname</td>
+                            <td>@meeting.Meeting</td>
+                        <td> @meeting.Date.ToString("yyyy-MM-dd")</td>
+                      
+                        <td><input type="checkbox" asp-for="@meeting.IsSelected"/></td>
+                        <td>@meeting.Comment</td>
+                     
                         <td>
                             <div class="text-center">
-                                <a asp-action="Card" asp-controller="Member" asp-route-Id="@Member.MemberId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-print text-white"></i></a>
+                                <a asp-action="Card" asp-controller="Member" asp-route-Id="@meeting.AttendanceId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-print text-white"></i></a>
                            
                             </div>
                         </td>

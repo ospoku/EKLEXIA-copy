@@ -14,9 +14,17 @@ namespace EKLEXIA.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            List<AttendanceListsVM> attendanceLists = xct.AttendanceLists.Where(i => i.IsDeleted == false).Select(i => new AttendanceListsVM
+            List<AttendanceListsVM> attendanceLists = xct.Attendances.Where(i => i.IsDeleted == false).Select(i => new AttendanceListsVM
             {
+                Fullname=i.Member.Fullname,
+                Date=i.Date,
+                IsSelected=i.IsPresent,
+                Meeting=i.Meeting.Name,
+                Comment=i.Description,
                
+                
+
+                
             }).ToList();
             return View(attendanceLists);
         }
