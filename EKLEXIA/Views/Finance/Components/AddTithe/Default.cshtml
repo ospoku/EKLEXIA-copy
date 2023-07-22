@@ -5,15 +5,13 @@
   <div class="modal fade" id="addTithe" data-backdrop="static" data-keyboard="false">
       <div class="modal-dialog">
     <div class="modal-content">
-        <div class="modal-header background-primary">
+        <div class="modal-header">
             <h6>New Tithe</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
 </div>
 <div class="modal-body">
 
-            <div class="card-body">
+           
          <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-prepend"><span class="input-group-text">Payment Date</span></div>
@@ -21,11 +19,11 @@
                 </div>
             </div>
             <div class="form-group">
-                    <select class="form-control select2" title="Select Member" style="width:100%" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
+                    <select class="form-control select2" title="Select Member"  style="width:100%" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
             </div>    
             <div class="form-group">
 
-                        <select class="form-control select2" title="Select Month" style="width:100%" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
+                        <select class="form-control select2"  title="Select Month" style="width:100%" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
               
             </div>
             <div class="form-group">
@@ -39,7 +37,7 @@
                     <textarea class="selectpicker form-control "  asp-for="@Model.Description"></textarea>
               
             </div>
-            </div>
+         
  <div class="modal-footer">
   <button class="btn btn-sm btn-primary">Submit</button>
   </div>
