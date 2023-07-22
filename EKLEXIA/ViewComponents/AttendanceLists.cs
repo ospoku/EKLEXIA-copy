@@ -20,8 +20,8 @@ namespace EKLEXIA.ViewComponents
                 Date=i.Date,
                 IsSelected=i.IsPresent,
                 Meeting=i.Meeting.Name,
-                Comment=i.Description,
-               
+                Comment = i.Description,
+               AttendanceId=i.AttendanceId,
                 
 
                 

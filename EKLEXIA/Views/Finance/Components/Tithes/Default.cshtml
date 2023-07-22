@@ -1,4 +1,5 @@
-﻿@{
+﻿@using EKLEXIA.DataProtection;
+@{
     Layout = "~/Views/MainLayout.cshtml";
 }
 @model IEnumerable< EKLEXIA.ViewModels.TithesVM>;
@@ -30,13 +31,10 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>DoB</th>
-                                <th>Gender</th>
-                                <th>Age</th>
-                                <th>Phone</th>
-                             
-                                <th>Clinic Number</th>
-                                <th>Insurance</th>
+                                <th>Date</th>
+                                <th>Month</th>
+                                <th>Amount</th>
+                                <th>Description</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -45,18 +43,21 @@
                             @foreach (var Tithe in Model)
                             {
                             <tr>
-                                
+                                <td>@Tithe.Member</td>
                                 <td> @Tithe.Date.ToString("yyyy-MM-dd")</td>
-
+                                <td>@Tithe.Month</td>
                                 <td>@Tithe.Amount</td>
                                 <td>@Tithe.Description</td>
-                           
                                 <td>
-                                    <div class="text-center">
-                                        <a asp-action="DetailMember" asp-controller="Finance" asp-route-Id="@Tithe.TitheId." class="btn btn-primary btn-circle"><i class="fa fa-sm fa-info text-white"></i></a>
-                                        <a asp-action="EditMember" asp-controller="Finance" asp-route-Id="@Tithe.TitheId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-edit text-white"></i></a>
-                                        <a asp-action="DeleteMember" asp-controller="Finance" asp-route-Id="@Tithe.TitheId" class="btn btn-primary btn-circle"><i class="fa fa-sm fa-trash text-white"></i></a>
+                                <div class="text-center">
+                                    <div class="btn-group" role="group">
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditTithe",new{Id=@Encryption.Encrypt(Tithe.TitheId)})" class="btn btn-sm btn-primary" data-target="#EditGroup"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(Tithe.TitheId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
+
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(Tithe.TitheId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
+
                                     </div>
+                                </div>
                                 </td>
                             </tr>
                             }

@@ -4,18 +4,19 @@ using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace EKLEXIA.Controllers
 {
     public class FinanceController : Controller
     {
 
-        public readonly XContext cxt;
+        public readonly XContext xct;
 
 
         public FinanceController(XContext xContext)
         {
-            cxt = xContext;
+            xct = xContext;
 
         }
 
@@ -31,7 +32,7 @@ namespace EKLEXIA.Controllers
       => ViewComponent("DetailMember", Id);
         public IActionResult EditMember(string Id)
         => ViewComponent("EditMember", Id);
-        [HttpPost]
+        
         
         [HttpGet]
         public IActionResult Tithes()
@@ -42,6 +43,24 @@ namespace EKLEXIA.Controllers
         public IActionResult AddTithe()
         {
             return ViewComponent("AddTithe");
+        }
+
+        [HttpPost]
+        public async Task< IActionResult> AddTithe(AddTitheVM addTitheVM)
+        {
+            if (addTitheVM == null) {
+            }
+
+            Tithe addThisTithe = new()
+            {
+                Amount = addTitheVM.Amount,
+                Description = addTitheVM.Description,
+                TitheDate = addTitheVM.Date,
+                MemberId = addTitheVM.MemberId,
+            };
+            xct.Add(addThisTithe);
+            xct.SaveChanges();
+            return View();
         }
         [HttpGet]
         public IActionResult WelfareList()

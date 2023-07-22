@@ -6,7 +6,8 @@ namespace EKLEXIA.ViewModels
     {
         public string TitheId { get; set; }
 
-
+        public string Month { get; set; }
+        public string Member { get; set; }
 
 
         public DateTime Date { get; set; }

@@ -17,7 +17,7 @@ namespace EKLEXIA.ViewModels
         public string TitheId { get; set; }
         public SelectList Months { get; set; }
         public SelectList Members { get; set; }
-        public decimal Amount { get; set; }
+        public double Amount { get; set; }
 
 
     }
