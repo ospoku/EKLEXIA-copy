@@ -13,13 +13,13 @@ namespace EKLEXIA.Controllers
     public class MemberController : Controller
     {
 
-        public readonly XContext cxt;
+        public readonly XContext ctx;
 
         private readonly INotyfService notyf;
 
         public MemberController(XContext xContext, INotyfService tNotyf)
         {
-            cxt = xContext;
+            ctx = xContext;
             notyf = tNotyf;
 
         }
@@ -43,143 +43,103 @@ namespace EKLEXIA.Controllers
         [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
         {
-                Member addThisMember = new()
-                {
-                    Address = addMemberVM.Address,
-                    DoB = addMemberVM.DoB,
-                    GenderId = addMemberVM.GenderId,
-                    Othername = addMemberVM.Othername,
-                    Telephone = addMemberVM.Telephone,
-                    Hometown = addMemberVM.Hometown,
-                    Surname = addMemberVM.Surname,
-                    RegionId = addMemberVM.RegionId,
-                  
-                    BranchId = addMemberVM.BranchId,
-                    CareerId = addMemberVM.CareerId,
-                    IDNumber = "memberId",
-                    IsDeleted = false,
-                    CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
-                    CreatedDate = DateTime.Now
-                };
 
-                using (var memoryStream = new MemoryStream())
-                {
-                    await Photo.CopyToAsync(memoryStream);
-                    addThisMember.Photo = memoryStream.ToArray();
-                }
+            int membershipid = ctx.Members.Count() + 1;
+            string memberId = "JWC" + membershipid.ToString();
+            int length = membershipid.ToString().Length;
+
+            if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
+            if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
+            if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
+
+            Member addThisMember = new()
+            {
+                Address = addMemberVM.Address,
+                DoB = addMemberVM.DoB,
+                GenderId = addMemberVM.GenderId,
+                Othername = addMemberVM.Othername,
+                Telephone = addMemberVM.Telephone,
+                Hometown = addMemberVM.Hometown,
+                Surname = addMemberVM.Surname,
+                RegionId = addMemberVM.RegionId,
+
+                BranchId = addMemberVM.BranchId,
+                CareerId = addMemberVM.CareerId,
+                IDNumber = memberId,
+                IsDeleted = false,
+                CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+                CreatedDate = DateTime.Now
+            };
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await Photo.CopyToAsync(memoryStream);
+                addThisMember.Photo = memoryStream.ToArray();
+            }
 
 
 
-                cxt.Members.Add(addThisMember);
-            foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g=>g.Value).ToList())
+            ctx.Members.Add(addThisMember);
+            foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g => g.Value).ToList())
 
             {
-                cxt.MemberGroups.Add(new MemberGroup
+                ctx.MemberGroups.Add(new MemberGroup
                 {
                     MemberId = addThisMember.MemberId,
                     GroupId = grp,
                 });
             }
 
-            await cxt.SaveChangesAsync();
+            await ctx.SaveChangesAsync();
             notyf.Success("member successfully created.");
             return RedirectToAction("Members");
+
+
         }
-        
-            if (ModelState.IsValid)
+
+        public async Task<IActionResult> SendSMS()
+        {
+            Member member = new Member();
+
+            //we creating the necessary URL string:
+            string GeneratedID = (from m in ctx.Members where m.MemberId == member.MemberId select m.IDNumber).FirstOrDefault().ToString()
+                   ;
+            string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
+            string from = "JHC";
+            string username = "KofiPoku";
+            string password = "Az36400@osp";
+            string to = member.Telephone;
+            string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
+
+            // Creating URL to send sms
+            string message = URL
+                + "username="
+                + username
+                + "&password="
+                + password
+                + "&from="
+                + from
+                + "&to="
+                + to
+                + "&service="
+                + "SMS"
+                + "&message="
+                + messageText;
+
+
+
+            HttpClient httpclient = new HttpClient();
+
+            var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
+            if (response2.StatusCode == HttpStatusCode.OK)
             {
-                //  if (imageData != null && imageData.Length > 0) 
-
-                int membershipid = jwx.Members.Count() + 1;
-        string memberId = "JWC" + membershipid.ToString();
-        int length = membershipid.ToString().Length;
-
-                if (length == 1) { memberId = "JWC00" + membershipid.ToString(); }
-                if (length == 2) { memberId = "JWC0" + membershipid.ToString(); }
-if (length == 3) { memberId = "JWC" + membershipid.ToString(); }
-
-
-Member addThisMember = new Member
-{
-    Address = addMemberVM.Address,
-    DoB = addMemberVM.DoB,
-    GenderId = addMemberVM.GenderId,
-    Othername = addMemberVM.Othername,
-    Telephone = addMemberVM.Telephone,
-    Hometown = addMemberVM.Hometown,
-    Surname = addMemberVM.Surname,
-    RegionId = addMemberVM.RegionId,
-    GroupId = addMemberVM.GroupId,
-    BranchId = addMemberVM.BranchId,
-    CareerId = addMemberVM.CareerId,
-    IDNumber = memberId,
-    IsDeleted = false,
-    CreatedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
-    CreatedDate = DateTime.Now
-};
-
-using (var memoryStream = new MemoryStream())
-{
-    await Photo.CopyToAsync(memoryStream);
-    addThisMember.Photo = memoryStream.ToArray();
-}
-
-
-
-jwx.Members.Add(addThisMember);
-
-await jwx.SaveChangesAsync();
-
-
-
-
-//we creating the necessary URL string:
-string GeneratedID = (from m in jwx.Members where m.MemberId == addThisMember.MemberId select m.IDNumber).FirstOrDefault().ToString()
-       ;
-string URL = "https://frog.wigal.com.gh/ismsweb/sendmsg?";
-string from = "JHC";
-string username = "KofiPoku";
-string password = "Az36400@osp";
-string to = addThisMember.Telephone;
-string messageText = "Thank you for joining Joy House Chapel. Your church ID is" + GeneratedID + "You are Welcome";
-
-// Creating URL to send sms
-string message = URL
-    + "username="
-    + username
-    + "&password="
-    + password
-    + "&from="
-    + from
-    + "&to="
-    + to
-    + "&service="
-    + "SMS"
-    + "&message="
-    + messageText;
-
-
-
-HttpClient httpclient = new HttpClient();
-
-var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
-if (response2.StatusCode == HttpStatusCode.OK)
-{
-    // Do something with response. Example get content:
-    // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
-}
-
-
-TempData["Message"] = "New Member successfully added";
-
-return RedirectToAction("ViewMembers");
+                // Do something with response. Example get content:
+                // var responseContent = await response.Content.ReadAsStringAsync ().ConfigureAwait (false);
             }
-            else
-{
-    ViewBag.Message = "Member creation error!!! Please try again";
-}
-return ViewComponent("AddMember");
-}
+
+            return RedirectToAction();
+
+        }
 public IActionResult DetailMember(string Id)
       => ViewComponent("DetailMember", Id);
         public IActionResult EditMember(string Id)
@@ -188,7 +148,7 @@ public IActionResult DetailMember(string Id)
         public async Task<IActionResult> EditMemberAsync(string Id, Member member)
         {
             Member updateThisMember = new();
-            updateThisMember = (from a in cxt.Members where a.MemberId == Id select a).FirstOrDefault();
+            updateThisMember = (from a in ctx.Members where a.MemberId == Id select a).FirstOrDefault();
 
             updateThisMember.Address = member.Address;
 
@@ -206,9 +166,9 @@ public IActionResult DetailMember(string Id)
             updateThisMember.ModifiedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value;
             updateThisMember.ModifiedDate = DateTime.Now;
 
-            cxt.Members.Attach(updateThisMember);
-            cxt.Entry(updateThisMember).State = EntityState.Modified;
-            await cxt.SaveChangesAsync();
+            ctx.Members.Attach(updateThisMember);
+            ctx.Entry(updateThisMember).State = EntityState.Modified;
+            await ctx.SaveChangesAsync();
 
             return RedirectToAction("ViewMembers");
         }
