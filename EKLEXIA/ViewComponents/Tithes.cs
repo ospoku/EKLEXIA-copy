@@ -15,8 +15,12 @@ namespace EKLEXIA.ViewComponents
             var Tithes = xct.Tithes.Where(t => t.IsDeleted == false).Select(t => new TithesVM
             {
                
-
-
+                MemberId=t.Member.Fullname,
+                Date=t.TitheDate,
+                Description=t.Description,
+                Amount= t.Amount,
+                MonthId= t.Month,
+                TitheId=t.TitheId,
 
 
 

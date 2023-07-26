@@ -14,7 +14,8 @@ namespace EKLEXIA.Models
         public string TitheId { get; set; }
         public string MemberId { get; set; }
         public Member Member { get; set; }
-        public string Month { get; set; }
+        public string MonthId { get; set; }
+        public Month Month { get; set; }
         public DateTime TitheDate { get; set; }
    
         public double Amount { get; set; }
