@@ -13,21 +13,23 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.AspNetCore.DataProtection;
+using EKLEXIA.ViewComponents;
+using AspNetCoreHero.ToastNotification.Abstractions;
 
 namespace ECLEXIA.Controllers
 {
     public class SettingsController : Controller
     {
-        public readonly XContext xct; 
+        public readonly XContext ctx; 
         public readonly UserManager<User> usm;
         public readonly RoleManager<AppRole> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        
-        public SettingsController(XContext xContext)
+        public readonly INotyfService tnotyf;
+        public SettingsController(XContext xContext, INotyfService notyf)
         {
-            xct = xContext;
-          
+            ctx = xContext;
+            tnotyf = notyf;
         }
         
       
@@ -54,9 +56,9 @@ namespace ECLEXIA.Controllers
                     CreatedDate = DateTime.Now,
                 };
 
-                xct.Careers.Add(addThisCareer);
-                await xct.SaveChangesAsync();
-                TempData["Message"] = "New Member successfully added";
+                ctx.Careers.Add(addThisCareer);
+                await ctx.SaveChangesAsync();
+                tnotyf.Success("New Career successfully created");
                 return RedirectToAction("Careers");
             }
 
@@ -99,9 +101,9 @@ public IActionResult Careers()
                     CreatedDate = DateTime.Now,
                 };
 
-                xct.Groups.Add(addThisGroup);
-                await xct.SaveChangesAsync();
-                TempData["Message"] = "New Group successfully added";
+                ctx.Groups.Add(addThisGroup);
+                await ctx.SaveChangesAsync();
+                tnotyf.Success( "New Group successfully created");
                 return RedirectToAction("Groups");
             }
 
@@ -155,9 +157,10 @@ public IActionResult Careers()
                     CreatedDate = DateTime.Now,
                 };
 
-                xct.Branches.Add(addThisBranch);
-                await xct.SaveChangesAsync();
-                TempData["Message"] = "New Branch successfully added";
+                ctx.Branches.Add(addThisBranch);
+                await ctx.SaveChangesAsync();
+                tnotyf.Success("New Branch successfully created");
+           
                 return RedirectToAction("Branches");
             }
 
@@ -179,5 +182,20 @@ public IActionResult Careers()
         {
             return ViewComponent("ManageGroup", Id);
         }
+        //[HttpPost]
+        //public IActionResult ManageGroupMembers(string Id)
+        //{
+        //    foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g => g.Value).ToList())
+
+        //    {
+        //        ctx.MemberGroups.Add(new MemberGroup
+        //        {
+        //            MemberId = addThisMember.MemberId,
+        //            GroupId = grp,
+        //        });
+        //    }
+
+
+        //}
     }
 }

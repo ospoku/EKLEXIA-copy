@@ -80,19 +80,11 @@ namespace EKLEXIA.Controllers
 
 
             ctx.Members.Add(addThisMember);
-            foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g => g.Value).ToList())
-
-            {
-                ctx.MemberGroups.Add(new MemberGroup
-                {
-                    MemberId = addThisMember.MemberId,
-                    GroupId = grp,
-                });
-            }
-
             await ctx.SaveChangesAsync();
             notyf.Success("member successfully created.");
             return RedirectToAction("Members");
+
+ 
 
 
         }

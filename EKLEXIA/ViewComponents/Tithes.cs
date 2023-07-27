@@ -19,7 +19,7 @@ namespace EKLEXIA.ViewComponents
                 Date=t.TitheDate,
                 Description=t.Description,
                 Amount= t.Amount,
-                MonthId= t.Month,
+                MonthId= t.Month.Name,
                 TitheId=t.TitheId,
 
 
