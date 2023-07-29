@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.AspNetCore.DataProtection;
 using EKLEXIA.ViewComponents;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using EKLEXIA.DataProtection;
 
 namespace ECLEXIA.Controllers
 {
@@ -25,11 +26,11 @@ namespace ECLEXIA.Controllers
         public readonly RoleManager<AppRole> rol;
         public readonly SignInManager<User> sim;
         public readonly IWebHostEnvironment env;
-        public readonly INotyfService tnotyf;
-        public SettingsController(XContext xContext, INotyfService notyf)
+        public readonly INotyfService notyf;
+        public SettingsController(XContext xContext, INotyfService tnotyf)
         {
             ctx = xContext;
-            tnotyf = notyf;
+            notyf = tnotyf;
         }
         
       
@@ -58,7 +59,7 @@ namespace ECLEXIA.Controllers
 
                 ctx.Careers.Add(addThisCareer);
                 await ctx.SaveChangesAsync();
-                tnotyf.Success("New Career successfully created");
+                notyf.Success("New Career successfully created");
                 return RedirectToAction("Careers");
             }
 
@@ -103,7 +104,7 @@ public IActionResult Careers()
 
                 ctx.Groups.Add(addThisGroup);
                 await ctx.SaveChangesAsync();
-                tnotyf.Success( "New Group successfully created");
+                notyf.Success( "New Group successfully created");
                 return RedirectToAction("Groups");
             }
 
@@ -159,7 +160,7 @@ public IActionResult Careers()
 
                 ctx.Branches.Add(addThisBranch);
                 await ctx.SaveChangesAsync();
-                tnotyf.Success("New Branch successfully created");
+                notyf.Success("New Branch successfully created");
            
                 return RedirectToAction("Branches");
             }
@@ -182,20 +183,29 @@ public IActionResult Careers()
         {
             return ViewComponent("ManageGroup", Id);
         }
-        //[HttpPost]
-        //public IActionResult ManageGroupMembers(string Id)
-        //{
-        //    foreach (var grp in addMemberVM.Groups.Where(g => g.Selected == true).Select(g => g.Value).ToList())
+        [HttpPost]
+        public IActionResult ManageGroup(ManageGrpVM manageGrpVM, string Id)
+        {
 
-        //    {
-        //        ctx.MemberGroups.Add(new MemberGroup
-        //        {
-        //            MemberId = addThisMember.MemberId,
-        //            GroupId = grp,
-        //        });
-        //    }
+            foreach(var removeMembers in ctx.MemberGroups.Where(x=>x.GroupId.Equals(Encryption.Decrypt(Id))))
+                    {
+                ctx.MemberGroups.Remove(removeMembers);
+            }
 
+            foreach (var member in manageGrpVM.Members .Where(m => m.Selected == true).ToList())
 
-        //}
+            {
+                ctx.MemberGroups.Add(new MemberGroup
+                {
+                    MemberId = member.Value,
+                    GroupId = Encryption.Decrypt(Id),
+                });
+            }
+
+            ctx.SaveChanges();
+            notyf.Success("Group Members updated");
+            return ViewComponent("Groups");
+
+        }
     }
 }

@@ -25,7 +25,7 @@ namespace EKLEXIA.ViewComponents
 
             ManageGrpVM manageGrpVM = new()
             {
-                Members = allMembers.Select(m=>new SelectListItem { Selected = groupMembers.Contains(Id),Text=m.Fullname,Value=m.MemberId }).ToList(),
+                Members = allMembers.Select(m=>new SelectListItem { Selected = groupMembers.Contains(m.MemberId),Text=m.Fullname,Value=m.MemberId }).ToList(),
                 Groupname = group.Name.ToString(),
             };
 
