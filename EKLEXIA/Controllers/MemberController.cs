@@ -4,9 +4,9 @@ using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AspNetCoreHero.ToastNotification.Abstractions;
-using EKLEXIA.ViewComponents;
 using System.Net;
-
+using EKLEXIA.Notice;
+using Microsoft.AspNetCore.SignalR;
 namespace EKLEXIA.Controllers
 {
 
@@ -16,11 +16,12 @@ namespace EKLEXIA.Controllers
         public readonly XContext ctx;
 
         private readonly INotyfService notyf;
-
-        public MemberController(XContext xContext, INotyfService tNotyf)
+        public readonly IHubContext<NotificationHub> hCtx;
+        public MemberController(XContext xContext, INotyfService tNotyf, IHubContext<NotificationHub>hubContext)
         {
             ctx = xContext;
             notyf = tNotyf;
+            hCtx = hubContext;
 
         }
 
@@ -82,6 +83,7 @@ namespace EKLEXIA.Controllers
             ctx.Members.Add(addThisMember);
             await ctx.SaveChangesAsync();
             notyf.Success("member successfully created.");
+            await hCtx.Clients.All.SendAsync("ReceiveNotification", $"New Post Created: {addThisMember.Fullname}");
             return RedirectToAction("Members");
 
  
@@ -91,7 +93,7 @@ namespace EKLEXIA.Controllers
 
         public async Task<IActionResult> SendSMS()
         {
-            Member member = new Member();
+            Member member = new();
 
             //we creating the necessary URL string:
             string GeneratedID = (from m in ctx.Members where m.MemberId == member.MemberId select m.IDNumber).FirstOrDefault().ToString()

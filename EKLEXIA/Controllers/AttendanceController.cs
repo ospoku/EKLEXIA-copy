@@ -4,6 +4,7 @@ using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using EKLEXIA.DataProtection;
 
 namespace EKLEXIA.Controllers
 {
@@ -72,11 +73,11 @@ namespace EKLEXIA.Controllers
                 xct.Meetings.Add(addThisMeeting);
                 await xct.SaveChangesAsync();
                 notx.Success("Meeting successful created");
-                return RedirectToAction("Meetings");
+                return ViewComponent("Meetings");
             }
             else
             {
-                ViewBag.Message = "Member creation error!!! Please try again";
+                notx.Error( "Meeting creation error!!! Please try again");
             }
             return ViewComponent("AddMeeting");
         }
@@ -84,14 +85,14 @@ namespace EKLEXIA.Controllers
         public IActionResult DetailMeeting(string Id)
       => ViewComponent("DetailMember", Id);
         public IActionResult EditMeeting(string Id)
-        => ViewComponent("EditMember", Id);
+        => ViewComponent("EditMeeting", Id);
         [HttpPost]
-        public async Task<IActionResult> EditMeetingAsync(string Id, Meeting meeting)
+        public async Task<IActionResult> EditMeetingAsync(string Id, EditMeetingVM editMeetingVM)
         {
             Meeting updateThisMeeting = new();
-            updateThisMeeting = (from a in xct.Meetings where a.MeetingId == Id select a).FirstOrDefault();
+            updateThisMeeting = (from a in xct.Meetings where a.MeetingId == Encryption.Decrypt(Id) select a).FirstOrDefault();
 
-            updateThisMeeting.Name = meeting.Name;
+            updateThisMeeting.Name = editMeetingVM.Name;
 
      
             updateThisMeeting.IsDeleted = false;

@@ -1,71 +1,31 @@
-﻿@{
-    Layout = "~/Views/MainLayout.cshtml";
-}
-@model EKLEXIA.ViewModels.EditMemberVM;
-
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Edit Member</h6>
-            </div>
-            <div class="card-body justify-content-md-center">
-                <div class="row justify-content-center">
-                    <div class="col-md-7">
+﻿@model EKLEXIA.ViewModels.EditMeetingVM;
 
 
-                        @using (Html.BeginForm("EditMember", "Member", FormMethod.Post))
-                        {
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-user-circle"></i></span></div>
-                                    <input class="form-control mr-2" asp-for="@Model.Surname" type="text" placeholder="Surname">
+<div class="modal fade" id="AddMeeting" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        @using (Html.BeginForm("EditMeeting", "Attendance", FormMethod.Post))
+        {
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h6>Edit Meeting</h6>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
+                </div>
 
 
-                                    <div class="input-group-prepend"><span class="input-group-text "><i class="icon fa fa-user-circle"></i></span></div>
-                                    <input class="form-control" asp-for="@Model.Othername" type="text" placeholder="Othernames">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text  ">Date of Birth</span></div>
-                                    <input id="dob" class="form-control js-datepicker mr-2" type="date" asp-for="@Model.DoB"/>
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-venus-mars"></i></span></div>
-                                    <select class="form-control" asp-items="@Model.Genders" asp-for="@Model.GenderId"></select>
-                                </div>
-
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-phone-alt"></i></span></div>
-                                    <input class="form-control" asp-for="@Model.Telephone" type="text" placeholder="Enter Telephone">
-
-                                </div>
-                            </div> 
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="fa fa-map-marker"></i></span></div>
-                                    <input class="form-control" asp-for="@Model.Address" type="text" placeholder="Enter Address">
-
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                    <input class="form-control" asp-for="@Model.Hometown" placeholder="Enter Hometown" />
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <div class="input-group-prepend"><span class="input-group-text"><i class="icon fa fa-list"></i></span></div>
-                                    <select class="form-control" asp-for="@Model.RegionId" placeholder="Select Region" />
-                                </div>
-                            </div>
-
-                            <button class="btn btn-block btn-primary">Update</button>
-
-                        }
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" asp-for="@Model.Name " required class="form-control" placeholder="Enter Name">
                     </div>
-                            </div>
-                        </div>
-    
+                    <div class="form-group">
+                        <textarea type="text" asp-for="@Model.Description" required class="form-control" placeholder="Enter Description"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm  btn-block btn-primary">Save</button>
+                </div>
 
+            </div>
+        }
+    </div>
+</div>

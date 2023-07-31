@@ -3,6 +3,7 @@ using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
 using EKLEXIA.Data;
 using EKLEXIA.Models;
+using EKLEXIA.Notice;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,9 +38,10 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<DBInitializer>();
-
+builder.Services.AddSignalR();
 builder.Services.AddDataProtection();
 builder.Services.AddHttpContextAccessor();
+
 
 
 
@@ -60,6 +62,8 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseCookiePolicy();
+app.UseEndpoints(endpoints => { endpoints.MapHub<NotificationHub>("/NotificationHub"); });
+
 
 app.MapControllerRoute(
     name: "default",

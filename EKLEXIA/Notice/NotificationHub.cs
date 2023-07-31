@@ -2,9 +2,12 @@
 
 namespace EKLEXIA.Notice
 {
-    public class NotificationHub:Hub
+    public class NotificationHub : Hub
     {
-        public string Text { get; set; } = "";
-        public bool IsRead { get; set; } = false;
+        public async Task SendNotification(string Message)
+        {
+            await Clients.All.SendAsync("ReceiveNotification", Message);
+
+        }
     }
 }

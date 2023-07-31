@@ -51,10 +51,10 @@
                                 <td>
                                 <div class="text-center">
                                     <div class="btn-group" role="group">
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditGroup",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#EditGroup"><i class="fa fa-sm fa-edit text-white"></i></button>
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditMeeting",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#EditMeeting"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageMeeting",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#ManageMeeting"><i class="fa fa-sm fa-users text-white"></i></button>
 
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("DeleteMeeting",new{Id=@Encryption.Encrypt(Meeting.MeetingId)})" class="btn btn-sm btn-primary" data-target="#DeleteMeeting"><i class="fa fa-sm fa-trash text-white"></i></button>
 
                                     </div>
                                 </div>

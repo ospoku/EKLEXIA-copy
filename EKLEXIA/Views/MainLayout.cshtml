@@ -549,8 +549,11 @@
     <script type="text/javascript" src="~/Vendor/tinymce/tinymce.min.js" asp-append-version="true"></script>
     <script type="text/javascript" src="~/js/site.js" asp-append-version="true"></script>
   <script type="text/javascript" src="~/Vendor/form-wizard/jquery.smartWizard.min.js"></script>
+  
+  <script type="text/javascript" src="~/ospapps/notification.js"></script>
     <script src="~/ospapps/ospapps.js" asp-append-version="true" type="text/javascript"></script>
-
+    <script type="text/javascript" src="~/Vendor/signalr.js/jquery.signalR.min.js"></script>
+    <script type="text/javascript" src="~/Vendor/signalr.js/jquery.signalR.js"></script>
     @await Component.InvokeAsync("Notyf")
     @RenderSection("Scripts", required:false)
     

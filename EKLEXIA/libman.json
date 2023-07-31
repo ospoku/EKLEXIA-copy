@@ -9,6 +9,10 @@
     {
       "library": "sweetalert2@11.7.16",
       "destination": "wwwroot/Vendor/"
+    },
+    {
+      "library": "signalr.js@2.4.3",
+      "destination": "wwwroot/Vendor/signalr.js/"
     }
   ]
 }
