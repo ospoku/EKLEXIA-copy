@@ -109,4 +109,9 @@ hr {
 .toggle-checkbox:checked ~ .slider > .toggle-switch.opt2 {
     display: inline-block;
 }
-  
+.idCard {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: min(16px, calc(100% - 4px));
+}

@@ -62,7 +62,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseCookiePolicy();
-app.UseEndpoints(endpoints => { endpoints.MapHub<NotificationHub>("/NotificationHub"); });
+app. MapHub<NotificationHub>("/notificationHub");
 
 
 app.MapControllerRoute(
