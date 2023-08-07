@@ -7,7 +7,9 @@
 
         var li = document.createElement("li");
         document.getElementById("MessageList").appendChild(li);
-        li.textContent = `  This is the ${Message}`;
+        li.textContent = `This is the $('<strong> ${Message}</strong>')`;
+       
+       li.style.fontSizeAdjust=""
     });
 
 connection.start().catch(function (err) {

@@ -21,15 +21,16 @@ namespace EKLEXIA.ViewComponents
             {
 
                 Address = a.Address,
-                GenderId = a.Gender.Name,
+               
                 Photo = a.Photo,
 
                 DoB = a.DoB,
 
                 Fullname = a.Fullname,
 
-
-                Telephone = a.Telephone,
+               MemberId=a.IDNumber,
+                BranchId = a.Branch.Name,
+             Telephone = a.Telephone,
 
             }).FirstOrDefault();
 

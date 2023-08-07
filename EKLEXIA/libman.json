@@ -13,6 +13,10 @@
     {
       "library": "signalr.js@2.4.3",
       "destination": "wwwroot/Vendor/signalr.js/"
+    },
+    {
+      "library": "FitText.js@1.2.0",
+      "destination": "wwwroot/Vendor/FitText.js/"
     }
   ]
 }

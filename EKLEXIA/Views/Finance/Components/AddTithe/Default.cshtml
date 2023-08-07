@@ -17,26 +17,26 @@
          <div class="form-group">
                 <div class="input-group">
                     <div class="input-group-prepend"><span class="input-group-text">Payment Date</span></div>
-                    <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.Date" asp-format="{0:dd/MMM/yyyy}" />
+                    <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.Date" asp-format="{0:dd/MMM/yyyy}"  required/>
                 </div>
             </div>
             <div class="form-group">
-                    <select class="form-control select2" title="Select Member"  style="width:100%" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
+                    <select class="form-control select2" required title="Select Member" multiple  style="width:100%" asp-for="@Model.MemberId" asp-items="@Model.Members"></select>
             </div>    
             <div class="form-group">
 
-                        <select class="form-control select2"  title="Select Month" style="width:100%" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
+                        <select class="form-control select2" required multiple  title="Select Month" style="width:100%" asp-for="@Model.MonthId" asp-items="@Model.Months"></select>
               
             </div>
             <div class="form-group">
               
-                    <input class=" form-control " asp-for="@Model.Amount" />
+                    <input class=" form-control " asp-for="@Model.Amount" required />
 
           
             </div>
             <div class="form-group">
                
-                    <textarea class="selectpicker form-control "  asp-for="@Model.Description"></textarea>
+                    <textarea class="selectpicker form-control " required  asp-for="@Model.Description"></textarea>
               
             </div>
  <div class="modal-footer">
@@ -50,7 +50,8 @@
 <script>
     $(document).ready(function () {
             $('.select2').select2({
-                placeholder: 'Select an option'
+                placeholder: 'Select an option',
+            maximumSelectionLength: 1
             });
      });
 </script>

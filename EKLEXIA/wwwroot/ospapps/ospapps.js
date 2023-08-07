@@ -59,6 +59,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () { $('time.timeago').timeago(); });
+$(document).ready(function () { $('.idCard').fittext(); });
 
 
 //$(document).ready(function () {

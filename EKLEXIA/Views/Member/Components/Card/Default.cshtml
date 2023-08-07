@@ -2,34 +2,38 @@
     Layout = "~/Views/MainLayout.cshtml";
 }*@
 @model EKLEXIA.ViewModels.CardVM;
+<link rel="stylesheet" type="text/css" href="~/ospapps/ospapps.css" />
 <div class= "modal fade" id="Card" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog">
 
         <div class="modal-content">
             <div class ="modal-header">
-                <h6>Member ID Card</h6>
+                <h5>Member IDCard</h5>
                 <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
             </div>
             <di class="modal-body">
+                <div class="container">
+                    <header>
+                        <span class="logo">
+                            <img src="images/logo.png" alt="" />
+                            <h5>Membership Card</h5>
+                        </span>
+                        <img src="images/chip.png" alt="" class="chip" />
+                    </header>
 
-           <table style="width:3.38in; height:2.13in; border-color:red ;border-width:1px; border-style:solid" class="text-center"><tr><th colspan="3" ><p class="text-center">Church</p></th></tr>
-                    <tr style="border-color:lightgray ;border-width:1px; border-style:solid"><td  style="border-color:red ;border-width:1px; font-size-adjust:inherit;overflow-wrap:break-word; white-space:nowrap;overflow:hidden;font-size:min(16px,cal(100%-4px));  width:124.8px; border-style:solid; word-wrap:break-word;word-break:break-all;padding:inherit">@Model.Fullname</td><td tclass="text-center" style="border-color:lightgray ;width:2.3in; border-width:0px; border-style:none" rowspan="5"><img src="data:image;base64,@System.Convert.ToBase64String(Model.Photo)" class="img-radius" width="150" height="150" /></td></tr>
-
-
-                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td style="border-color:red ;border-width:1px; border-style:solid">@Model.GenderId</td></tr>
-                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.DoB.ToString("dd-MMM-yyyy")</td></tr>
-                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.Telephone"</td></tr>
-                    <tr style="border-color:red ;border-width:1px; border-style:solid"><td>@Model.Address"</td></tr>
-                </table>
-                      
-                      
-                        
-
-                        
-
-                       
-
-                  
+                    <div class="card-details">
+                        <div class="name-number">
+                            
+                            <h5 class="font-weight-bold">@Model.Fullname</h5>
+                            <h5 class="name">@Model.MemberId</h5>
+                            <h5>@Model.BranchId</h5>
+                        </div>
+                        <div class="img-circle">
+                           
+                            <img src="data:image;base64,@System.Convert.ToBase64String(Model.Photo)" class="img-circle" width="100" height="100" />
+                        </div>
+                    </div>
+                </div>
 
                         
 
