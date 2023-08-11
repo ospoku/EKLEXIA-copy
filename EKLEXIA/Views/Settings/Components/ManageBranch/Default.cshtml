@@ -3,8 +3,8 @@
 
 <div class="modal fade" id="ManageBranch" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog">
-        @using (Html.BeginForm("ManageGroup", "Settings", FormMethod.Post))
-        {
+   @*     @using (Html.BeginForm("ManageGroup", "Settings", FormMethod.Post))
+        {*@
             <div class="modal-content">
                 <div class="modal-header">
 
@@ -40,7 +40,7 @@
                                      @Model.GenderId
                                     </td>
                                 </tr>
-                            }
+                          @*  }*@
                         </tbody>
                     </table>
                     </div>
@@ -49,6 +49,6 @@
                 </div>
 
             </div>
-        }
+    @*    }*@
     </div>
     </div>

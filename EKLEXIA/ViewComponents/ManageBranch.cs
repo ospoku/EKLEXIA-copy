@@ -26,7 +26,7 @@ namespace EKLEXIA.ViewComponents
     
 
 
-            return View(manageBMVm);
+            return View(branchMembers);
 
 
         }
