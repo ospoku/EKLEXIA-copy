@@ -80,10 +80,10 @@
        
                                             <a class="dropdown-item-custom" asp-action="EditMember" asp-controller="Member" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-edit text-white"></i>Edit</a>
                                         
-                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Member" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-comment text-white"></i>View</a>
-                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Member" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-print text-white"></i>Print</a>
+                                        <a class="dropdown-item-custom" asp-action="CommentIncident" asp-controller="Incident" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-comment text-white"></i>View</a>
+                                        <a class="dropdown-item-custom" asp-action="PrintIncident" asp-controller="Incident" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-print text-white"></i>Print</a>
 
-                                        <a class="dropdown-item-custom" asp-action="DeleteMember" asp-controller="Member" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-trash text-white"></i>Delete</a>
+                                        <a class="dropdown-item-custom" asp-action="DeleteIncident" asp-controller="Incident" asp-route-Id="@Encryption.Encrypt(Member.MemberId)"><i class="fa fa-sm fa-trash text-white"></i>Delete</a>
 
 
                                     </div>

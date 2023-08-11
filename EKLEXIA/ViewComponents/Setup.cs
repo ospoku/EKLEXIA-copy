@@ -16,7 +16,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            SetupVM setupVM = new SetupVM
+            SetupVM setupVM = new()
             {
 
             };

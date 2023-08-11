@@ -137,6 +137,11 @@ public IActionResult Careers()
         }
 
         [HttpGet]
+        public IActionResult ManageBranch(string Id)
+        {
+            return ViewComponent("ManageBranch",Id);
+        }
+        [HttpGet]
         public IActionResult Setup()
         {
             return ViewComponent("Setup");

@@ -14,7 +14,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            AddCareerVM addCareerVM = new AddCareerVM
+            AddCareerVM addCareerVM = new()
             {
 
 

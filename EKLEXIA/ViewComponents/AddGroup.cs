@@ -14,7 +14,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            AddGroupVM addGroupVM = new AddGroupVM
+            AddGroupVM addGroupVM = new()
             {
 
 

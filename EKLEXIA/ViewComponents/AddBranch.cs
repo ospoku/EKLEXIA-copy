@@ -14,7 +14,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            AddBranchVM addBranchVM = new AddBranchVM
+            AddBranchVM addBranchVM = new()
             {
 
             };

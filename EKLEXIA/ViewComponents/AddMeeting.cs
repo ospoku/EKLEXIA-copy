@@ -14,7 +14,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            AddMeetingVM addMeetingVM = new AddMeetingVM
+            AddMeetingVM addMeetingVM = new()
             {
              
              

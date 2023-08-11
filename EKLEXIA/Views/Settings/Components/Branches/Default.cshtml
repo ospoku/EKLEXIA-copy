@@ -37,24 +37,23 @@
                 </thead>
 
                 <tbody>
-                    @foreach (var grp in Model)
+                    @foreach (var b in Model)
                     {
                         <tr>
 
-                            <td> @grp.Name</td>
+                            <td>@b.Name</td>
 
                            
-                            <td>@grp.Description</td>
+                            <td>@b.Description</td>
 
                             <td>
                                 <div class="text-center">
 
                                     <div class="text-center">
                                         <div class="btn-group" role="group">
-                                            <button data-toggle="ajax-modal" data-url="@Url.Action("EditGroup",new{Id=@Encryption.Encrypt(grp.Id)})" class="btn btn-sm btn-primary" data-target="#EditGroup"><i class="fa fa-sm fa-edit text-white"></i></button>
-                                            <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(grp.Id)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
-
-                                            <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(grp.Id)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
+                                            <button data-toggle="ajax-modal" data-url="@Url.Action("EditBranch",new{Id=@Encryption.Encrypt(b.Id)})" class="btn btn-sm btn-primary" data-target="#EditGroup"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                            <button data-toggle="ajax-modal" data-url="@Url.Action("ManageBranch",new{Id=@Encryption.Encrypt(b.Id)})" class="btn btn-sm btn-primary" data-target="#ManageBranch"><i class="fa fa-sm fa-users text-white"></i></button>
+                                            <button data-toggle="ajax-modal" data-url="@Url.Action("ManageBranch",new{Id=@Encryption.Encrypt(b.Id)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
 
                                         </div>
                                     </div>

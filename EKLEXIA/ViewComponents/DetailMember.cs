@@ -23,7 +23,7 @@ namespace EKLEXIA.ViewComponents
            
             {
              Insurance=a.Hometown,
-             ClinicNumber=a.RegionId,
+                ClinicNumber = a.RegionId,
                 Address = a.Address,
            
                 DoB = a.DoB,
