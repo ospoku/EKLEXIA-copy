@@ -4,6 +4,7 @@ using EKLEXIA.Data;
 using EKLEXIA.Models;
 using EKLEXIA.ViewModels;
 using System.Diagnostics.CodeAnalysis;
+using EKLEXIA.DataProtection;
 
 namespace EKLEXIA.ViewComponents
 {
@@ -18,7 +19,7 @@ namespace EKLEXIA.ViewComponents
         public IViewComponentResult Invoke(string Id)
         {
             Member MemberToEdit = new();
-            MemberToEdit = (from a in xct.Members where a.MemberId == Id & a.IsDeleted == false select a).FirstOrDefault();
+            MemberToEdit = (from a in xct.Members where a.MemberId == Encryption.Decrypt(Id) & a.IsDeleted == false select a).FirstOrDefault();
             EditMemberVM editMemberVM = new()
             {
              

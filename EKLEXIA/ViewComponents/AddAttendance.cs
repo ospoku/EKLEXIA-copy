@@ -40,11 +40,11 @@ namespace EKLEXIA.ViewComponents
             {
                 AddAttendanceVM.Meetings = new SelectList(xct.Meetings.ToList(), nameof(Meeting.MeetingId), nameof(Meeting.Name));
 
-                AddAttendanceVM.Attendees = xct.Members.Select(m => new CheckBoxItem 
-                ()
+                AddAttendanceVM.Attendees = xct.Members.Select(m => new CheckBoxItem
+
                 {
-                    Name=m.Fullname,
-                    Value=m.MemberId,
+                    Name = m.Fullname,
+                    Value = m.MemberId,
                     
                 }
                 
