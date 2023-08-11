@@ -14,7 +14,7 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            AddIncomeVM addIncomeVM = new AddIncomeVM
+            AddIncomeVM addIncomeVM = new()
             {
 
 
