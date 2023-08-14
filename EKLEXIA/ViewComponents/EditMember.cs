@@ -31,9 +31,9 @@ namespace EKLEXIA.ViewComponents
           
                 GenderId = MemberToEdit.GenderId,
                 RegionId = MemberToEdit.RegionId,
-                Hometown = MemberToEdit.Hometown,
+                Residence = MemberToEdit.Hometown,
                 Othername = MemberToEdit.Othername,
-
+                BranchId=MemberToEdit.BranchId,
                 Surname = MemberToEdit.Surname,
                 Telephone = MemberToEdit.Telephone,
 

@@ -32,7 +32,7 @@ namespace EKLEXIA.Controllers
             {
 
 
-                Attendance addThisAttendance = new Attendance
+                Attendance addThisAttendance = new()
                 {
                     Date = addAttendanceVM.Date,
                     Description = att.Description,
