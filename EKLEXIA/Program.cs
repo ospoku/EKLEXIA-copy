@@ -4,6 +4,7 @@ using AspNetCoreHero.ToastNotification.Extensions;
 using EKLEXIA.Data;
 using EKLEXIA.Models;
 using EKLEXIA.Notice;
+using EKLEXIA.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddAuthentication();
-
+builder.Services.AddHostedService<EmailSMSService>();
 //  builder.  Services.AddSingleton<IAuthorizationHandler, IncidentAuthorizationHandler>();
 //    builder.Services.AddAuthorization(options => options.AddPolicy("sameAuthorPolicy",
 //policy =>
