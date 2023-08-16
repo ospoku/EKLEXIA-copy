@@ -122,7 +122,7 @@ namespace EKLEXIA.Controllers
 
 
 
-            HttpClient httpclient = new HttpClient();
+            HttpClient httpclient = new();
 
             var response2 = await httpclient.SendAsync(new HttpRequestMessage(HttpMethod.Post, message));
             if (response2.StatusCode == HttpStatusCode.OK)
@@ -189,7 +189,7 @@ public IActionResult DetailMember(string Id)
         }
 
 
-
+   
 
 
 

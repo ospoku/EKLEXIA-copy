@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.DataProtection;
 using EKLEXIA.ViewComponents;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using EKLEXIA.DataProtection;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECLEXIA.Controllers
 {
@@ -182,6 +183,38 @@ public IActionResult Careers()
         public IActionResult EditGroup(string Id)
         {
             return ViewComponent("EditGroup",Id);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditGroup(string Id, EditGrpVM editGrpVM)
+        {
+         Group   grpToEdit = (from grp in ctx.Groups where grp.GroupId== Encryption.Decrypt(Id) select grp).FirstOrDefault();
+
+       
+
+            if(ModelState.IsValid)
+            {
+                grpToEdit.Name = editGrpVM.Name;
+                grpToEdit.Description= editGrpVM.Description;
+                grpToEdit.IsDeleted = false;
+                grpToEdit.ModifiedBy = User.Claims.FirstOrDefault(c => c.Type == "Name").Value;
+                grpToEdit.ModifiedDate = DateTime.Now;
+
+                ctx.Groups.Attach(grpToEdit);
+                ctx.Entry(grpToEdit).State = EntityState.Modified;
+                await ctx.SaveChangesAsync();
+                notyf.Success("Group updated");
+                return RedirectToAction("Groups");
+            }
+            else
+            {
+
+                notyf.Error("Update error, Please try again");
+                return ViewComponent("EditGroup", Id);
+
+            }
+
+         
         }
         [HttpGet]
         public IActionResult ManageGroup(string Id)

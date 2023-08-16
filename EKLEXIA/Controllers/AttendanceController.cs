@@ -43,7 +43,7 @@ namespace EKLEXIA.Controllers
                     CreatedDate = DateTime.Now
                 };
 
-                xct.Attendances.Add(addThisAttendance); 
+                xct.Attendances.Add(addThisAttendance);
             }
                 xct.SaveChanges();
             notx.Success("Attendance successfully saved");
