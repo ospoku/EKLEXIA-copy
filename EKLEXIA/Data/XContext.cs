@@ -28,6 +28,7 @@ namespace EKLEXIA.Data
         public DbSet<Fund> Funds { get; set; }  
         public DbSet<Fundraising> Fundraisings { get;set; }
         public DbSet<MemberGroup> MemberGroups { get; set; }
+        public DbSet<Message> Messages { get; set; }
     }
 
 
