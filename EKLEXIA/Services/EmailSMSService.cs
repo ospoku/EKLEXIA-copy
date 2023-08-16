@@ -7,6 +7,7 @@ namespace EKLEXIA.Services
 {
     public class EmailSMSService : BackgroundService
     {
+<<<<<<< HEAD
       public readonly XContext ctx;
         public EmailSMSService( XContext context)
         {
@@ -58,6 +59,11 @@ namespace EKLEXIA.Services
             await Task.CompletedTask;
 
             }
+=======
+        protected async override Task ExecuteAsync(CancellationToken stoppingToken)
+        {
+            throw new NotImplementedException();
+>>>>>>> d66eded450a156b66c9a7ffda0fa41a003d00e65
         }
     }
 
