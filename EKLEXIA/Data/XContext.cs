@@ -15,7 +15,7 @@ namespace EKLEXIA.Data
         public DbSet<Region> Regions { get; set; }
         public DbSet<Gender> Genders { get; set; }
         public DbSet<Month> Months { get; set; }
-    
+  
         public DbSet<Welfare> Welfares { get; set; }
         public DbSet<MaritalStatus> MaritalStatuses { get; set; }
         public DbSet<Career> Careers { get; set; }
