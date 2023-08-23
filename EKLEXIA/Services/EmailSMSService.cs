@@ -2,9 +2,10 @@
 {
     public class EmailSMSService : BackgroundService
     {
-        protected async override Task ExecuteAsync(CancellationToken stoppingToken)
+        protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            throw new NotImplementedException();
+            return;
         }
+
     }
 }
