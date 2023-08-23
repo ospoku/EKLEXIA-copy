@@ -1,4 +1,5 @@
 ﻿using EKLEXIA.Data;
+using EKLEXIA.DataProtection;
 using EKLEXIA.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,29 +17,21 @@ namespace EKLEXIA.ViewComponents
 
         public IViewComponentResult Invoke(string Id)
         {
-            var MemberDetail = xct.Members.Include("Gender").Where(a => a.IsDeleted == false & a.MemberId == Id).Select(a => new DetailMemberVM
+            var memberDetail = xct.Members.Where(a => a.MemberId == Encryption.Decrypt(Id)).FirstOrDefault();
 
-       
-
-           
+            DetailMemberVM detailMemberVM = new()
             {
-             Insurance=a.Hometown,
-                ClinicNumber = a.RegionId,
-                Address = a.Address,
-           
-                DoB = a.DoB,
-               
-                GenderId = a.Gender.Name,
-             
-                Othername = a.Othername,
-             
-                Surname = a.Surname,
-                Telephone = a.Telephone,
-                
-            }).FirstOrDefault();
 
-            return View(MemberDetail);
+
+                Othername = memberDetail.Othername,
+
+                Surname = memberDetail.Surname,
+               
+                
+            };
+
+           return View(detailMemberVM);
         }
-            
+
     }
 }

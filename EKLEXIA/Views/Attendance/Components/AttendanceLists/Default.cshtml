@@ -4,7 +4,7 @@
 }
 @model IEnumerable<EKLEXIA.ViewModels.AttendanceListsVM>;
 
-
+<div id="PlaceHolderHere"></div>
 <div class="card">
     <div class="card-header">
         <h5 class="m-0 font-weight-bold text-center">Register</h5>
@@ -20,12 +20,12 @@
         </div>
     </div>
 <div class="card-body">
-    <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+   <div class="table-responsive">
+        <table class="table table-responsive overflow-auto" id="dataTable">
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Meeting</th>
+                  <th>Meeting</th>
                     <th>Date</th>
                     <th>Present/Absent</th>
                         <th>Comment</th>
@@ -36,19 +36,30 @@
                 @foreach (var meeting in Model)
                 {
                     <tr>
-                            <td>@meeting.Fullname</td>
-                            <td>@meeting.Meeting</td>
-                        <td> @meeting.Date.ToString("yyyy-MM-dd")</td>
-                      
-                        <td><input type="checkbox" asp-for="@meeting.IsSelected"/></td>
-                        <td>@meeting.Comment</td>
+                        <td>@meeting.Fullname</td>
+                      <td>@meeting.Meeting</td>
+                        <td>@meeting.Date.ToString("yyyy-MM-dd")</td>
+                        <td>@*<input type="checkbox" asp-for="@meeting.IsSelected"/>*@
+                        @if(meeting.IsSelected==true)
+                        {
+                                    <span class="badge badge-pill text-white" style="background-color:green">Present</span>
+
+
+                                }
+                                else
+                                {
+                                    <span class="badge badge-pill text-white" style="background-color:red">Absent</span>
+                                    
+                                }
+
+                        </td>
+                    <td>@meeting.Comment</td>
                      
                         <td>
                                 <div class="text-center">
                                     <div class="btn-group" role="group">
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#EditGroup"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditAttendance",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#EditAttendance"><i class="fa fa-sm fa-edit text-white"></i></button>
                                         <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
-
                                         <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
 
                                     </div>

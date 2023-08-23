@@ -9,7 +9,7 @@ using EKLEXIA.Models;
 namespace EKLEXIA.ViewModels
 {
     public class DetailMemberVM
-    {
+    { public string Id { get; set; }
         public string Surname { get; set; }
         public string Othername { get; set; }
 

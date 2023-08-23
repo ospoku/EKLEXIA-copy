@@ -153,3 +153,45 @@ $(function () {
     })
 })
 
+$(function functionConfirm(event) {
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass:
+        {
+            confirmButton: 'btn btn-success',
+            cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
+
+    swalWithBootstrapButtons.fire({
+        title: 'Emin misiniz?',
+        text: "Bu işlem geri alınamaz!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Evet, sil!',
+        cancelButtonText: 'Hayır, iptal',
+        reverseButtons: true,
+        timer: 3000
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $("form").submit();
+
+            swalWithBootstrapButtons.fire({
+                title: 'Silindi!',
+                text: 'Kategori silindi.',
+                icon: 'success',
+                timer: '2000'
+            }
+            )
+        } else if (
+            /* Read more about handling dismissals below */
+            result.dismiss === Swal.DismissReason.cancel
+        ) {
+            swalWithBootstrapButtons.fire(
+                'İptal edildi',
+                '',
+                'error'
+            )
+        }
+    })
+})

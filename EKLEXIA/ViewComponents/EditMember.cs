@@ -24,7 +24,8 @@ namespace EKLEXIA.ViewComponents
             {
              
                 Genders = new SelectList(xct.Genders.ToList(), nameof(Gender.GenderId), nameof(Gender.Name)),
-           
+                Branches= new SelectList (xct.Branches.ToList(),nameof(Branch.BranchId),nameof(Branch.Name)),   
+           Regions=new SelectList(xct.Regions.ToList(),nameof(Region.RegionId),nameof(Region.Name)),    
                 Address = MemberToEdit.Address,
               
                 DoB = MemberToEdit.DoB,
