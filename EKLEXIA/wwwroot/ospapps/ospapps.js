@@ -153,7 +153,6 @@ $(function () {
     })
 })
 
-
 $(function functionConfirm(event) {
     const swalWithBootstrapButtons = Swal.mixin({
         customClass:
@@ -194,7 +193,5 @@ $(function functionConfirm(event) {
                 'error'
             )
         }
-    });
-});
-
-    
+    })
+})

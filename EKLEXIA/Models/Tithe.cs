@@ -15,11 +15,12 @@ namespace EKLEXIA.Models
         public string MemberId { get; set; }
         public Member Member { get; set; }
         public string MonthId { get; set; }
+        [ForeignKey("MonthId")]
         public Month Month { get; set; }
         public DateTime TitheDate { get; set; }
    
         public double Amount { get; set; }
-  
+
         public string Description { get; set; }
      
     }

@@ -7,6 +7,8 @@ using AspNetCoreHero.ToastNotification.Abstractions;
 using System.Net;
 using EKLEXIA.Notice;
 using Microsoft.AspNetCore.SignalR;
+using EKLEXIA.DataProtection;
+
 namespace EKLEXIA.Controllers
 {
 
@@ -134,15 +136,23 @@ namespace EKLEXIA.Controllers
             return RedirectToAction();
 
         }
-public IActionResult DetailMember(string Id)
-      => ViewComponent("DetailMember", Id);
+        public async Task<IActionResult>Birthday()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult DetailMember(string Id)
+        {
+            return ViewComponent("DetailMember", Id);
+        }
+
         public IActionResult EditMember(string Id)
         => ViewComponent("EditMember", Id);
         [HttpPost]
         public async Task<IActionResult> EditMemberAsync(string Id, Member member)
         {
             Member updateThisMember = new();
-            updateThisMember = (from a in ctx.Members where a.MemberId == Id select a).FirstOrDefault();
+            updateThisMember = (from a in ctx.Members where a.MemberId == Encryption.Decrypt(Id) select a).FirstOrDefault();
 
             updateThisMember.Address = member.Address;
 
@@ -162,9 +172,10 @@ public IActionResult DetailMember(string Id)
 
             ctx.Members.Attach(updateThisMember);
             ctx.Entry(updateThisMember).State = EntityState.Modified;
-            await ctx.SaveChangesAsync();
 
-            return RedirectToAction("ViewMembers");
+            await ctx.SaveChangesAsync();
+            notyf.Success("Member successfully updated");
+            return RedirectToAction("Members");
         }
         [HttpGet]
         public IActionResult Members()

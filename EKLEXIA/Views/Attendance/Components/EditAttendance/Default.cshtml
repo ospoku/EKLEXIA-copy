@@ -1,0 +1,31 @@
+﻿@model EKLEXIA.ViewModels.EditMeetingVM;
+
+
+<div class="modal fade" id="EditAttendance" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        @using (Html.BeginForm("EditAttendance", "Attendance", FormMethod.Post))
+        {
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h6>Edit Meeting</h6>
+                    <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
+                </div>
+
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" asp-for="@Model.Name " required class="form-control" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" asp-for="@Model.Description" required class="form-control" placeholder="Enter Description"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-sm  btn-block btn-primary" onclick="functionConfirm(this)" >Update</button>
+                </div>
+
+            </div>
+        }
+    </div>
+</div>

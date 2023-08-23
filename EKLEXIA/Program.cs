@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc();
 builder.Services.AddAuthentication();
-builder.Services.AddHostedService<EmailSMSService>();
+builder.Services.AddScoped<SMSService>();
 //  builder.  Services.AddSingleton<IAuthorizationHandler, IncidentAuthorizationHandler>();
 //    builder.Services.AddAuthorization(options => options.AddPolicy("sameAuthorPolicy",
 //policy =>
