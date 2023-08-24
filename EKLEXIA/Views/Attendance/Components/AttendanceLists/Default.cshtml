@@ -21,14 +21,14 @@
     </div>
 <div class="card-body">
    <div class="table-responsive">
-        <table class="table table-responsive overflow-auto" id="dataTable">
+        <table class="table table-bordered nowrap" id="dataTable" width="100%">
             <thead>
                 <tr>
                     <th>Name</th>
                   <th>Meeting</th>
                     <th>Date</th>
                     <th>Present/Absent</th>
-                        <th>Comment</th>
+                     <th>Comment</th>
                         <th>Action</th>
                 </tr>
             </thead>
@@ -53,16 +53,16 @@
                                 }
 
                         </td>
-                    <td>@meeting.Comment</td>
+                 <td>@meeting.Comment</td>
                      
                         <td>
-                                <div class="text-center">
-                                    <div class="btn-group" role="group">
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("EditAttendance",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#EditAttendance"><i class="fa fa-sm fa-edit text-white"></i></button>
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
-                                        <button data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
+                                
+                                    <div class="btn-group">
+                                        <button type="button" data-toggle="ajax-modal" data-url="@Url.Action("EditAttendance",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#EditAttendance"><i class="fa fa-sm fa-edit text-white"></i></button>
+                                        <button type="button" data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-users text-white"></i></button>
+                                        <button type="button" data-toggle="ajax-modal" data-url="@Url.Action("ManageGroup",new{Id=@Encryption.Encrypt(meeting.AttendanceId)})" class="btn btn-sm btn-primary" data-target="#ManageGroup"><i class="fa fa-sm fa-trash text-white"></i></button>
 
-                                    </div>
+                                
                                 </div>
                         </td>
                     </tr>
