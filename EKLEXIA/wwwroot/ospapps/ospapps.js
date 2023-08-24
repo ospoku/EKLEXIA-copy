@@ -12,7 +12,7 @@
 });
 $(document).ready(function () {
     $(".table").dataTable({
-        dom: 'Bfrtip',
+    
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
@@ -196,4 +196,4 @@ $(function functionConfirm(event) {
             )
         }
     })
-})
+});
