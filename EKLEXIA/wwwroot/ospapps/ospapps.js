@@ -12,9 +12,11 @@
 });
 $(document).ready(function () {
     $(".table").dataTable({
+        dom: 'Bfrtip',
         buttons: [
-            'copy', 'excel', 'pdf'
+            'copy', 'csv', 'excel', 'pdf', 'print'
         ]
+        
     }
     );
 });
