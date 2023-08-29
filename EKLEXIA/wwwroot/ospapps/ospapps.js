@@ -159,7 +159,13 @@ $(document).ready( function Confirm() {
     
     $("#btnAddMember").click(function (e) {
         e.preventDefault();
-        Swal.fire({ title: 'Swal Notification', icon: 'question', showButtonCancel: true, text:'Do you want to save changes?' }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
+        Swal.fire({
+            title: 'New Member', icon: 'warning', showButtonCancel: true,
+        showDenyButton:true,
+            text: 'Do you want to add new Member?',
+            confirmButtonText: 'Yes',
+            buttonsStyling: false,
+       }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
 
 
     })
