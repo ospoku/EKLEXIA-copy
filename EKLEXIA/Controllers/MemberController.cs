@@ -19,7 +19,7 @@ namespace EKLEXIA.Controllers
 
         private readonly INotyfService notyf;
         public readonly IHubContext<NotificationHub> hCtx;
-        public MemberController(XContext xContext, INotyfService tNotyf, IHubContext<NotificationHub>hubContext)
+        public MemberController(XContext xContext, INotyfService tNotyf, IHubContext<NotificationHub> hubContext)
         {
             ctx = xContext;
             notyf = tNotyf;
@@ -45,6 +45,8 @@ namespace EKLEXIA.Controllers
 
         [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
+         
+   
         {
 
             int membershipid = ctx.Members.Count() + 1;

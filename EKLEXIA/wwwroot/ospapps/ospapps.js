@@ -155,45 +155,13 @@ $(function () {
     })
 })
 
-$(function functionConfirm(event) {
-    const swalWithBootstrapButtons = Swal.mixin({
-        customClass:
-        {
-            confirmButton: 'btn btn-success',
-            cancelButton: 'btn btn-danger'
-        },
-        buttonsStyling: false
-    })
+$(document).ready( function Confirm() {
+    
+    $("#btnAddMember").click(function (e) {
+        e.preventDefault();
+        Swal.fire({ title: 'Swal Notification', icon: 'question', showButtonCancel: true, text:'Do you want to save changes?' }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
 
-    swalWithBootstrapButtons.fire({
-        title: 'Emin misiniz?',
-        text: "Bu işlem geri alınamaz!",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonText: 'Evet, sil!',
-        cancelButtonText: 'Hayır, iptal',
-        reverseButtons: true,
-        timer: 3000
-    }).then((result) => {
-        if (result.isConfirmed) {
-            $("form").submit();
 
-            swalWithBootstrapButtons.fire({
-                title: 'Silindi!',
-                text: 'Kategori silindi.',
-                icon: 'success',
-                timer: '2000'
-            }
-            )
-        } else if (
-            /* Read more about handling dismissals below */
-            result.dismiss === Swal.DismissReason.cancel
-        ) {
-            swalWithBootstrapButtons.fire(
-                'İptal edildi',
-                '',
-                'error'
-            )
-        }
     })
 })
+  
