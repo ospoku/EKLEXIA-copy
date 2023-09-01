@@ -15,12 +15,12 @@
       "destination": "wwwroot/Vendor/signalr.js/"
     },
     {
-      "library": "FitText.js@1.2.0",
-      "destination": "wwwroot/Vendor/FitText.js/"
-    },
-    {
       "library": "datatables.net-buttons-bs4@2.4.1",
       "destination": "wwwroot/Vendor/jquery-datatable/extensions/datatables.net-buttons-bs4/"
+    },
+    {
+      "library": "tailwindcss@2.2.19",
+      "destination": "wwwroot/Vendor/tailwindcss/"
     }
   ]
 }

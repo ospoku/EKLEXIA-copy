@@ -1,4 +1,4 @@
-﻿@model EKLEXIA.ViewModels.EditMeetingVM;
+﻿@model EKLEXIA.ViewModels.EditAttendanceVM;
 
 
 <div class="modal fade" id="EditAttendance" data-backdrop="static" data-keyboard="false">
@@ -8,17 +8,26 @@
             <div class="modal-content">
                 <div class="modal-header">
 
-                    <h6>Edit Meeting</h6>
+                    <h6>Edit Attendance</h6>
                     <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-sm btn-outline-danger">Close</button>
                 </div>
 
 
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="text" asp-for="@Model.Name " required class="form-control" placeholder="Enter Name">
+                        <input type="text" asp-for="@Model.Date" required class="form-control">
                     </div>
                     <div class="form-group">
-                        <textarea type="text" asp-for="@Model.Description" required class="form-control" placeholder="Enter Description"></textarea>
+                        <input type="text" asp-for="@Model.MeetingId" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" asp-for="@Model.MemberId" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" asp-for="@Model.IsPresent" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" asp-for="@Model.Description" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">

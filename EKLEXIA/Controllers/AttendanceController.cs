@@ -81,9 +81,10 @@ namespace EKLEXIA.Controllers
             }
             return ViewComponent("AddMeeting");
         }
-
+        [HttpGet]
         public IActionResult DetailMeeting(string Id)
       => ViewComponent("DetailMember", Id);
+        [HttpGet]
         public IActionResult EditMeeting(string Id)
         => ViewComponent("EditMeeting", Id);
         [HttpPost]
@@ -114,7 +115,11 @@ namespace EKLEXIA.Controllers
         public IActionResult DeleteMember() => ViewComponent("ViewMembers");
 
         public IActionResult AttendanceLists() => ViewComponent("AttendanceLists");
-
+        [HttpGet]
+        public IActionResult EditAttendance(string Id)
+        {
+            return ViewComponent("EditAttendance", Id);
+        }
 
 
 

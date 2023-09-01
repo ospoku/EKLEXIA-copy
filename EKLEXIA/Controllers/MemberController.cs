@@ -201,8 +201,18 @@ namespace EKLEXIA.Controllers
             return ViewComponent("Card", Id);
         }
 
+        [HttpPost]
+   public IActionResult DeleteMember (string Id)
+        {
+         var   memberToDelete = (from m in ctx.Members where m.MemberId == Encryption.Decrypt(Id) select m).FirstOrDefault();
 
-   
+           
+            memberToDelete.IsDeleted = true;
+            ctx.Members.Attach(memberToDelete);
+            ctx.SaveChanges();
+
+            return ViewComponent("Members");
+        }
 
 
 

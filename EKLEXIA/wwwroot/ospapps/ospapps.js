@@ -11,14 +11,15 @@
     })
 });
 $(document).ready(function () {
-    $(".table").dataTable({
-    
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-        
+  var table=  $('#dataTable').dataTable({ buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print'],
+       
+      lengthMenu: [
+          [5, 10, 25, 50, 100, -1],
+      [5, 10, 25,  50, 100, "All"]
+      ]
     }
     );
+    table.buttons().container().appendTo('#table_wrapper');
 });
 
 
@@ -160,12 +161,9 @@ $(document).ready( function Confirm() {
     $("#btnAddMember").click(function (e) {
         e.preventDefault();
         Swal.fire({
-            title: 'New Member', icon: 'warning', showButtonCancel: true,
-        showDenyButton:true,
-            text: 'Do you want to add new Member?',
-            confirmButtonText: 'Yes',
-            buttonsStyling: false,
-       }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
+            title: 'New Member', icon: 'question', showDenyButton: true, text: 'Do you want to save this record?',
+            denyButtonColor: 'red',
+            confirmButtonColor: 'blue'        }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
 
 
     })
