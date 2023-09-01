@@ -42,10 +42,6 @@ builder.Services.AddScoped<DBInitializer>();
 builder.Services.AddSignalR();
 builder.Services.AddDataProtection();
 builder.Services.AddHttpContextAccessor();
-
-
-
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -64,20 +60,13 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.UseCookiePolicy();
 app. MapHub<NotificationHub>("/notificationHub");
-
-
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
-
 var scope = app.Services.CreateScope();
 var db = scope.ServiceProvider.GetRequiredService<XContext>();
-
-
 db.Database.EnsureCreated();
-
-
-    var init = scope.ServiceProvider.GetRequiredService<DBInitializer>();
+var init = scope.ServiceProvider.GetRequiredService<DBInitializer>();
 await init.GenderSetup();
 await init.MonthSetup();
 await init.RegionSetup();
