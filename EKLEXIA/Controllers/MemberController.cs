@@ -45,8 +45,8 @@ namespace EKLEXIA.Controllers
 
         [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
-         
-   
+
+
         {
 
             int membershipid = ctx.Members.Count() + 1;
@@ -90,7 +90,7 @@ namespace EKLEXIA.Controllers
             await hCtx.Clients.All.SendAsync("ReceiveNotification", $"New Post Created: {addThisMember.Fullname}");
             return RedirectToAction("Members");
 
- 
+
 
 
         }
@@ -138,7 +138,7 @@ namespace EKLEXIA.Controllers
             return RedirectToAction();
 
         }
-        public async Task<IActionResult>Birthday()
+        public async Task<IActionResult> Birthday()
         {
             return View();
         }
@@ -189,7 +189,7 @@ namespace EKLEXIA.Controllers
         {
             return ViewComponent("Birthdays");
         }
-       
+
 
         public IActionResult IDCards()
         {
@@ -202,9 +202,12 @@ namespace EKLEXIA.Controllers
         }
 
 
-   
+        public IActionResult Delete(string Id)
+
+        {
 
 
 
+        }
     }
 }

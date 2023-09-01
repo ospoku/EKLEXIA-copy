@@ -165,9 +165,11 @@ $(document).ready( function Confirm() {
             text: 'Do you want to add new Member?',
             confirmButtonText: 'Yes',
             buttonsStyling: false,
+            customClass: {
+                confirmButton: 'btn btn-primary btn-lg mr-5',
+                denyButton: 'btn btn-danger btn-lg',
+            },
        }).then(result => { if (result.isConfirmed) { const memberForm = document.getElementById("AddMember"); memberForm.submit() } });
-
-
     })
 })
   
