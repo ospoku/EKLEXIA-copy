@@ -9,9 +9,9 @@ namespace ECLEXIA.Controllers
 
         }
         [HttpGet]
-        public IActionResult ViewDashboard()
+        public IActionResult Dashboard()
         {
-            return ViewComponent("ViewDashboard");
+            return ViewComponent("Dashboard");
         }
     }
 }

@@ -4,14 +4,7 @@
 
 <head>
     <title>Material Able bootstrap admin template by Codedthemes</title>
-
-    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 10]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-      <![endif]-->
-    <!-- Meta -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,19 +25,25 @@
     <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.min.css"/>
     <link href="~/assets/css/jquery.mcustomscrollbar.css" rel="stylesheet"/>
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" asp-append-version="true"/>
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" asp-append-version="true" />
+    <link href="~/vendor/datatables/datatables.bootstrap.min.css" rel="stylesheet"/>
+    <link href="~/vendor/datatables/datatables.bootstrap4.css" rel="stylesheet" />
+ 
+    <link href="~/vendor/datatables/buttons.bootstrap4.css" rel="stylesheet" />
+    
+    
+    
    
-    <link href="~/Vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet"/>
     <link href="~/Vendor/select2/css/select2.min.css" rel="stylesheet" asp-append-version="true"/>
     <link href="~/Vendor/toggle-switch/toggle-switch.css" rel="stylesheet"/>
- 
     
-    <link rel="stylesheet" type="text/css" href="~/Vendor/form-wizard/smart_wizard_all.min.css" asp-append-version="true"/>
+    <link rel="stylesheet" type="text/css" href="~/Vendor/form-wizard/smart_wizard_all.min.css" asp-append-version="true" />
+ 
    
 </head>
 
 <body>
-    <!-- Pre-loader start -->
+@*    <!-- Pre-loader start -->
     <div class="theme-loader">
         <div class="loader-track">
             <div class="preloader-wrapper">
@@ -96,7 +95,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>*@
     <!-- Pre-loader end -->
     <div id="pcoded" class="pcoded">
         <div class="pcoded-overlay-box"></div>
@@ -147,7 +146,7 @@
                                         <h6>Notifications</h6>
                                         <label class="label label-danger">New</label>
                                     </li>
-                          @*          <li class="waves-effect waves-light">
+                                 <li class="waves-effect waves-light">
                                         <div class="media">
                                             <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
@@ -156,8 +155,8 @@
                                                 <span class="notification-time">30 minutes ago</span>
                                             </div>
                                         </div>
-                                    </li>*@
-                          @*          <li class="waves-effect waves-light">
+                                    </li>
+                                    <li class="waves-effect waves-light">
                                         <div class="media">
                                             <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
@@ -166,8 +165,8 @@
                                                 <span class="notification-time">30 minutes ago</span>
                                             </div>
                                         </div>
-                                    </li>*@
-                              @*      <li class="waves-effect waves-light">
+                                    </li>
+                                <li class="waves-effect waves-light">
                                         <div class="media">
                                             <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
@@ -176,7 +175,7 @@
                                                 <span class="notification-time">30 minutes ago</span>
                                             </div>
                                         </div>
-                                    </li>*@
+                                    </li>
                                 </ul>
                             </li>
                             <li class="user-profile header-notification">
@@ -243,7 +242,7 @@
                   
                             <ul class="pcoded-item pcoded-left-item">
                                 <li class="pcoded-hasmenu">
-                                    <a href="index.html" class="waves-effect waves-dark">
+                                    <a asp-action="Dashboard" asp-controller="Report" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
                                         <span class="pcoded-mtext">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
@@ -403,7 +402,13 @@
                                             </a>
                                         </li>
 
-
+                                        <li class=" ">
+                                            <a asp-action="IdCards" asp-controller="Member" class="waves-effect waves-dark">
+                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
+                                                <span class="pcoded-mtext">Member Career</span>
+                                                <span class="pcoded-mcaret"></span>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -513,7 +518,7 @@
                                             
                                             <!-- Project statustic end -->
                                         </div>
-                                    
+                                        
                                     @RenderBody()
                                     </div>
                                     <!-- Page-body end -->
@@ -541,25 +546,18 @@
     <!-- menu js -->
     <script src="~/assets/js/pcoded.min.js"></script>
     <script src="~/assets/js/vertical/vertical-layout.min.js"></script>
-    <script type="text/javascript" src="~/assets/js/script.js"></script>
+    
     <script type="text/javascript" src="~/Vendor/datatables/jquery.dataTables.min.js"></script>
     
 
-    <script type="text/javascript" src="~/Vendor/datatables/dataTables.bootstrap4.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/datatables.net-buttons-bs4/buttons.bootstrap4.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/jszip.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/buttons.print.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-    <script type="text/javascript" src="~/Vendor/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
     
-   
+
+
 
     <script src="~/Vendor/select2/js/select2.full.js" asp-append-version="true"></script>
     <script type="text/javascript" src="~/Vendor/jquery-timeago/jquery.timeago.min.js" asp-append-version="true"></script>
     <script type="text/javascript" src="~/Vendor/tinymce/tinymce.min.js" asp-append-version="true"></script>
-    <script type="text/javascript" src="~/js/site.js" asp-append-version="true"></script>
+    
   <script type="text/javascript" src="~/Vendor/form-wizard/jquery.smartWizard.min.js"></script>
   
     <script type="text/javascript" src="~/Vendor/signalr.js/signalr.js"></script>

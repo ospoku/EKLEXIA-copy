@@ -64,14 +64,14 @@
 
                         <div class="tab-content">
                             <div id="step-1" class="tab-pane" role="tabpanel" aria-labelledby="step-1">
-                                <div class="input-group input-group mb-3">
+                                <div class="input-group input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="icon fa fa-user-circle"></i></span>
                                     </div>
                                     <input class="form-control" asp-for="@Model.Surname" type="text" placeholder="Surname">
                                 </div>
 
-                                <div class="input-group input-group mb-3">
+                                <div class="input-group input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="icon fa fa-user-circle"></i></span>
                                     </div>
@@ -79,8 +79,8 @@
 
                                 </div>
 
-                                <div class="input-group input-group mb-3">
-                                    <div class="input-group-prepend">
+                                <div class="input-group input-group input-group-sm">
+                                    <div class="input-group-prepend input-group-prepend-sm">
                                         <span class="input-group-text">Date of Birth</span>
                                     </div>
                                     <input id="dob" class="form-control js-datepicker" type="date" asp-for="@Model.DoB" asp-format="{0:dd/MMM/yyyy}"/>

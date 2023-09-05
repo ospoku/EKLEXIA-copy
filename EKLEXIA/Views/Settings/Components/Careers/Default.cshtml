@@ -7,7 +7,7 @@
 <div class="card">
     <div class="card-header">
         <h5 class="m-0 font-weight-bold text-center">Careers</h5>
-        <button class="btn btn-primary btn-sm text-white" data-toggle="ajax-modal" data-target="#AddCareer" data-url="@Url.Action("AddCareer")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Career</button>
+        <button class="btn btn-primary btn-sm text-white" data-bs-toggle="ajax-modal" data-bs-target="#AddCareer" data-url="@Url.Action("AddCareer")"><i class="fa fa-fw fa-sm fa-plus-circle"></i>Add Career</button>
         <div class="card-header-right">
             <ul class="list-unstyled card-option">
                 <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -18,9 +18,9 @@
             </ul>
         </div>
     </div>
-    <div class="card-body">
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+    
+        
+            <table class="table table-bordered" id="dataTable" width="100%">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -62,5 +62,4 @@
                 </tbody>
             </table>
         </div>
-    </div>
-</div>
+    
