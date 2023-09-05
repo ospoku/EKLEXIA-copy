@@ -11,7 +11,12 @@
     })
 });
 $(document).ready(function () {
-  var table=  $('#dataTable').dataTable({ buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print'],
+  var table=  $('#dataTable').dataTable(
+      {
+          buttons: [
+              {
+                  extend: 'Export',
+                  split: ['copy', 'csv', 'excel', 'pdf', 'print']}],
        
       lengthMenu: [
           [5, 10, 25, 50, 100, -1],
