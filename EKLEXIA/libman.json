@@ -3,10 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "bootstrap@4.6.2",
-      "destination": "wwwroot/assets/css/bootstrap/"
-    },
-    {
       "library": "sweetalert2@11.7.16",
       "destination": "wwwroot/Vendor/"
     },
@@ -19,8 +15,20 @@
       "destination": "wwwroot/Vendor/jquery-datatable/extensions/datatables.net-buttons-bs4/"
     },
     {
-      "library": "tailwindcss@2.2.19",
-      "destination": "wwwroot/Vendor/tailwindcss/"
+      "library": "bootstrap@5.3.1",
+      "destination": "wwwroot/Vendor/bootstrap/"
+    },
+    {
+      "library": "jquery@3.7.0",
+      "destination": "wwwroot/Vendor/jquery/"
+    },
+    {
+      "library": "datatables-buttons@2.4.2",
+      "destination": "wwwroot/Vendor/datatables-buttons/"
+    },
+    {
+      "library": "datatables@1.10.21",
+      "destination": "wwwroot/Vendor/datatables/"
     }
   ]
 }

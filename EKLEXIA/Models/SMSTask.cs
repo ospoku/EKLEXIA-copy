@@ -6,6 +6,7 @@ namespace EKLEXIA.Models
     public class SMSTask : TableAudit
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] 
         public string  SMSTaskId { get; set; }
         public string MemberId { get; set; }
         public string Telephone { get; set; }

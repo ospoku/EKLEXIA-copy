@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     var PlaceHolderElement = $('#PlaceHolderHere');
-    $(' button[data-toggle="ajax-modal"]').click(function (event) {
+    $(' button[data-bs-toggle="ajax-modal"]').click(function (event) {
         var url = $(this).data('url');
         var decodeUrl = decodeURI(url);
         $.get(decodeUrl).done(function (data) {
@@ -11,24 +11,12 @@
     })
 });
 $(document).ready(function () {
-  var table=  $('#dataTable').dataTable({ buttons: [ 'copy', 'csv', 'excel', 'pdf', 'print'],
-       
-      lengthMenu: [
-          [5, 10, 25, 50, 100, -1],
-      [5, 10, 25,  50, 100, "All"]
-      ]
-    }
-    );
-    table.buttons().container().appendTo('#table_wrapper');
+    $('.table').dataTable();
 });
-
-
 $(document).ready(function () { $('time.timeago').timeago(); });
 
 
 $(document).ready(function () {
-    
- 
 
         $('.select2').select2({
             placeholder: 'Select an option',

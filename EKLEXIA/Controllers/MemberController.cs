@@ -45,8 +45,8 @@ namespace EKLEXIA.Controllers
 
         [HttpPost]
         public async Task<IActionResult> AddMember(AddMemberVM addMemberVM, IFormFile Photo)
-         
-   
+
+
         {
 
             int membershipid = ctx.Members.Count() + 1;
@@ -85,15 +85,31 @@ namespace EKLEXIA.Controllers
 
 
             ctx.Members.Add(addThisMember);
+            ctx.Messages.Add(new Message
+            {
+                Subject = "New Member",
+                CreatedDate = DateTime.Now,
+                Sender = "Eklexia",
+                Body = "New Member with Member by name" + addThisMember.Fullname + "-" + addThisMember.IDNumber + " has been created",
+                Reciever = User.Claims.FirstOrDefault(c => c.Type == "Name").Value,
+            });
+            ctx.SMSTasks.Add(new SMSTask
+            {
+                MemberId = addThisMember.IDNumber,
+                Telephone = addThisMember.Telephone,
+
+            });
+
             await ctx.SaveChangesAsync();
-            notyf.Success("member successfully created.");
+            notyf.Success("Member successfully created.");
             await hCtx.Clients.All.SendAsync("ReceiveNotification", $"New Post Created: {addThisMember.Fullname}");
+
             return RedirectToAction("Members");
 
- 
 
+        } 
 
-        }
+        
 
         public async Task<IActionResult> SendSMS()
         {
