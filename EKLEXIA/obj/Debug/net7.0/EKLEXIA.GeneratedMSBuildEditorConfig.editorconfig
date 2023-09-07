@@ -1,0 +1,225 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EKLEXIA
+build_property.RootNamespace = EKLEXIA
+build_property.ProjectDir = C:\Users\emmanuel.osei\source\repos\ospoku\EKLEXIA - Copy\EKLEXIA\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\emmanuel.osei\source\repos\ospoku\EKLEXIA - Copy\EKLEXIA
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Components/AddUser/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wb25lbnRzXEFkZFVzZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Components/DetailUser/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wb25lbnRzXERldGFpbFVzZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Components/EditUser/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wb25lbnRzXEVkaXRVc2VyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Components/UserRoles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wb25lbnRzXFVzZXJSb2xlc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Components/Users/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDb21wb25lbnRzXFVzZXJzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/AddAttendance/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXEFkZEF0dGVuZGFuY2VcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/AddMeeting/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXEFkZE1lZXRpbmdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/AttendanceLists/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXEF0dGVuZGFuY2VMaXN0c1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/Card/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXENhcmRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/DetailMeeting/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXERldGFpbE1lZXRpbmdcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/EditAttendance/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXEVkaXRBdHRlbmRhbmNlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/EditMeeting/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXEVkaXRNZWV0aW5nXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Attendance/Components/Meetings/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXR0ZW5kYW5jZVxDb21wb25lbnRzXE1lZXRpbmdzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/AddTithe/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXEFkZFRpdGhlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/AddWelfare/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXEFkZFdlbGZhcmVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/Card/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXENhcmRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/DetailTithe/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXERldGFpbFRpdGhlXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/EditMember/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXEVkaXRNZW1iZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/Fundraisings/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXEZ1bmRyYWlzaW5nc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/Funds/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXEZ1bmRzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/Tithes/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXFRpdGhlc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Finance/Components/WelfareList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW5jZVxDb21wb25lbnRzXFdlbGZhcmVMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/AddMember/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcQWRkTWVtYmVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/Birthdays/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcQmlydGhkYXlzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/Card/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcQ2FyZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/DetailMember/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcRGV0YWlsTWVtYmVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/EditMember/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcRWRpdE1lbWJlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/IDCards/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcSURDYXJkc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Member/Components/Members/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENvbXBvbmVudHNcTWVtYmVyc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Report/Components/Dashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XENvbXBvbmVudHNcRGFzaGJvYXJkXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/AddBranch/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xBZGRCcmFuY2hcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/AddCareer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xBZGRDYXJlZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/AddGroup/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xBZGRHcm91cFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/AddRegion/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xBZGRSZWdpb25cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/Branches/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xCcmFuY2hlc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/Careers/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xDYXJlZXJzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/EditCareer/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xFZGl0Q2FyZWVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/EditGroup/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xFZGl0R3JvdXBcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/Groups/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xHcm91cHNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/ManageBranch/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xNYW5hZ2VCcmFuY2hcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/ManageGroup/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xNYW5hZ2VHcm91cFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/Regions/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xSZWdpb25zXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Settings/Components/Setup/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ3NcQ29tcG9uZW50c1xTZXR1cFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emmanuel.osei/source/repos/ospoku/EKLEXIA - Copy/EKLEXIA/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x2hk0uyvhf

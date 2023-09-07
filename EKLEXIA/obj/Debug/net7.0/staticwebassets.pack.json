@@ -1,0 +1,1785 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\EKLEXIA.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EKLEXIA.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\Rotativa\\help-wkhtmltoimage.txt",
+      "PackagePath": "staticwebassets\\Rotativa\\help-wkhtmltoimage.txt"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\Rotativa\\help-wkhtmltopdf.txt",
+      "PackagePath": "staticwebassets\\Rotativa\\help-wkhtmltopdf.txt"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\form-wizard\\jquery.smartWizard.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\form-wizard\\jquery.smartWizard.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\form-wizard\\smart_wizard_all.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\form-wizard\\smart_wizard_all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\jquery.timeago.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\jquery.timeago.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\jquery.timeago.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\jquery.timeago.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\jquery.timeago.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\jquery.timeago.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.af.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.am.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ar.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.az.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.be.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bg.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.bs.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ca.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cs.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.cy.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.da.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.de.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.dv.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.el.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.en.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.es.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.et.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.eu.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fa.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fi.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.fr.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.gl.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.he.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hr.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hu.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.hy.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.id.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.is.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.it.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ja.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.jv.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ko.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ky.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lt.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.lv.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.mk.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.nl.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.no.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pl.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-br.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.pt.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ro.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rs.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ru.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.rw.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.si.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sk.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sl.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sq.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sr.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.sv.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.th.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr-short.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.tr.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uk.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.ur.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.uz.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.vi.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-CN.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\jquery-timeago\\locales\\jquery.timeago.zh-TW.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\print-js\\print.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\print-js\\print.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\print-js\\print.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\print-js\\print.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\print-js\\print.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\print-js\\print.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\print-js\\print.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\print-js\\print.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\print-js\\print.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\print-js\\print.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\css\\select2.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\css\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\af.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\af.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\af.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\af.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ar.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ar.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ar.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\az.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\az.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\az.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\az.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bg.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bg.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bg.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bg.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bn.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bn.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bn.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bn.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bs.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bs.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\bs.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\bs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ca.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ca.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ca.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ca.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\cs.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\cs.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\cs.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\cs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\da.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\da.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\da.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\da.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\de.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\de.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\de.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\de.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\dsb.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\dsb.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\dsb.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\dsb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\el.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\el.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\el.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\el.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\en.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\en.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\en.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\en.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\es.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\es.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\es.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\es.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\et.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\et.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\et.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\et.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\eu.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\eu.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\eu.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\eu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fa.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fa.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fa.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fa.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fi.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fi.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fi.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\fr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\fr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\gl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\gl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\gl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\gl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\he.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\he.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\he.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\he.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hi.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hi.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hi.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hsb.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hsb.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hsb.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hsb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hu.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hu.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hu.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hy.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hy.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\hy.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\hy.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\id.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\id.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\id.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\id.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\is.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\is.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\is.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\is.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\it.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\it.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\it.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\it.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ja.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ja.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ja.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ja.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ka.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ka.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ka.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ka.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\km.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\km.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\km.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\km.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ko.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ko.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ko.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ko.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\lt.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\lt.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\lt.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\lt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\lv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\lv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\lv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\lv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\mk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\mk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\mk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\mk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ms.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ms.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ms.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ms.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\nb.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\nb.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\nb.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\nb.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ne.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ne.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ne.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ne.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\nl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\nl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\nl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\nl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ps.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ps.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ps.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ps.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pt-BR.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pt-BR.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pt-BR.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pt-BR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pt.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pt.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\pt.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\pt.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ro.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ro.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ro.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ro.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ru.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ru.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\ru.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\ru.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sq.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sq.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sq.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sq.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sr-Cyrl.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sr-Cyrl.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sr-Cyrl.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sr-Cyrl.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sv.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sv.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\sv.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\sv.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\th.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\th.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\th.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\th.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\tk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\tk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\tk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\tk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\tr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\tr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\tr.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\tr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\uk.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\uk.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\uk.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\uk.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\vi.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\vi.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\vi.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\vi.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\zh-CN.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\zh-CN.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\zh-CN.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\zh-CN.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\zh-TW.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\zh-TW.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\i18n\\zh-TW.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\i18n\\zh-TW.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\select2.full.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\select2.full.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\select2.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\select2.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\signalr.js\\jquery.signalR.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\signalr.js\\jquery.signalR.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\signalr.js\\jquery.signalR.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\signalr.js\\jquery.signalR.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\signalr.js\\signalr.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\signalr.js\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.all.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\sweetAlert\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\sweetAlert\\sweetalert2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\icons\\default\\icons.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\icons\\default\\icons.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\langs\\README.md",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\langs\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\license.txt",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\models\\dom\\model.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\models\\dom\\model.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\advlist\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\advlist\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\anchor\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\anchor\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\autolink\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\autolink\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\autoresize\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\autoresize\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\autosave\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\autosave\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\charmap\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\charmap\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\code\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\code\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\codesample\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\codesample\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\directionality\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\directionality\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojiimages.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojiimages.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojiimages.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojis.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojis.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojis.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\emoticons\\js\\emojis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\emoticons\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\emoticons\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\fullscreen\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\fullscreen\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\help\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\help\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\image\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\image\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\importcss\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\importcss\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\insertdatetime\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\insertdatetime\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\link\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\link\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\lists\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\lists\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\media\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\media\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\nonbreaking\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\nonbreaking\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\pagebreak\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\pagebreak\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\preview\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\preview\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\quickbars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\quickbars\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\save\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\save\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\searchreplace\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\searchreplace\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\table\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\table\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\template\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\template\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\visualblocks\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\visualblocks\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\visualchars\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\visualchars\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\plugins\\wordcount\\plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\plugins\\wordcount\\plugin.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\default\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\default\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\document\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\document\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\content\\writer\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\content\\writer\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\oxide\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5-dark\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\content.inline.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\content.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\content.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\skin.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\skins\\ui\\tinymce-5\\skin.shadowdom.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\themes\\silver\\theme.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\themes\\silver\\theme.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\tinymce.d.ts",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\tinymce.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\tinymce\\tinymce.min.js",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\tinymce\\tinymce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\toggle-switch\\toggle-switch.css",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\toggle-switch\\toggle-switch.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\Vendor\\toggle-switch\\toggle-switch.css.map",
+      "PackagePath": "staticwebassets\\assets\\Vendor\\toggle-switch\\toggle-switch.css.map"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\extra.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\extra.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\header.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-horizontal-navigation.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-horizontal-navigation.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-overlay-effect.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-overlay-effect.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-push-effect.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-push-effect.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-rightsidebar.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-rightsidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-shrink-effect.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-shrink-effect.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe-theme-color.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe-theme-color.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\lib\\menubar\\hoe.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lib\\menubar\\hoe.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\js\\lib\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lib\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\js\\lib\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lib\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\js\\lib\\jquery.nanoscroller.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lib\\jquery.nanoscroller.min.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\assets\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\ospapps\\notification.js",
+      "PackagePath": "staticwebassets\\assets\\ospapps\\notification.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\ospapps\\ospapps.css",
+      "PackagePath": "staticwebassets\\assets\\ospapps\\ospapps.css"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\assets\\ospapps\\ospapps.js",
+      "PackagePath": "staticwebassets\\assets\\ospapps\\ospapps.js"
+    },
+    {
+      "Id": "C:\\Users\\emmanuel.osei\\source\\repos\\ospoku\\EKLEXIA\\EKLEXIA\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EKLEXIA.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EKLEXIA.props",
+      "PackagePath": "build\\EKLEXIA.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EKLEXIA.props",
+      "PackagePath": "buildMultiTargeting\\EKLEXIA.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EKLEXIA.props",
+      "PackagePath": "buildTransitive\\EKLEXIA.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

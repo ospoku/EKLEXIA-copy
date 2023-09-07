@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@4.6.2",
+      "destination": "wwwroot/assets/css/bootstrap/"
+    },
+    {
+      "library": "sweetalert2@11.7.16",
+      "destination": "wwwroot/Vendor/"
+    },
+    {
+      "library": "signalr.js@2.4.3",
+      "destination": "wwwroot/Vendor/signalr.js/"
+    },
+    {
+      "library": "datatables.net-buttons-bs4@2.4.1",
+      "destination": "wwwroot/Vendor/jquery-datatable/extensions/datatables.net-buttons-bs4/"
+    },
+    {
+      "library": "tailwindcss@2.2.19",
+      "destination": "wwwroot/Vendor/tailwindcss/"
+    }
+  ]
+}
